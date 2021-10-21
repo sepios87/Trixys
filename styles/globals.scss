@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Quick";
+  src: url("../public/fonts/quick/Quick.woff") format("woff"),
+  url("../public/fonts/quick/Quick.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/fonts/poppins/Poppins-Regular.woff") format("woff"),
+  url("../public/fonts/poppins/Poppins-Regular.woff2") format("woff2");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$primary: white;
+$secondary: #464652;
+
+body {
+  background-color: $primary;
+  transition: background-color 0.2s;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+

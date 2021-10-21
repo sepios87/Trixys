@@ -1,0 +1,33 @@
+.vagueGauche,
+.vagueDroite {
+  width: 55vw;
+  position: absolute;
+  z-index: 100;
+}
+
+.vagueDroite {
+  bottom: 0;
+  right: 0;
+}
+
+.logo {
+  position: absolute;
+  width: 3rem;
+  top: 10px;
+  left: 10px;
+  max-width: 20vw;
+  z-index: 200;
+}
+
+@media screen and (min-width: 780px) {
+  .vagueGauche,
+  .vagueDroite {
+    width: 15rem;
+  }
+
+  .logo {
+    width: 4rem;
+    top: 15px;
+    left: 15px;
+  }
+}

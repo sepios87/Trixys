@@ -1,0 +1,25 @@
+.services {
+  margin: 100px 0 0;
+
+  h2 {
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Quick', sans-serif;
+    margin: 100px 0;
+  }
+
+  .servicesContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 50px auto;
+    justify-content: space-between;
+
+    @media screen and (min-width: 600px) {
+      width: 80%;
+      flex-direction: row;
+    }
+  }
+}

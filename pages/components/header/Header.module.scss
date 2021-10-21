@@ -1,0 +1,186 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.svg {
+    color: #464652;
+    margin: auto;
+}
+
+.pointsDroite,
+.pointsGauche {
+    position: absolute;
+    width: 20vw;
+}
+
+.pointsDroite {
+    top: 1rem;
+    right: 1rem;
+}
+
+.pointsGauche {
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.titleDiv {
+    width: 75%;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: var(--secondary);
+}
+
+.titleDiv h1 {
+    font-size: 1rem;
+}
+
+.titleDiv h1 span {
+    display: block;
+    font-family: 'Quick', sans-serif;
+    font-size: 18vw;
+    letter-spacing: 5px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact p{
+    border-right: solid #464652 2px;
+    padding-right: 8%;
+    margin-right: 6%;
+}
+
+.contact a {
+    display: flex;
+}
+
+.contact img {
+    width: 2rem;
+    object-fit: contain;
+}
+
+.rond {
+    max-width: 38vw;
+    position: absolute;
+}
+
+.triangle1 {
+    width: 6rem;
+    top: 20vh;
+    left: 10vw;
+}
+
+.triangle2 {
+    width: 10rem;
+    top: 16vh;
+    right: -4vh;
+}
+
+.triangle3 {
+    bottom: 12vh;
+    width: 5rem;
+}
+
+.triangle4 {
+    bottom: 27vh;
+    left: 24vw;
+    width: 7rem;
+}
+
+.triangle5 {
+    right: -15vw;
+    bottom: 21vh;
+    width: 10rem;
+}
+
+.triangle6, .triangle7, .triangle8, .triangle9 {
+    display: none;
+}
+
+.rond {
+    width: 5rem;
+    bottom: 12vh;
+    right: 31vw;
+}
+
+@media screen and (min-width: 780px) {
+    .pointsDroite,
+    .pointsGauche {
+        width: 4rem;
+    }
+
+    .titleDiv {
+        width: 40%;
+        left: 9vw;
+        transform: translate(0, -50%);
+    }
+
+    .titleDiv h1 {
+        font-size: 1.25rem;
+    }
+
+    .titleDiv h1 span {
+        font-size: 10vw;
+    }
+
+    .triangles, .rond {
+        max-width: 30vw;
+    }
+
+    .triangle1 {
+        width: 8rem;
+        top: 8vh;
+    }
+
+    .triangle2 {
+        width: 18rem;
+        right: 3vw;
+    }
+
+    .triangle3 {
+        width: 12rem;
+    }
+
+    .triangle4 {
+        width: 25rem;
+        bottom: 1vh;
+    }
+
+    .triangle5 {
+        width: 10rem;
+        right: 25vw;
+    }
+
+    .triangle6 {
+        display: block;
+        bottom: 7vh;
+        right: 8vw;
+        width: 15rem;
+    }
+
+    .triangle7 {
+        display: block;
+        width: 10rem;
+        right: 35vw;
+        top: 30vh;
+    }
+
+    .triangle8 {
+        display: block;
+        width: 16rem;
+        left: 40vw;
+        top: 5vh;
+    }
+
+    .rond {
+        width: 8rem;
+        bottom: 5vh;
+        right: 35vw;
+    }
+}
