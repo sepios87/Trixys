@@ -25,19 +25,17 @@ a {
   box-sizing: border-box;
 }
 
-$primary: white;
-$secondary: #464652;
+:root {
+  --primary: white;
+  --secondary: #464652;
+}
 
 body {
-  background-color: $primary;
+  background-color: var(--primary);
   transition: background-color 0.2s;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-h2 {
-  margin-bottom: 3rem;
 }
 

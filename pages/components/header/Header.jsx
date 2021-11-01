@@ -1,7 +1,7 @@
 import React from 'react';
 import Triangle from '../../components/triangle/Triangle';
 import classes from './Header.module.scss';
-import EmailIcon from '@mui/icons-material/Email';
+import { MdEmail } from "react-icons/md";
 import Theme from "../../components/theme/Theme";
 
 const Header = ({ isWaiting }) => {
@@ -47,7 +47,7 @@ const Header = ({ isWaiting }) => {
                             question n'hésitez pas à nous contacter par mail !
                         </p>
                         <a href="mailto:contact.trixys@gmail.com">
-                            <EmailIcon className={classes.svg + ' svg'} />
+                            <MdEmail className={classes.svg + ' svg'} />
                         </a>
                     </div>
                 ) : null}
