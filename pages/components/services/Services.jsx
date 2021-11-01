@@ -14,6 +14,11 @@ const Services = (props) => {
 
     return isDarkTheme
             ? <figure className={classes.services}>
+                <span
+                    className={classes.icon}
+                    aria-hidden="true"
+                    data-icon={props.img}
+                />
                 <div className={classes.illustration}>
                     <img
                         className={classes.back}
@@ -27,6 +32,11 @@ const Services = (props) => {
                 </figcaption>
             </figure>
             : <figure className={classes.services}>
+                <span
+                    className={classes.icon}
+                    aria-hidden="true"
+                    data-icon={props.img}
+                />
                 <div className={classes.illustration}>
                     <img
                         className={classes.back}

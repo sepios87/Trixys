@@ -38,3 +38,17 @@
         width: 22%;
     }
 }
+
+.icon {
+    color: var(--secondary);
+}
+
+.icon:before {
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
