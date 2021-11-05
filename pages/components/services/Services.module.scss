@@ -7,15 +7,17 @@
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.8);
     margin: 0;
+    position: relative;
 
     .illustration {
         display: block;
+        height: 130px;
 
         .back {
-            width: 60%;
+            height: 100%;
             display: block;
             margin: auto;
-            opacity: 0.5;
+            opacity: 0.2;
         }
     }
 
@@ -37,18 +39,4 @@
     @media screen and (min-width: 600px) {
         width: 22%;
     }
-}
-
-.icon {
-    color: var(--secondary);
-}
-
-.icon:before {
-    content: attr(data-icon);
-    speak: none;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
 }

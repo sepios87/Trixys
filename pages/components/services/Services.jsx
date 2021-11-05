@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 // css import
 import classes from './Services.module.scss';
+import ServiceImage from '../service-image/ServiceImage';
 
 // ui icons import
 const Services = (props) => {
@@ -14,10 +15,11 @@ const Services = (props) => {
 
     return isDarkTheme
             ? <figure className={classes.services}>
-                <span
-                    className={classes.icon}
-                    aria-hidden="true"
-                    data-icon={props.img}
+                <ServiceImage
+                    name={props.name}
+                />
+                <ServiceImage
+                    name={props.name}
                 />
                 <div className={classes.illustration}>
                     <img
@@ -32,10 +34,8 @@ const Services = (props) => {
                 </figcaption>
             </figure>
             : <figure className={classes.services}>
-                <span
-                    className={classes.icon}
-                    aria-hidden="true"
-                    data-icon={props.img}
+                <ServiceImage
+                    name={props.name}
                 />
                 <div className={classes.illustration}>
                     <img
