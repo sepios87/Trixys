@@ -1,0 +1,79 @@
+.imageProfil {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: 5vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    color: var(--secondary);
+
+    figure {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: 780px) {
+            display: grid;
+            grid-template-columns: 10rem 1fr;
+            padding: 0 15%;
+        }
+    }
+
+    .content {
+        h2,
+        h3 {
+            text-align: center;
+            width: fit-content;
+            margin: auto;
+        }
+
+        h2::after,
+        h3::after {
+            content: '';
+            background-color: #f6c952;
+            position: relative;
+            display: block;
+        }
+
+        h2::after {
+            left: -40px;
+            bottom: 16px;
+            height: 1px;
+            width: 25px;
+        }
+
+        h3::after {
+            width: 36%;
+            height: 6px;
+            right: 12px;
+            bottom: 16px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        p {
+            padding: 0 10%;
+        }
+    }
+}
+
+.button {
+    background: transparent;
+    border: 2px solid var(--secondary);
+    padding: 0.4rem 1.2rem;
+    width: fit-content;
+    font-size: 10pt;
+    border-radius: 30px;
+    text-align: right;
+    color: var(--secondary);
+    margin: 3vh auto 0;
+    display: block;
+
+    @media screen and (min-width: 780px) {
+        margin-left: 10%;
+    }
+}

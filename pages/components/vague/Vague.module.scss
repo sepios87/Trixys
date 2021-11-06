@@ -45,10 +45,9 @@
   transform: rotate(180deg);
 }
 
-.testvagueGauche, 
+.testvagueGauche,
 .testvagueDroite {
   position: absolute;
   height: 50%;
   transform: rotate(145deg) translateX(25%) translateY(60%) scaleX(2);
 }
-
