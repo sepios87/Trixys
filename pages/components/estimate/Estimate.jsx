@@ -1,7 +1,9 @@
 import classes from './Estimate.module.scss';
 import { useState } from 'react';
-import { Slider, Progress } from 'antd';
+import { Progress } from 'antd';
 import 'antd/dist/antd.css';
+import ItemQuestionCard from './components/ItemQuestionCard';
+import ItemQuestionSlider from './components/ItemQuestionSlider';
 
 const tab = [
     {
@@ -9,7 +11,7 @@ const tab = [
         response1: {
             name: 'Creation',
             image: 'https://picsum.photos/200',
-            point: 1,
+            point: 2,
         },
         response2: {
             name: 'Refonte',
@@ -27,7 +29,7 @@ const tab = [
         response2: {
             name: 'Site de e commerce',
             image: 'https://picsum.photos/200',
-            point: 1,
+            point: 2,
         },
     },
     {
@@ -40,15 +42,25 @@ const tab = [
         response2: {
             name: 'Non',
             image: 'https://picsum.photos/200',
-            point: 1,
+            point: 2,
         },
     },
     {
         question: 'Combien de pages contiendra votre site ?',
+        response: {
+            min: 1,
+            max: 10,
+            point: 1,
+        },
     },
     {
         question:
-            'Quel niveau de graphisme souhaitez-vous ? (1 étant un design classique et 5 étant un design très poussé et personnalisé)',
+            'Quel niveau de graphisme souhaitez-vous ? (1 étant un design classique et 5 étant un design très poussé)',
+        response: {
+            min: 1,
+            max: 5,
+            point: 2,
+        },
     },
     {
         question:
@@ -56,7 +68,7 @@ const tab = [
         response1: {
             name: 'Oui',
             image: 'https://picsum.photos/200',
-            point: 1,
+            point: 2,
         },
         response2: {
             name: 'Non',
@@ -73,9 +85,9 @@ const tab = [
             point: 1,
         },
         response2: {
-            name: 'Le prestataire',
+            name: 'Le prestataire (Nous)',
             image: 'https://picsum.photos/200',
-            point: 1,
+            point: 2,
         },
     },
     {
@@ -84,7 +96,7 @@ const tab = [
         response1: {
             name: 'Oui',
             image: 'https://picsum.photos/200',
-            point: 1,
+            point: 2,
         },
         response2: {
             name: 'Non',
@@ -94,74 +106,47 @@ const tab = [
     },
 ];
 
-const ProgressBar = () => {
-    const [valueSlider, setValueSlider] = useState(0);
-
-    return (
-        <Slider
-            min={0}
-            max={20}
-            value={valueSlider}
-            onChange={setValueSlider}
-        />
-    );
-};
-
 const Estimate = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [points, setPoints] = useState(0);
 
-    const Item = () => {
-        if (tab[currentQuestion].response1 != null) {
-            return (
-                <div className={classes.containerQuestion}>
-                    <figure
-                        className={classes.itemQuestion}
-                        onClick={() => {
-                            setCurrentQuestion(currentQuestion + 1);
-                        }}
-                    >
-                        <img src={tab[currentQuestion].response1.image} />
-                        <figcaption>
-                            <p>{tab[currentQuestion].response1.name}</p>
-                        </figcaption>
-                    </figure>
-                    <figure
-                        className={classes.itemQuestion}
-                        onClick={() => {
-                            setCurrentQuestion(currentQuestion + 1);
-                        }}
-                    >
-                        <img src={tab[currentQuestion].response2.image} />
-                        <figcaption>
-                            <p>{tab[currentQuestion].response2.name}</p>
-                        </figcaption>
-                    </figure>
-                </div>
-            );
-        } else {
-            return (
-                <div>
-                    <ProgressBar />
-                    <p
-                        onClick={() => {
-                            setCurrentQuestion(currentQuestion + 1);
-                        }}
-                    >
-                        Valider
-                    </p>
-                </div>
-            );
-        }
+    const onFinishedQuestion = (e) => {
+        setCurrentQuestion(currentQuestion + 1);
+        setPoints(points + e);
+    };
+
+    const formIsFinished = () => {
+        return currentQuestion == tab.length - 1;
     };
 
     return (
         <section className={classes.container}>
-            <span className={classes.questionNum+1}>{currentQuestion}</span>
+            <span className={classes.questionNum}>{currentQuestion + 1}</span>
             <h2>Evaluez le montant de votre site web</h2>
-            <h3>{tab[currentQuestion].question}</h3>
-            <Item />
+            {formIsFinished() ? (
+                <div>Fini !!! avec un poids de {points}</div>
+            ) : (
+                <div>
+                    <h3 className={classes.titleQuestion}>
+                        {tab[currentQuestion].question}
+                    </h3>
+                    {tab[currentQuestion].response1 != null ? (
+                        <ItemQuestionCard
+                            onFinishedQuestion={(e) => onFinishedQuestion(e)}
+                            response1={tab[currentQuestion].response1}
+                            response2={tab[currentQuestion].response2}
+                        />
+                    ) : (
+                        <ItemQuestionSlider
+                            onFinishedQuestion={(e) => onFinishedQuestion(e)}
+                            response={tab[currentQuestion].response}
+                        />
+                    )}
+                </div>
+            )}
+
             <Progress
-                percent={(currentQuestion * 100) / tab.length}
+                percent={(currentQuestion * 100) / (tab.length - 1)}
                 onChange={setCurrentQuestion}
                 showInfo={false}
                 strokeColor="#f6c952"
