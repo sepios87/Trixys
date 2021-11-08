@@ -31,8 +31,8 @@ a {
 }
 
 body {
+  overflow-x: hidden;
   width: 100vw;
-  overflow: hidden;
   background-color: var(--primary);
   transition: background-color 0.2s;
   margin: 0;

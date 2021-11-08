@@ -24,6 +24,16 @@
     justify-content: space-around;
     margin-bottom: 15%;
     cursor: pointer;
+
+    @media screen and (min-width: 780px) {
+        width: 50%;
+        margin: 0 auto 10%;
+    }
+}
+
+.validate {
+    cursor: pointer;
+    user-select: none;
 }
 
 .titleQuestion {

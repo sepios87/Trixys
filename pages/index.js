@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <div>
             {/* <Vague /> */}
-            <ReactPageScroller>
+            {/* <ReactPageScroller> */}
                 <Header />
                 <Bio />
                 <Member
@@ -25,7 +25,7 @@ export default function Home() {
                 <Projet />
                 <Estimate/>
                 <Contact />
-            </ReactPageScroller>
+            {/* </ReactPageScroller> */}
         </div>
     );
 }

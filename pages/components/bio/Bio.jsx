@@ -1,7 +1,7 @@
 import classes from './Bio.module.scss';
 
 const Bio = () => {
-    return <section>
+    return <section className={classes.container}>
         <p className={classes.backgroundLetter}>4</p>
         <section className={classes.bioContainer}>
         <h2>L{'\''}agence</h2>
