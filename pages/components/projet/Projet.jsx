@@ -46,42 +46,43 @@ const Projet = () => {
             </div>
         </div>
     ) : (
-        <Swiper
-            className={classes.swiper}
-            spaceBetween={50}
-            slidesPerView={1}
-            centeredSlides
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-        >
-            <SwiperSlide className={classes.swiperItem}>
-                <h2>Projet 1</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint libero nostrum dolore rem! Quibusdam architecto maiores
-                    aliquam quaerat vitae, nemo, nam cupiditate, exercitationem
-                    sed et commodi doloribus ad? Atque, tempora!
-                </p>
-            </SwiperSlide>
-            <SwiperSlide className={classes.swiperItem}>
-                <h2>Projet 2</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint libero nostrum dolore rem! Quibusdam architecto maiores
-                    aliquam quaerat vitae, nemo, nam cupiditate, exercitationem
-                    sed et commodi doloribus ad? Atque, tempora!
-                </p>
-            </SwiperSlide>
-            <SwiperSlide className={classes.swiperItem}>
-                <h2>Projet 3</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint libero nostrum dolore rem! Quibusdam architecto maiores
-                    aliquam quaerat vitae, nemo, nam cupiditate, exercitationem
-                    sed et commodi doloribus ad? Atque, tempora!
-                </p>
-            </SwiperSlide>
-        </Swiper>
+        <div></div>
+        // <Swiper
+        //     className={classes.swiper}
+        //     spaceBetween={50}
+        //     slidesPerView={1}
+        //     centeredSlides
+        //     onSlideChange={() => console.log('slide change')}
+        //     onSwiper={(swiper) => console.log(swiper)}
+        // >
+        //     <SwiperSlide className={classes.swiperItem}>
+        //         <h2>Projet 1</h2>
+        //         <p>
+        //             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        //             Sint libero nostrum dolore rem! Quibusdam architecto maiores
+        //             aliquam quaerat vitae, nemo, nam cupiditate, exercitationem
+        //             sed et commodi doloribus ad? Atque, tempora!
+        //         </p>
+        //     </SwiperSlide>
+        //     <SwiperSlide className={classes.swiperItem}>
+        //         <h2>Projet 2</h2>
+        //         <p>
+        //             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        //             Sint libero nostrum dolore rem! Quibusdam architecto maiores
+        //             aliquam quaerat vitae, nemo, nam cupiditate, exercitationem
+        //             sed et commodi doloribus ad? Atque, tempora!
+        //         </p>
+        //     </SwiperSlide>
+        //     <SwiperSlide className={classes.swiperItem}>
+        //         <h2>Projet 3</h2>
+        //         <p>
+        //             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        //             Sint libero nostrum dolore rem! Quibusdam architecto maiores
+        //             aliquam quaerat vitae, nemo, nam cupiditate, exercitationem
+        //             sed et commodi doloribus ad? Atque, tempora!
+        //         </p>
+        //     </SwiperSlide>
+        // </Swiper>
     );
 };
 

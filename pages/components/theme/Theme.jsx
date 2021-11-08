@@ -4,11 +4,9 @@ import React, { useState, useEffect } from 'react';
 import classes from './Theme.module.scss';
 
 // ui icons import
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
-import Brightness2Icon from '@mui/icons-material/Brightness2';
-import Brightness2OutlinedIcon from '@mui/icons-material/Brightness2Outlined';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import { BsBrightnessHighFill, BsBrightnessHigh } from "react-icons/bs";
+import { MdOutlineBrightness2, MdBrightness2 } from "react-icons/md";
+import { BsChevronLeft } from "react-icons/bs";
 
 const Theme = () => {
     // light theme is default theme
@@ -36,18 +34,18 @@ const Theme = () => {
 
     return isDarkTheme ? (
         <div className={classes.theme}>
-            <WbSunnyOutlinedIcon onClick={onClickDarkTheme} />
-            <Brightness2Icon className={classes.moon} />
-            <ChevronLeftIcon onClick={onClickCloseTheme} />
+            <BsBrightnessHigh onClick={onClickDarkTheme} />
+            <MdBrightness2 className={classes.moon} />
+            <BsChevronLeft onClick={onClickCloseTheme} />
         </div>
     ) : (
         <div className={classes.theme}>
-            <WbSunnyIcon />
-            <Brightness2OutlinedIcon
+            <BsBrightnessHighFill/>
+            <MdOutlineBrightness2
                 className={classes.moon}
                 onClick={onClickDarkTheme}
             />
-            <ChevronLeftIcon onClick={onClickCloseTheme} />
+            <BsChevronLeft onClick={onClickCloseTheme} />
         </div>
     );
 };
