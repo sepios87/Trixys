@@ -1,3 +1,17 @@
+.vague1 {
+  position: fixed;
+  // width: 100%;
+  z-index: -1;
+}
+
+.vague2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
 .vagueGauche,
 .vagueDroite {
   width: 55vw;

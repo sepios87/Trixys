@@ -44,7 +44,7 @@ const Header = ({ isWaiting }) => {
                         <p>
                             Notre site est en cours de <strong>création</strong>
                             , merci de bien vouloir patienter. Pour toute
-                            question n'hésitez pas à nous contacter par mail !
+                            question n{'\''}hésitez pas à nous contacter par mail !
                         </p>
                         <a href="mailto:contact.trixys@gmail.com">
                             <MdEmail className={classes.svg + ' svg'} />
