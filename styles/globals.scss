@@ -54,6 +54,10 @@ body {
   display: block;
 }
 
+.button:last-child {
+  margin-right: 0;
+}
+
 .button:hover {
   cursor: pointer;
 }

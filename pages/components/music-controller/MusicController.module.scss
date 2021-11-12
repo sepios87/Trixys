@@ -10,6 +10,11 @@
     position: absolute;
     z-index: 1000;
     color: white;
+    padding: 0 2rem;
+
+    @media screen and (min-width: 780px) {
+        padding: 0;
+    }
 
     &_buttons {
         display: flex;
@@ -17,21 +22,28 @@
     }
 
     &_icon {
-        height: 5rem;
+        height: 2rem;
         width: auto;
         margin-bottom: 1rem;
         color: white;
+
+        @media screen and (min-width: 780px) {
+            height: 5rem;
+        }
     }
+
 }
 
 .toggle {
-    position: absolute;
-    bottom: 2rem;
-    right: 4rem;
-    z-index: 1000;
-    background-color: #f6c952;
-    border-radius: 25%;
-    padding: .5rem;
+    @media screen and (min-width: 780px) {
+        position: absolute;
+        bottom: 2rem;
+        right: 4rem;
+        z-index: 1000;
+        background-color: #f6c952;
+        border-radius: 25%;
+        padding: .5rem;
+    }
 }
 
 
