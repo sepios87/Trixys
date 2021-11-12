@@ -1,14 +1,15 @@
 .musicController {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     font-family: Poppins, sans-serif;
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(70, 70, 82, .9);
     position: absolute;
     z-index: 1000;
+    color: white;
 
     &_buttons {
         display: flex;
@@ -19,5 +20,18 @@
         height: 5rem;
         width: auto;
         margin-bottom: 1rem;
+        color: white;
     }
 }
+
+.toggle {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    z-index: 1000;
+    background-color: #f6c952;
+    border-radius: 25%;
+    padding: .5rem;
+}
+
+

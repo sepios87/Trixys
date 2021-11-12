@@ -4,10 +4,13 @@ import classes from './Header.module.scss';
 import { MdEmail } from "react-icons/md";
 import Theme from "../../components/theme/Theme";
 
-const Header = ({ isWaiting }) => {
+const Header = ({ isWaiting, music, setMusic }) => {
     return (
         <section className={classes.container}>
-            <Theme />
+            <Theme
+                music={ music }
+                setMusic={ setMusic }
+            />
             <img
                 className={classes.pointsDroite}
                 src="/svg/points.svg"

@@ -8,14 +8,24 @@ import ReactPageScroller from 'react-page-scroller';
 import Member from './components/member/Member';
 import Estimate from './components/estimate/Estimate.jsx';
 import MusicController from "./components/music-controller/MusicController";
+import {useState} from "react";
 
 export default function Home() {
+
+    const [music, setMusic] = useState(null);
+
     return (
         <div>
-            <MusicController />
+            <MusicController
+                music = { music }
+                setMusic={ setMusic }
+            />
             {/* <Vague /> */}
             {/* <ReactPageScroller> */}
-                <Header />
+                <Header
+                    music={ music }
+                    setMusic={ setMusic }
+                />
                 <Bio />
                 <Member
                     image="https://picsum.photos/900/1000"

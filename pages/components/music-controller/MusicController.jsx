@@ -1,37 +1,31 @@
 import React, {useState} from 'react'
 import classes from './MusicController.module.scss'
+import {IoVolumeHighOutline, IoVolumeMuteOutline} from "react-icons/io5";
 
-const MusicController = () => {
+const MusicController = ({ music, setMusic }) => {
 
-    // TODO: Faire remonter cette prop au niveau supérieur
-    const [music, setMusic] = useState(null)
-
-    return !music
+    return music === null
     ? <section className={classes.musicController}>
-        <img
+        <IoVolumeHighOutline
             className={classes.musicController_icon}
-            src="/svg/volume-up-solid.svg"
-            alt="Icône de volume"
         />
         <p>Notre agence vous propose une expérience sonore lors de votre navigation. Souhaitez-vous en bénéficier ?</p>
         <div className={classes.musicController_buttons}>
             <button
-                className='button'
+                className='button button--white'
                 onClick={() => setMusic(true)}
             >
                 Oui
             </button>
             <button
-                className='button'
+                className='button button--white'
                 onClick={() => setMusic(false)}
             >
                 Non
             </button>
         </div>
     </section>
-    : <aside>
-            <p>Toggle</p>
-    </aside>
+    : <></>
 
 }
 
