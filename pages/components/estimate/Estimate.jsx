@@ -1,7 +1,6 @@
 import classes from './Estimate.module.scss';
 import { useState } from 'react';
 import { Progress } from 'antd';
-import 'antd/dist/antd.css';
 import ItemQuestionCard from './components/ItemQuestionCard';
 import ItemQuestionSlider from './components/ItemQuestionSlider';
 

@@ -1,35 +1,15 @@
-
 .triangles {
     max-width: 38vw;
     position: absolute;
+    animation: flotter ease-in-out infinite;
 }
 
-.anim0 {
-    animation: flotterDroite ease-in-out infinite;
-}
-
-.anim1 {
-    animation: flotterGauche ease-in-out infinite;
-}
-
-@keyframes flotterDroite {
+@keyframes flotter {
     0% {
         transform: translate(0, 0) rotate(0deg);
     }
     50% {
         transform: translate(-3px, -9px) rotate(-2deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-}
-
-@keyframes flotterGauche {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    50% {
-        transform: translate(2px, -9px) rotate(3deg);
     }
     100% {
         transform: translate(0, 0) rotate(0deg);

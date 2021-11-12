@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import classes from './Vague.module.scss';
-import useWindowDimensions from './../useWindowDimensions';
 
 const Vague = () => {
-    const size = 1920;
-    const { width, height } = useWindowDimensions();
-
     return (
         <>
-            <img className={classes.logo} src="svg/logo.svg" alt="logo" />
+            <img
+                className={classes.logo}
+                src="svg/logo.svg"
+                alt="logo"
+            />
             <svg
                 className={classes.vague1}
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
-                width={size}
-                height={size}
                 preserveAspectRatio="xMidYMid"
-                viewBox={`0 0 ${size} ${size}`}
+                viewBox={`0 0 300 300`}
             >
-                <g style={{transform : 'scale(5)'}}>
+                <g>
                     <linearGradient
                         id="lg-0.29842378160630834"
                         x1="0"
@@ -26,8 +24,8 @@ const Vague = () => {
                         y1="0"
                         y2="0"
                     >
-                        <stop stopColor="#f6c952" offset="0"></stop>
-                        <stop stopColor="#ffc388" offset="1"></stop>
+                        <stop stopColor="#f5d854" offset="0"></stop>
+                        <stop stopColor="#f8c555" offset="1"></stop>
                     </linearGradient>
                     <path
                         d=""
@@ -84,10 +82,10 @@ const Vague = () => {
                 className={classes.vague2}
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
-                width={size}
-                height={size}
+                width="300"
+                height="300"
                 preserveAspectRatio="xMidYMid"
-                viewBox={`0 0 ${size} ${size}`}
+                viewBox={`0 0 300 300`}
             >
                 <g>
                     <linearGradient
@@ -97,8 +95,8 @@ const Vague = () => {
                         y1="0"
                         y2="0"
                     >
-                        <stop stopColor="#f6c952" offset="0"></stop>
-                        <stop stopColor="#f6c952" offset="1"></stop>
+                        <stop stopColor="#f5d854" offset="0"></stop>
+                        <stop stopColor="#f8c555" offset="1"></stop>
                     </linearGradient>
                     <path d="" fill="url(#lg-0.4895634189693667)" opacity="0.5">
                         <animate

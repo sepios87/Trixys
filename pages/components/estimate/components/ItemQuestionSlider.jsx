@@ -1,13 +1,12 @@
 import { Slider } from 'antd';
-import 'antd/dist/antd.css';
 import { useState } from 'react';
 import classes from '../Estimate.module.scss';
-    
-const ItemQuestionSlider = ({response, onFinishedQuestion}) => {
+
+const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
     const [valueSlider, setValueSlider] = useState(response.min);
 
     return (
-        <div>
+        <div className={classes.itemQuestionSlider}>
             <p>{valueSlider}</p>
             <Slider
                 min={response.min}
@@ -17,10 +16,15 @@ const ItemQuestionSlider = ({response, onFinishedQuestion}) => {
                 trackStyle={{ backgroundColor: '#f6c952' }}
                 handleStyle={{ borderColor: '#f6c952' }}
             />
-            <p className={classes.validate} onClick={() => {
-                onFinishedQuestion(valueSlider*response.point)
-                setValueSlider(0);
-            }}>Valider</p>
+            <p
+                className={classes.validate}
+                onClick={() => {
+                    onFinishedQuestion(valueSlider * response.point);
+                    setValueSlider(0);
+                }}
+            >
+                Valider
+            </p>
         </div>
     );
 };

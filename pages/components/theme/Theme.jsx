@@ -15,16 +15,12 @@ const Theme = () => {
 
     useEffect(() => {
         document.documentElement.style.setProperty('--primary', isDarkTheme ? '#464652' : 'white');
-        document.documentElement.style.setProperty('--secondary', isDarkTheme ? 'white' : '#464652');
+        document.querySelector(':root').style.setProperty('--secondary', isDarkTheme ? 'white' : '#464652');
     }, [isDarkTheme]);
 
     const onClickDarkTheme = () => {
         // inverser isDarkTheme
         setIsDarkTheme(!isDarkTheme);
-        // changer le theme
-        isDarkTheme
-            ? document.body.classList.remove('dark-mode')
-            : document.body.classList.add('dark-mode');
     };
 
     const onClickCloseTheme = () => {

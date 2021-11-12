@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import classes from './Triangle.module.scss';
 
-const Triangle = ({ num, className }) => {
+const Triangle = ({ num, classNameTriangle }) => {
 
     const ramdomBool = () => Math.random() > 0.5;
 
@@ -11,7 +11,7 @@ const Triangle = ({ num, className }) => {
     });
 
     return <img
-            className={(ramdomBool() ? classes.anim0 : classes.anim1) + ' ' + className + ' ' + classes.triangles}
+            className={classNameTriangle + ' ' + classes.triangles}
             style={TrianglStyle}
             src={`/svg/triangle${num}.svg`}
             alt="triangleFlottant"

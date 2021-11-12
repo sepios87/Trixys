@@ -10,7 +10,7 @@ import Estimate from './components/estimate/Estimate.jsx';
 
 export default function Home() {
     return (
-        <div>
+        <>
             <Vague />
             {/* <ReactPageScroller> */}
                 <Header />
@@ -26,6 +26,6 @@ export default function Home() {
                 <Estimate/>
                 <Contact />
             {/* </ReactPageScroller> */}
-        </div>
+        </>
     );
 }

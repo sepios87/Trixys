@@ -8,9 +8,9 @@ const Services = (props) => {
 
     const [isDarkTheme, setDarkTheme] = useState(null);
 
-    useEffect(() => {
-        setDarkTheme(document.body.classList.contains('dark-mode'));
-    }, [])
+    // useEffect(() => {
+    //     setDarkTheme(document.body.classList.contains('dark-mode'));
+    // }, [])
 
     return isDarkTheme
             ? <figure className={classes.services}>

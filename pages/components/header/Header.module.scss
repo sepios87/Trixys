@@ -3,6 +3,8 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    // background-color: var(--primary);
+    // transition: background-color 0.2s;
 }
 
 .svg {
@@ -32,11 +34,11 @@
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
-    color: var(--secondary);
 }
 
 .titleDiv h1 {
     font-size: 1rem;
+    color: var(--secondary);
 }
 
 .titleDiv h1 span {
