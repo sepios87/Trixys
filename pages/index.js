@@ -7,10 +7,12 @@ import Bio from './components/bio/Bio.jsx';
 import ReactPageScroller from 'react-page-scroller';
 import Member from './components/member/Member';
 import Estimate from './components/estimate/Estimate.jsx';
+import MusicController from "./components/music-controller/MusicController";
 
 export default function Home() {
     return (
         <div>
+            <MusicController />
             {/* <Vague /> */}
             {/* <ReactPageScroller> */}
                 <Header />
