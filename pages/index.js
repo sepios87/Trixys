@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Header from './components/header/Header.jsx';
 import Contact from './components/contact/Contact.jsx';
 import Vague from './components/vague/Vague.jsx';
@@ -9,12 +10,19 @@ import Member from './components/member/Member';
 import Estimate from './components/estimate/Estimate.jsx';
 
 export default function Home() {
+    const [waveTransition, setWaveTransition] = useState(false);
+
     return (
         <>
-            <Vague />
-            {/* <ReactPageScroller> */}
-                <Header />
-                <Bio />
+            <Vague waveTransition={waveTransition} />
+            <ReactPageScroller
+                onBeforePageScroll={() => {
+                    setWaveTransition(true);
+                    setTimeout(() => setWaveTransition(false), 1000)
+                }}
+            >
+                <Header/>
+                <Bio/>
                 <Member
                     image="https://picsum.photos/900/1000"
                     name="Florian TORIBIO"
@@ -23,9 +31,9 @@ export default function Home() {
                 />
                 {/* <ServiceList /> */}
                 <Projet />
-                <Estimate/>
+                <Estimate />
                 <Contact />
-            {/* </ReactPageScroller> */}
+            </ReactPageScroller>
         </>
     );
 }

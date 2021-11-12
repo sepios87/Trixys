@@ -1,4 +1,4 @@
-import { Slider } from 'antd';
+import Slider from '@mui/material/Slider';
 import { useState } from 'react';
 import classes from '../Estimate.module.scss';
 
@@ -8,13 +8,13 @@ const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
     return (
         <div className={classes.itemQuestionSlider}>
             <p>{valueSlider}</p>
-            <Slider
+            <input
+                className={classes.slider}
+                type="range"
+                onChange={(e) => setValueSlider(e.target.value)}
+                value={valueSlider}
                 min={response.min}
                 max={response.max}
-                value={valueSlider}
-                onChange={setValueSlider}
-                trackStyle={{ backgroundColor: '#f6c952' }}
-                handleStyle={{ borderColor: '#f6c952' }}
             />
             <p
                 className={classes.validate}

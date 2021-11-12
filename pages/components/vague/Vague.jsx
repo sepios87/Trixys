@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import classes from './Vague.module.scss';
 
-const Vague = () => {
+const Vague = ({ waveTransition }) => {
     return (
         <>
-            <img
-                className={classes.logo}
-                src="svg/logo.svg"
-                alt="logo"
-            />
+            <img className={classes.logo} src="svg/logo.svg" alt="logo" />
             <svg
+                style={{
+                    width: waveTransition ? '75vh' : '',
+                    height: waveTransition ? '75vh' : '',
+                }}
                 className={classes.vague1}
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -79,6 +79,10 @@ const Vague = () => {
             </svg>
 
             <svg
+                style={{
+                    width: waveTransition ? '75vh' : '',
+                    height: waveTransition ? '75vh' : '',
+                }}
                 className={classes.vague2}
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"

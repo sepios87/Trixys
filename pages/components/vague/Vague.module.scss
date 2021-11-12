@@ -4,13 +4,18 @@
     z-index: -1;
     width: 12rem;
     height: 12rem;
-    transition: width 4s, height 4s;
+    transition: width 2.5s, height 2.5s;
 }
 
 .vague2 {
     right: 0;
     bottom: 0;
     transform: rotate(180deg);
+}
+
+.test {
+    width: 150vw;
+    height: 150vw;
 }
 
 .logo:hover ~ .vague1 {
