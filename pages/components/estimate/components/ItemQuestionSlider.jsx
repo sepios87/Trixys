@@ -1,4 +1,3 @@
-import Slider from '@mui/material/Slider';
 import { useState } from 'react';
 import classes from '../Estimate.module.scss';
 
