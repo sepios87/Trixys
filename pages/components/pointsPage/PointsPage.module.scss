@@ -1,0 +1,13 @@
+.pointsContainer {
+    position: fixed;
+    right: 10px;
+    bottom: 50%;
+
+    .point {
+        margin: 2px;
+        height: 2px;
+        width: 2px;
+        // border-radius: 50%;
+        border: solid black 1px;
+    }
+}

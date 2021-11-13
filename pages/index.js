@@ -8,15 +8,19 @@ import ReactPageScroller from 'react-page-scroller';
 import Member from './components/member/Member';
 import Estimate from './components/estimate/Estimate.jsx';
 import Services from './components/services/Services.jsx';
+import PointsPage from './components/pointsPage/PointsPage';
 
 export default function Home() {
     const [waveTransition, setWaveTransition] = useState(false);
+    const [numPage, setNumPage] = useState(0);
 
     return (
         <>
             <Vague waveTransition={waveTransition} />
+            {/* <PointsPage numPage={numPage}/> */}
             <ReactPageScroller
-                onBeforePageScroll={() => {
+                onBeforePageScroll={(e) => {
+                    setNumPage(e);
                     setWaveTransition(true);
                     setTimeout(() => setWaveTransition(false), 1000)
                 }}
