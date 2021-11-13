@@ -1,9 +1,11 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
+    height: 100vh;
+    padding: 0 15%;
     text-align: center;
     color: var(--secondary);
+    justify-content: center;
 }
 
 .questionNum {
@@ -16,7 +18,7 @@
     justify-content: center;
     align-items: center;
     color: var(--primary);
-    margin: 10vh auto 0;
+    margin: 0 auto;
 }
 
 .containerQuestion {
@@ -77,6 +79,7 @@
         border: none;
         background-color: #f6c952;
         box-shadow: -3px 3px 14px -4px #000000;
+        cursor: grab;
     }
 
     &::-moz-range-thumb:hover {

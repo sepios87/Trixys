@@ -5,6 +5,10 @@
 
 .projetContainer {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10vh 0;
 
     @media screen and (min-width: 780px) {
         width: 80%;
@@ -18,7 +22,7 @@
 
         .clip:hover {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
+        } 
     }
 
     .clip {
