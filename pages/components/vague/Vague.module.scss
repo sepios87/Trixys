@@ -31,3 +31,23 @@
     left: 15px;
   }
 }
+
+.waveContainerGauche, .waveContainerDroite {
+  position: fixed;
+  width: 28rem;
+  height: 28rem;
+  overflow: hidden;
+}
+
+.waveContainerDroite {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.testvagueGauche,
+.testvagueDroite {
+  position: absolute;
+  height: 50%;
+  transform: rotate(145deg) translateX(25%) translateY(60%) scaleX(2);
+}

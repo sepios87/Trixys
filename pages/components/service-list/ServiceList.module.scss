@@ -1,5 +1,7 @@
 .services {
-    height: 100vh;
+    @media screen and (min-width: 600px) {
+        height: 100vh;
+    }
 
     h2 {
         font-size: 30px;

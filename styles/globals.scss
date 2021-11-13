@@ -39,11 +39,39 @@ a {
 }
 
 body {
+  overflow-x: hidden;
+  width: 100vw;
   background-color: var(--primary);
   transition: background-color 0.2s;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+  background: transparent;
+  border: 2px solid var(--secondary);
+  padding: 0.4rem 1.2rem;
+  width: fit-content;
+  font-size: 10pt;
+  border-radius: 30px;
+  text-align: right;
+  color: var(--secondary);
+  margin-right: 1rem;
+  display: block;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button--white {
+  border-color: white;
+  color: white;
 }
 
