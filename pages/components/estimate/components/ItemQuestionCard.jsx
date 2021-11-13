@@ -7,7 +7,7 @@ const ItemQuestionCard = ({ onFinishedQuestion, response1, response2 }) => {
                 className={classes.itemQuestion}
                 onClick={() => onFinishedQuestion(response.point)}
             >
-                <img src={response.image} />
+                <img src={response.image} alt=""/>
                 <figcaption>
                     <p>{response.name}</p>
                 </figcaption>

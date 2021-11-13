@@ -1,26 +1,30 @@
-import { Slider } from 'antd';
-import 'antd/dist/antd.css';
+import Slider from '@mui/material/Slider';
 import { useState } from 'react';
 import classes from '../Estimate.module.scss';
-    
-const ItemQuestionSlider = ({response, onFinishedQuestion}) => {
+
+const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
     const [valueSlider, setValueSlider] = useState(response.min);
 
     return (
-        <div>
+        <div className={classes.itemQuestionSlider}>
             <p>{valueSlider}</p>
-            <Slider
+            <input
+                className={classes.slider}
+                type="range"
+                onChange={(e) => setValueSlider(e.target.value)}
+                value={valueSlider}
                 min={response.min}
                 max={response.max}
-                value={valueSlider}
-                onChange={setValueSlider}
-                trackStyle={{ backgroundColor: '#f6c952' }}
-                handleStyle={{ borderColor: '#f6c952' }}
             />
-            <p className={classes.validate} onClick={() => {
-                onFinishedQuestion(valueSlider*response.point)
-                setValueSlider(0);
-            }}>Valider</p>
+            <p
+                className={classes.validate}
+                onClick={() => {
+                    onFinishedQuestion(valueSlider * response.point);
+                    setValueSlider(0);
+                }}
+            >
+                Valider
+            </p>
         </div>
     );
 };

@@ -1,47 +1,36 @@
 import React from 'react';
 import classes from './Projet.module.scss';
-import { isMobile } from 'react-device-detect';
+
+const projets = [
+    {
+        titre: 'Projet 1',
+        texte: 'Lorem ipsu dorl erger zberoinvbe rabierzb eribe rbiàern berb erboie rberi berb erb',
+        classe: classes.clip1,
+    },
+    {
+        titre: 'Projet 2',
+        texte: 'Lorem ipsu dorl erger zberoinvbe rabierzb eribe rbiàern berb erboie rberi berb erb',
+        classe: classes.clip2,
+    },
+    {
+        titre: 'Projet 3',
+        texte: 'Lorem ipsu dorl erger zberoinvbe rabierzb eribe rbiàern berb erboie rberi berb erb',
+        classe: classes.clip3,
+    },
+];
 
 const Projet = () => {
     return (
         <section className={classes.container}>
             <div className={classes.projetContainer}>
-                <div className={`${classes.clip} ${classes.clip1}`}>
-                    <div className={classes.content}>
-                        <h2>Projet 1</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Sint libero nostrum dolore rem! Quibusdam
-                            architecto maiores aliquam quaerat vitae, nemo, nam
-                            cupiditate, exercitationem sed et commodi doloribus
-                            ad? Atque, tempora!
-                        </p>
+                {projets.map((e, index) => (
+                    <div key={index} className={`${classes.clip} ${e.classe}`}>
+                        <div className={classes.content}>
+                            <h2>{e.titre}</h2>
+                            <p>{e.texte}</p>
+                        </div>
                     </div>
-                </div>
-                <div className={`${classes.clip} ${classes.clip2}`}>
-                    <div className={classes.content}>
-                        <h2>Projet 2</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Sint libero nostrum dolore rem! Quibusdam
-                            architecto maiores aliquam quaerat vitae, nemo, nam
-                            cupiditate, exercitationem sed et commodi doloribus
-                            ad? Atque, tempora!
-                        </p>
-                    </div>
-                </div>
-                <div className={`${classes.clip} ${classes.clip3}`}>
-                    <div className={classes.content}>
-                        <h2>Projet 3</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Sint libero nostrum dolore rem! Quibusdam
-                            architecto maiores aliquam quaerat vitae, nemo, nam
-                            cupiditate, exercitationem sed et commodi doloribus
-                            ad? Atque, tempora!
-                        </p>
-                    </div>
-                </div>
+                ))}
             </div>
         </section>
     );

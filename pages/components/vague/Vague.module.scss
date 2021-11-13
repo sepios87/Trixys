@@ -1,53 +1,47 @@
-.vagueGauche,
-.vagueDroite {
-  width: 55vw;
-  position: absolute;
-  z-index: 100;
+.vague1,
+.vague2 {
+    position: fixed;
+    z-index: -1;
+    width: 12rem;
+    height: 12rem;
+    transition: width 2.5s, height 2.5s;
 }
 
-.vagueDroite {
-  bottom: 0;
-  right: 0;
+.vague2 {
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.test {
+    width: 150vw;
+    height: 150vw;
+}
+
+.logo:hover ~ .vague1 {
+    width: 150vw;
+    height: 150vw;
 }
 
 .logo {
-  position: absolute;
-  width: 3rem;
-  top: 10px;
-  left: 10px;
-  max-width: 20vw;
-  z-index: 200;
+    position: absolute;
+    width: 3rem;
+    top: 10px;
+    left: 10px;
+    max-width: 20vw;
+    z-index: 200;
 }
 
 @media screen and (min-width: 780px) {
-  .vagueGauche,
-  .vagueDroite {
-    width: 15rem;
-  }
+    .vague1,
+    .vague2 {
+        width: 20rem;
+        height: 20rem;
+    }
 
-  .logo {
-    width: 4rem;
-    top: 15px;
-    left: 15px;
-  }
-}
-
-.waveContainerGauche, .waveContainerDroite {
-  position: fixed;
-  width: 28rem;
-  height: 28rem;
-  overflow: hidden;
-}
-
-.waveContainerDroite {
-  bottom: 0;
-  right: 0;
-  transform: rotate(180deg);
-}
-
-.testvagueGauche,
-.testvagueDroite {
-  position: absolute;
-  height: 50%;
-  transform: rotate(145deg) translateX(25%) translateY(60%) scaleX(2);
+    .logo {
+        width: 4rem;
+        top: 15px;
+        left: 15px;
+    }
 }
