@@ -1,0 +1,48 @@
+.informations {
+  width: 100%;
+  background: none;
+  color: var(--secondary);
+  box-sizing: border-box;
+
+  @media screen and (min-width: 700px) {
+    background: rgba(112,112,112,0.9);
+    color: white;
+    padding: 20px 0 100px 55px;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 700px) {
+      text-align: left;
+    }
+  }
+
+  ul {
+    list-style: none;
+    width: 80%;
+    margin: auto;
+
+    @media screen and (min-width: 700px) {
+      margin: 0;
+      width: auto;
+    }
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 20px 0;
+
+      .icon {
+        margin-right: 25px;
+      }
+
+      a {
+        font-size: 15px;
+        font-weight: 100;
+      }
+    }
+  }
+}

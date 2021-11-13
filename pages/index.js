@@ -8,6 +8,7 @@ import ReactPageScroller from 'react-page-scroller';
 import Member from './components/member/Member';
 import Estimate from './components/estimate/Estimate.jsx';
 import MusicController from "./components/music-controller/MusicController";
+import Informations from './components/informations/Informations';
 
 export default function Home() {
     const [waveTransition, setWaveTransition] = useState(false);
@@ -59,6 +60,7 @@ export default function Home() {
                 {/* <Services/> */}
                 <Estimate />
                 <Contact />
+                {width <= 700 && <Informations />}
             </ReactPageScroller>
         </>
     );
