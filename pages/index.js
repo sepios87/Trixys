@@ -6,10 +6,10 @@ import MusicController from './components/music-controller/MusicController';
 import Vague from './components/vague/Vague';
 import Header from './components/header/Header';
 import Bio from './components/bio/Bio';
-import Member from './components/member/Member';
 import Projet from './components/projet/Projet';
 import Estimate from './components/estimate/Estimate';
 import Contact from './components/contact/Contact';
+import SliderMembers from './components/slider-members/SliderMembers';
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -49,54 +49,7 @@ export default function Home() {
                     <Bio />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Swiper
-                        direction={'horizontal'}
-                        slidesPerView={1}
-                        spaceBetween={30}
-                        keyboard={true}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        className="mySwiper"
-                        onSlideChange={() => {
-                            setWaveTransition(true);
-                            setTimeout(() => setWaveTransition(false), 800);
-                        }}
-                        speed={800}
-                    >
-                        <SwiperSlide>
-                            <Member
-                                image="https://picsum.photos/900/1000"
-                                name="Florian TORIBIO"
-                                status="Développeur Web"
-                                descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Member
-                                image="https://picsum.photos/900/1000"
-                                name="Benjamin PELAUDEIX"
-                                status="Développeur Web"
-                                descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Member
-                                image="https://picsum.photos/900/1000"
-                                name="Rémi HAY--RIMBAULT"
-                                status="Développeur Web"
-                                descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Member
-                                image="https://picsum.photos/900/1000"
-                                name="Océane Guilloizeau"
-                                status="Web designeuse"
-                                descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
-                            />
-                        </SwiperSlide>
-                    </Swiper>
+                    <SliderMembers />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Projet />

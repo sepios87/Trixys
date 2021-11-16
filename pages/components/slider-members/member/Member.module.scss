@@ -60,20 +60,3 @@
         }
     }
 }
-
-.button {
-    background: transparent;
-    border: 2px solid var(--secondary);
-    padding: 0.4rem 1.2rem;
-    width: fit-content;
-    font-size: 10pt;
-    border-radius: 30px;
-    text-align: right;
-    color: var(--secondary);
-    margin: 3vh auto 0;
-    display: block;
-
-    @media screen and (min-width: 780px) {
-        margin-left: 10%;
-    }
-}

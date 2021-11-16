@@ -1,3 +1,4 @@
+import Button from '../../button/Button';
 import classes from './Member.module.scss';
 
 const Member = ({image, name, status, descr}) => {
@@ -8,7 +9,7 @@ const Member = ({image, name, status, descr}) => {
                 <h2>{name}</h2>
                 <h3>{status}</h3>
                 <p>{descr}</p>
-                <a className={classes.button}>Voir son porfolio</a>
+                <Button style={{marginLeft: '10%'}}>Voir son portfolio</Button>
             </figcaption>
         </figure>
     </section>
