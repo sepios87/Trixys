@@ -6,15 +6,27 @@ const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
 
     return (
         <div className={classes.itemQuestionSlider}>
-            <p>{valueSlider}</p>
-            <input
-                className={classes.slider}
-                type="range"
-                onChange={(e) => setValueSlider(e.target.value)}
-                value={valueSlider}
-                min={response.min}
-                max={response.max}
-            />
+            <p
+                onClick={() =>
+                    valueSlider > response.min
+                        ? setValueSlider(valueSlider - 1)
+                        : null
+                }
+                className={classes.buttonSlider}
+            >
+                -
+            </p>
+            <p className={classes.value}>{valueSlider}</p>
+            <p
+                onClick={() =>
+                    valueSlider < response.max
+                        ? setValueSlider(valueSlider + 1)
+                        : null
+                }
+                className={classes.buttonSlider}
+            >
+                +
+            </p>
             <p
                 className={classes.validate}
                 onClick={() => {

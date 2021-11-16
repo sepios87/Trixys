@@ -124,7 +124,7 @@ const Estimate = () => {
             {formIsFinished() ? (
                 <div>
                     <p>Votre site est estimé à : {points*60}€</p>
-                    <p onClick={() => setCurrentQuestion(0)}>Recommencer</p>
+                    <p className={classes.validate} onClick={() => setCurrentQuestion(0)}>Recommencer</p>
                 </div>
             ) : (
                 <div>

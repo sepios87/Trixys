@@ -34,17 +34,42 @@
     }
 }
 
-.validate {
-    cursor: pointer;
-    user-select: none;
-}
-
 .titleQuestion {
     min-height: 80px;
 }
 
 .itemQuestionSlider {
     min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .buttonSlider {
+        margin: 0;
+        background-color: #f6c952;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+    }
+
+    .value {
+        width: 20%;
+        font-weight: bold;
+    }
+}
+
+
+.validate {
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+    text-align: center;
 }
 
 .itemQuestion {
