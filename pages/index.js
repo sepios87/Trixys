@@ -22,15 +22,21 @@ export default function Home() {
         <>
             <MusicController music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
+            <div className="pagination"></div>
             <Swiper
                 direction={'vertical'}
                 slidesPerView={1}
                 mousewheel={true}
-                keyboard={{enabled: true, onlyInViewport: false}}
+                keyboard={{ enabled: true, onlyInViewport: false }}
                 pagination={{
                     clickable: true,
+                    el: '.pagination',
+                    clickable: true,
+                    bulletActiveClass: 'pagination__number--active',
+                    renderBullet: (_, className) =>
+                        `<span class="${className} pagination__number"></span>`,
                 }}
-                onSlideChange={() => {
+                onSlideChange={(e) => {
                     setWaveTransition(true);
                     setTimeout(() => setWaveTransition(false), 800);
                 }}
@@ -49,12 +55,12 @@ export default function Home() {
                         spaceBetween={30}
                         keyboard={true}
                         pagination={{
-                            "clickable": true
+                            clickable: true,
                         }}
                         className="mySwiper"
                         onSlideChange={() => {
                             setWaveTransition(true);
-                            setTimeout(() => setWaveTransition(false), 800)
+                            setTimeout(() => setWaveTransition(false), 800);
                         }}
                         speed={800}
                     >
