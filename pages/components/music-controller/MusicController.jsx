@@ -7,10 +7,10 @@ const MusicController = ({ music, setMusic }) => {
     return music === null
     ? <section className={classes.musicController}>
         <IoVolumeHighOutline
-            className={classes.musicController_icon}
+            className={classes.musicController__icon}
         />
         <p>Notre agence vous propose une expérience sonore lors de votre navigation. Souhaitez-vous en bénéficier ?</p>
-        <div className={classes.musicController_buttons}>
+        <div className={classes.musicController__buttons}>
             <button
                 className='button button--white'
                 onClick={() => setMusic(true)}

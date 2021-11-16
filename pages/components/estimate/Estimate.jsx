@@ -119,7 +119,7 @@ const Estimate = () => {
 
     return (
         <section className={classes.container}>
-            <span className={classes.questionNum}>{currentQuestion + 1}</span>
+            <span className={classes.container__questionNum}>{currentQuestion + 1}</span>
             <h2>Evaluez le montant de votre site web</h2>
             {formIsFinished() ? (
                 <div>
@@ -147,7 +147,7 @@ const Estimate = () => {
             )}
             <div className={classes.progressBar}>
                 <div
-                    className={classes.contentProgressBar}
+                    className={classes.progressBar__content}
                     style={{
                         width: (currentQuestion * 100) / (tab.length - 1) + '%',
                     }}

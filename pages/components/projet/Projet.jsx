@@ -22,7 +22,7 @@ const projets = [
 const Projet = () => {
     return (
         <section className={classes.container}>
-            <div className={classes.projetContainer}>
+            <div className={classes.container__projetContainer}>
                 {projets.map((e, index) => (
                     <div key={index} className={`${classes.clip} ${e.classe}`}>
                         <div className={classes.content}>

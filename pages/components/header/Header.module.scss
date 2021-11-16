@@ -5,6 +5,50 @@
     position: relative;
     // background-color: var(--primary);
     // transition: background-color 0.2s;
+
+    &__pointsDroite,
+    &__pointsGauche {
+        position: absolute;
+        width: 20vw;
+    }
+
+    &__pointsDroite {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    &__pointsGauche {
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    &__titleDiv {
+        width: 75%;
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            font-size: 1rem;
+            color: var(--secondary);
+
+            span {
+                display: block;
+                font-family: 'Quick', sans-serif;
+                font-size: 18vw;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+    &__rond {
+        max-width: 25vw;
+        position: absolute;
+        width: 5rem;
+        bottom: 12vh;
+        right: 31vw;
+    }
 }
 
 .svg {
@@ -12,64 +56,19 @@
     margin: auto;
 }
 
-.pointsDroite,
-.pointsGauche {
-    position: absolute;
-    width: 20vw;
-}
-
-.pointsDroite {
-    top: 1rem;
-    right: 1rem;
-}
-
-.pointsGauche {
-    bottom: 1rem;
-    left: 1rem;
-}
-
-.titleDiv {
-    width: 75%;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-}
-
-.titleDiv h1 {
-    font-size: 1rem;
-    color: var(--secondary);
-}
-
-.titleDiv h1 span {
-    display: block;
-    font-family: 'Quick', sans-serif;
-    font-size: 18vw;
-    letter-spacing: 5px;
-}
-
 .contact {
     display: flex;
-}
 
-.contact p{
-    border-right: solid #464652 2px;
-    padding-right: 8%;
-    margin-right: 6%;
-}
+    p{
+        border-right: solid #464652 2px;
+        padding-right: 8%;
+        margin-right: 6%;
+    }
 
-.contact a {
-    display: flex;
-}
-
-.contact img {
-    width: 2rem;
-    object-fit: contain;
-}
-
-.rond {
-    max-width: 38vw;
-    position: absolute;
+    img {
+        width: 2rem;
+        object-fit: contain;
+    }
 }
 
 .triangle1 {
@@ -105,34 +104,35 @@
     display: none;
 }
 
-.rond {
-    width: 5rem;
-    bottom: 12vh;
-    right: 31vw;
-}
-
 @media screen and (min-width: 780px) {
-    .pointsDroite,
-    .pointsGauche {
-        width: 4rem;
-    }
-
-    .titleDiv {
-        width: 40%;
-        left: 9vw;
-        transform: translate(0, -50%);
-    }
-
-    .titleDiv h1 {
-        font-size: 1.25rem;
-    }
-
-    .titleDiv h1 span {
-        font-size: 10vw;
-    }
-
     .triangles, .rond {
         max-width: 30vw;
+    }
+    .container {
+        &__pointsDroite,
+        &__pointsGauche {
+            width: 4rem;
+        }
+
+        &__titleDiv {
+            width: 40%;
+            left: 9vw;
+            transform: translate(0, -50%);
+
+            h1 {
+                font-size: 1.25rem;
+
+                span {
+                    font-size: 10vw;
+                }
+            }
+        }
+
+        &__rond {
+            width: 8rem;
+            bottom: 5vh;
+            right: 35vw;
+        }
     }
 
     .triangle1 {
@@ -178,11 +178,5 @@
         width: 16rem;
         left: 40vw;
         top: 5vh;
-    }
-
-    .rond {
-        width: 8rem;
-        bottom: 5vh;
-        right: 35vw;
     }
 }
