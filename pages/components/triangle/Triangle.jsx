@@ -1,21 +1,26 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import classes from './Triangle.module.scss';
+import { useSpring, animated } from 'react-spring';
 
 const Triangle = ({ num, classNameTriangle }) => {
+    const config = { duration: 3200, tension: 50, mass: 50, friction: 200 };
 
-    const ramdomBool = () => Math.random() > 0.5;
-
-    const TrianglStyle = useRef({
-        animationDelay: `${Math.random() * 2000}ms`,
-        animationDuration: `${4 + Math.random() * 6}s`
+    const test = useSpring({
+        from: { transform: 'translate(0px, 0px) rotate(0deg)' },
+        to: [{ transform: `translate(-3px, -9px) rotate(${num%2 == 0 ? '-' : ''}5deg)` }, { transform: 'translate(0px, 0px) rotate(0deg)' }],
+        config:config,
+        delay: num%3 + 1,
+        loop: true,
     });
 
-    return <img
+    return (
+        <animated.img
+            style={test}
             className={classNameTriangle + ' ' + classes.triangles}
-            style={TrianglStyle}
             src={`/svg/triangle${num}.svg`}
             alt="triangleFlottant"
-        />
-}
+        ></animated.img>
+    );
+};
 
 export default Triangle;
