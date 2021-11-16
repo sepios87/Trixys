@@ -61,29 +61,54 @@ export default function Home() {
                     <Bio />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Member
-                        image="https://picsum.photos/900/1000"
-                        name="Florian TORIBIO"
-                        status="Développeur Web"
-                        descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
-                    />
-
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Member
-                        image="https://picsum.photos/900/1000"
-                        name="Benjamin PELAUDEIX"
-                        status="Développeur Web"
-                        descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Member
-                        image="https://picsum.photos/900/1000"
-                        name="Océane Guilloizeau"
-                        status="Web designeuse"
-                        descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
-                    />
+                    <Swiper
+                        direction={'horizontal'}
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        keyboard={true}
+                        pagination={{
+                            "clickable": true
+                        }}
+                        className="mySwiper"
+                        onSlideChange={() => {
+                            setWaveTransition(true);
+                            setTimeout(() => setWaveTransition(false), 800)
+                        }}
+                        speed={800}
+                    >
+                        <SwiperSlide>
+                            <Member
+                                image="https://picsum.photos/900/1000"
+                                name="Florian TORIBIO"
+                                status="Développeur Web"
+                                descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Member
+                                image="https://picsum.photos/900/1000"
+                                name="Benjamin PELAUDEIX"
+                                status="Développeur Web"
+                                descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Member
+                                image="https://picsum.photos/900/1000"
+                                name="Rémi HAY--RIMBAULT"
+                                status="Développeur Web"
+                                descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Member
+                                image="https://picsum.photos/900/1000"
+                                name="Océane Guilloizeau"
+                                status="Web designeuse"
+                                descr="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis pariatur cum sequi nisi possimus magni ullam laudantium numquam? Suscipit repudiandae inventore amet sint sapiente libero labore velit quos ad!"
+                            />
+                        </SwiperSlide>
+                    </Swiper>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Projet/>
