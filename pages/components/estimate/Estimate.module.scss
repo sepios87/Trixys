@@ -53,11 +53,16 @@
 
     &__itemQuestionSlider {
         min-height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     &__validate {
         cursor: pointer;
         user-select: none;
+        width: 100%;
     }
 
     &__slider {
@@ -82,4 +87,17 @@
             box-shadow: rgba(#f6c952, 0.1) 0px 0px 0px 8px;
         }
     }
+}
+
+.buttonSlider {
+    margin: 0 30px;
+    background-color: #f6c952;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
 }
