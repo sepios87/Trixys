@@ -12,6 +12,7 @@ import Contact from './components/contact/Contact';
 import SliderMembers from './components/slider-members/SliderMembers';
 import Theme from './components/theme/Theme';
 import useSound from 'use-sound';
+import Services from "./components/services/Services";
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -54,6 +55,9 @@ export default function Home() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Bio />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Services/>
                 </SwiperSlide>
                 <SwiperSlide>
                     <SliderMembers />

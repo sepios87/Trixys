@@ -1,15 +1,15 @@
 .span {
-  position: absolute;
   display: flex;
   height: 130px;
   text-align: center;
   z-index: 1000;
   left: 0;
   right: 0;
+  position: absolute;
 }
 
 .span:before {
-  font-family: icomoon;
+  font-family: icomoon, sans-serif;
   content: attr(data-icon);
   speak: none;
   font-weight: normal;

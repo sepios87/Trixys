@@ -1,11 +1,13 @@
 .services {
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.05);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     width: auto;
     padding: 15px;
     font-weight: 100;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.8);
     margin: 0;
     position: relative;
 
