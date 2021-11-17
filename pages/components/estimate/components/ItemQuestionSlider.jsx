@@ -5,7 +5,7 @@ const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
     const [valueSlider, setValueSlider] = useState(response.min);
 
     return (
-        <div className={classes.itemQuestionSlider}>
+        <div className={classes.estimate__itemQuestionSlider}>
             <p
                 onClick={() =>
                     valueSlider > response.min &&
@@ -27,7 +27,7 @@ const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
                 +
             </p>
             <p
-                className={classes.validate}
+                className={classes.estimate__validate}
                 onClick={() => {
                     onFinishedQuestion(valueSlider * response.point);
                     setValueSlider(0);

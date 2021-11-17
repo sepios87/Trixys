@@ -119,19 +119,23 @@ const Estimate = () => {
     };
 
     return (
-        <section className={classes.container}>
-            <span className={classes.questionNum}>{currentQuestion + 1}</span>
+        <section className={classes.estimate}>
+            <span className={classes.estimate__questionNum}>
+                {currentQuestion + 1}
+            </span>
             <h2>Evaluez le montant de votre site web</h2>
             {formIsFinished() ? (
                 <div>
-                    <p style={{marginBottom: 30}}>Votre site est estimé à : {points * 60}€</p>
+                    <p style={{ marginBottom: 30 }}>
+                        Votre site est estimé à : {points * 60}€
+                    </p>
                     <Button onClick={() => setCurrentQuestion(0)}>
                         Recommencer
                     </Button>
                 </div>
             ) : (
                 <div>
-                    <h3 className={classes.titleQuestion}>
+                    <h3 className={classes.estimate__titleQuestion}>
                         {tab[currentQuestion].question}
                     </h3>
                     {tab[currentQuestion].response1 != null ? (
@@ -146,9 +150,9 @@ const Estimate = () => {
                             response={tab[currentQuestion].response}
                         />
                     )}
-                    <div className={classes.progressBar}>
+                    <div className={classes.estimate__progressBar}>
                         <div
-                            className={classes.contentProgressBar}
+                            className={classes.estimate__progressBarContent}
                             style={{
                                 width:
                                     (currentQuestion * 100) / (tab.length - 1) +

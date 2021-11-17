@@ -1,14 +1,14 @@
-.imageProfil {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    margin-bottom: 5vh;
-}
-
-.container {
+.member {
     height: 100vh;
     display: flex;
     color: var(--secondary);
+
+    &__imageProfil {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin-bottom: 5vh;
+    }
 
     figure {
         display: flex;
@@ -23,7 +23,7 @@
         }
     }
 
-    .content {
+    &__content {
         h2,
         h3 {
             text-align: center;

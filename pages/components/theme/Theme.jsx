@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 // css import
 import classes from './Theme.module.scss';
-import iconClasses from '../music-controller/MusicController.module.scss';
 
 // ui icons import
 import { BsBrightnessHighFill, BsBrightnessHigh } from "react-icons/bs";
@@ -33,14 +32,12 @@ const Theme = ({ music, setMusic }) => {
     return isDarkTheme ? (
         <div className={classes.theme}>
             <BsBrightnessHigh onClick={onClickDarkTheme} />
-            <MdBrightness2 className={classes.moon} />
+            <MdBrightness2 className={classes.theme__moon} />
             { music
                 ? <IoVolumeMuteOutline
-                    className={iconClasses.musicController_iconToggle}
                     onClick={() => setMusic(false)}
                 />
                 : <IoVolumeHighOutline
-                    className={iconClasses.musicController_iconToggle}
                     onClick={() => setMusic(true)}
                 />
             }
@@ -54,12 +51,10 @@ const Theme = ({ music, setMusic }) => {
                 onClick={onClickDarkTheme}
             />
             { music
-                ? <IoVolumeHighOutline
-                    className={iconClasses.musicController_iconToggle}
+                ? <IoVolumeMuteOutline
                     onClick={() => setMusic(false)}
                 />
-                : <IoVolumeMuteOutline
-                    className={iconClasses.musicController_iconToggle}
+                : <IoVolumeHighOutline
                     onClick={() => setMusic(true)}
                 />
             }

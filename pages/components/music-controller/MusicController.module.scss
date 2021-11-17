@@ -16,13 +16,13 @@
         padding: 0;
     }
 
-    &_buttons {
+    &__buttons {
         display: flex;
         justify-content: center;
         column-gap: 30px;
     }
 
-    &_icon {
+    &__icon {
         height: 2rem;
         width: auto;
         margin-bottom: 1rem;
@@ -34,17 +34,4 @@
     }
 
 }
-
-.toggle {
-    @media screen and (min-width: 780px) {
-        position: absolute;
-        bottom: 2rem;
-        right: 4rem;
-        z-index: 1000;
-        background-color: #f6c952;
-        border-radius: 25%;
-        padding: .5rem;
-    }
-}
-
 

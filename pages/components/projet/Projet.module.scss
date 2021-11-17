@@ -1,28 +1,55 @@
-.container {
+.projet {
     height: 100vh;
     display: flex;
-}
 
-.projetContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10vh 0;
+    &__projetContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10vh 0;
 
-    @media screen and (min-width: 780px) {
-        width: 80%;
-        height: 60vh;
-        margin: auto;
-        position: relative;
+        @media screen and (min-width: 780px) {
+            width: 80%;
+            height: 60vh;
+            margin: auto;
+            position: relative;
 
-        &:hover .clip {
-            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            &:hover .clip {
+                clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            }
+
+            .clip:hover {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
         }
 
-        .clip:hover {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        } 
+        .clip:hover .content {
+            @media screen and (min-width: 780px) {
+                opacity: 1;
+            }
+        }
+
+        .clip1 {
+            background-image: url('https://picsum.photos/900/1000');
+            @media screen and (min-width: 780px) {
+                clip-path: polygon(0 0, 55%, 0, 20% 100%, 0% 100%);
+            }
+        }
+
+        .clip2 {
+            background-image: url('https://picsum.photos/950/1320');
+            @media screen and (min-width: 780px) {
+                clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+            }
+        }
+
+        .clip3 {
+            background-image: url('https://picsum.photos/1200/1350');
+            @media screen and (min-width: 780px) {
+                clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+            }
+        }
     }
 
     .clip {
@@ -69,33 +96,6 @@
             height: 100%;
             transition: 0.5s;
             background-size: cover;
-        }
-    }
-
-    .clip:hover .content {
-        @media screen and (min-width: 780px) {
-            opacity: 1;
-        }
-    }
-
-    .clip1 {
-        background-image: url('https://picsum.photos/900/1000');
-        @media screen and (min-width: 780px) {
-            clip-path: polygon(0 0, 55%, 0, 20% 100%, 0% 100%);
-        }
-    }
-
-    .clip2 {
-        background-image: url('https://picsum.photos/950/1320');
-        @media screen and (min-width: 780px) {
-            clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
-        }
-    }
-
-    .clip3 {
-        background-image: url('https://picsum.photos/1200/1350');
-        @media screen and (min-width: 780px) {
-            clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
         }
     }
 }

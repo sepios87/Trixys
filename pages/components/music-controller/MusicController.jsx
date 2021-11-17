@@ -6,12 +6,12 @@ import Button from '../button/Button';
 const MusicController = ({ music, setMusic }) => {
     return (music === null &&
         <section className={classes.musicController}>
-            <IoVolumeHighOutline className={classes.musicController_icon} />
+            <IoVolumeHighOutline className={classes.musicController__icon} />
             <p>
                 Notre agence vous propose une expérience sonore lors de votre
                 navigation. Souhaitez-vous en bénéficier ?
             </p>
-            <div className={classes.musicController_buttons}>
+            <div className={classes.musicController__buttons}>
                 <Button whiteTheme={true} onClick={() => setMusic(true)}>Oui</Button>
                 <Button whiteTheme={true} onClick={() => setMusic(false)}>Non</Button>
             </div>

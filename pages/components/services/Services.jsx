@@ -29,7 +29,7 @@ const Services = () => {
     return (
         <section className={classes.services}>
             <h2>NOS SERVICES</h2>
-            <div className={classes.servicesContainer}>
+            <div className={classes.services__servicesContainer}>
                 {servicesList.map((services, index) => (
                     <ServiceItem
                         key={index}
