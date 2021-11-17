@@ -34,16 +34,3 @@
 
 }
 
-.toggle {
-    @media screen and (min-width: 780px) {
-        position: absolute;
-        bottom: 2rem;
-        right: 4rem;
-        z-index: 1000;
-        background-color: #f6c952;
-        border-radius: 25%;
-        padding: .5rem;
-    }
-}
-
-

@@ -5,10 +5,10 @@ const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
     const [valueSlider, setValueSlider] = useState(response.min);
 
     return (
-        <div className={classes.itemQuestionSlider}>
+        <div className={classes.estimate__itemQuestionSlider}>
             <p>{valueSlider}</p>
             <input
-                className={classes.slider}
+                className={classes.estimate__slider}
                 type="range"
                 onChange={(e) => setValueSlider(e.target.value)}
                 value={valueSlider}
@@ -16,7 +16,7 @@ const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
                 max={response.max}
             />
             <p
-                className={classes.validate}
+                className={classes.estimate__validate}
                 onClick={() => {
                     onFinishedQuestion(valueSlider * response.point);
                     setValueSlider(0);

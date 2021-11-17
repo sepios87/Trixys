@@ -10,19 +10,19 @@ const Informations = () => {
         <h2>Informations</h2>
         <ul>
             <li>
-                <AiOutlineMail className={classes.icon}/>
+                <AiOutlineMail className={classes.informations__icon}/>
                 <a href="#">contact.trixys@gmail.com</a>
             </li>
             <li>
-                <AiOutlinePhone className={classes.icon}/>
+                <AiOutlinePhone className={classes.informations__icon}/>
                 <a href="#">06 06 06 06 06</a>
             </li>
             <li>
-                <BsMap className={classes.icon}/>
+                <BsMap className={classes.informations__icon}/>
                 <a href="#">44 Avenue Albert Einstein - 17000 La Rochelle</a>
             </li>
             <li>
-                <MdOutlineWatchLater className={classes.icon}/>
+                <MdOutlineWatchLater className={classes.informations__icon}/>
                 <a href="#">9h-12h 13h30-18h</a>
             </li>
         </ul>

@@ -1,4 +1,4 @@
-.container {
+.projet {
     height: 100vh;
     display: flex;
 
@@ -21,53 +21,6 @@
 
             .clip:hover {
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            }
-        }
-
-        .clip {
-            border-radius: 4px;
-            width: 100%;
-            margin: 2vh 0;
-
-            .content {
-                background-color: rgba(0, 0, 0, 0.5);
-                height: 15vh;
-                display: flex;
-                align-items: center;
-                color: white;
-                padding-left: 20px;
-
-                @media screen and (min-width: 780px) {
-                    color: black;
-                    height: auto;
-                    display: block;
-                    opacity: 0;
-                    transition: 0.5s;
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 70%;
-                    padding: 20px;
-                    background-color: var(--primary);
-                    color: var(--secondary);
-                }
-
-                p {
-                    display: none;
-                    @media screen and (min-width: 780px) {
-                        display: block;
-                    }
-                }
-            }
-
-            @media screen and (min-width: 780px) {
-                padding: 0;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                transition: 0.5s;
-                background-size: cover;
             }
         }
 
@@ -96,6 +49,53 @@
             @media screen and (min-width: 780px) {
                 clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
             }
+        }
+    }
+
+    .clip {
+        border-radius: 4px;
+        width: 100%;
+        margin: 2vh 0;
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 15vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-left: 20px;
+
+            @media screen and (min-width: 780px) {
+                color: black;
+                height: auto;
+                display: block;
+                opacity: 0;
+                transition: 0.5s;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 70%;
+                padding: 20px;
+                background-color: var(--primary);
+                color: var(--secondary);
+            }
+
+            p {
+                display: none;
+                @media screen and (min-width: 780px) {
+                    display: block;
+                }
+            }
+        }
+
+        @media screen and (min-width: 780px) {
+            padding: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            transition: 0.5s;
+            background-size: cover;
         }
     }
 }

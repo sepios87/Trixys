@@ -1,4 +1,4 @@
-.container {
+.bio {
     &__backgroundLetter {
         position: absolute;
         font-size: 44rem;
@@ -31,24 +31,24 @@
         @media screen and (min-width: 780px) {
             padding: 0 15%;
         }
+    }
 
-        .contentText {
-            span {
-                display: block;
-                margin-top: 1rem;
-            }
+    &__contentText {
+        span {
+            display: block;
+            margin-top: 1rem;
         }
+    }
 
-        .button {
-            background: transparent;
-            border: 2px solid var(--secondary);
-            padding: 0.4rem 1.2rem;
-            width: fit-content;
-            font-size: 10pt;
-            border-radius: 30px;
-            text-align: right;
-            margin-top: 2rem;
-            color: var(--secondary);
-        }
+    &__button {
+        background: transparent;
+        border: 2px solid var(--secondary);
+        padding: 0.4rem 1.2rem;
+        width: fit-content;
+        font-size: 10pt;
+        border-radius: 30px;
+        text-align: right;
+        margin-top: 2rem;
+        color: var(--secondary);
     }
 }

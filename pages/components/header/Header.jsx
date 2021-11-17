@@ -6,23 +6,23 @@ import Theme from "../../components/theme/Theme";
 
 const Header = ({ isWaiting, music, setMusic }) => {
     return (
-        <section className={classes.container}>
+        <section className={classes.header}>
             <Theme
                 music={ music }
                 setMusic={ setMusic }
             />
             <img
-                className={classes.container__pointsDroite}
+                className={classes.header__pointsDroite}
                 src="/svg/points.svg"
                 alt="pointsDroite"
             />
             <img
-                className={classes.container__pointsGauche}
+                className={classes.header__pointsGauche}
                 src="/svg/points.svg"
                 alt="pointsGauche"
             />
             <img
-                className={classes.container__rond}
+                className={classes.header__rond}
                 src="/svg/rond.svg"
                 alt="rondFlottant"
             />
@@ -38,12 +38,12 @@ const Header = ({ isWaiting, music, setMusic }) => {
             <Triangle num={4} classNameTriangle={classes.triangle7} />
             <Triangle num={5} classNameTriangle={classes.triangle8} />
 
-            <div className={classes.container__titleDiv}>
+            <div className={classes.header__titleDiv}>
                 <h1>
                     AGENCE WEB A LA ROCHELLE <span>TRIXYS</span>
                 </h1>
                 {isWaiting ? (
-                    <div className={classes.contact}>
+                    <div className={classes.header__contact}>
                         <p>
                             Notre site est en cours de <strong>création</strong>
                             , merci de bien vouloir patienter. Pour toute
