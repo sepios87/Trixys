@@ -4,7 +4,7 @@ import { IoVolumeHighOutline, IoVolumeMuteOutline } from 'react-icons/io5';
 import Button from '../button/Button';
 
 const MusicController = ({ music, setMusic }) => {
-    return music === null ? (
+    return (music === null &&
         <section className={classes.musicController}>
             <IoVolumeHighOutline className={classes.musicController_icon} />
             <p>
@@ -16,8 +16,6 @@ const MusicController = ({ music, setMusic }) => {
                 <Button whiteTheme={true} onClick={() => setMusic(false)}>Non</Button>
             </div>
         </section>
-    ) : (
-        <></>
     );
 };
 

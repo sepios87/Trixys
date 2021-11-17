@@ -1,16 +1,11 @@
 import React from 'react';
 import Triangle from '../../components/triangle/Triangle';
 import classes from './Header.module.scss';
-import { MdEmail } from "react-icons/md";
-import Theme from "../../components/theme/Theme";
+import { MdEmail } from 'react-icons/md';
 
 const Header = ({ isWaiting, music, setMusic }) => {
     return (
         <section className={classes.container}>
-            <Theme
-                music={ music }
-                setMusic={ setMusic }
-            />
             <img
                 className={classes.pointsDroite}
                 src="/svg/points.svg"
@@ -42,21 +37,22 @@ const Header = ({ isWaiting, music, setMusic }) => {
                 <h1>
                     AGENCE WEB A LA ROCHELLE <span>TRIXYS</span>
                 </h1>
-                {isWaiting ? (
+                {isWaiting && (
                     <div className={classes.contact}>
                         <p>
                             Notre site est en cours de <strong>création</strong>
                             , merci de bien vouloir patienter. Pour toute
-                            question n{'\''}hésitez pas à nous contacter par mail !
+                            question n{"'"}hésitez pas à nous contacter par mail
+                            !
                         </p>
                         <a href="mailto:contact.trixys@gmail.com">
                             <MdEmail className={classes.svg + ' svg'} />
                         </a>
                     </div>
-                ) : null}
+                )}
             </div>
         </section>
     );
-}
+};
 
 export default Header;

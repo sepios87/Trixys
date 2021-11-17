@@ -7,9 +7,8 @@ const Triangle = ({ num, classNameTriangle }) => {
 
     const test = useSpring({
         from: { transform: 'translate(0px, 0px) rotate(0deg)' },
-        to: [{ transform: `translate(-3px, -9px) rotate(${num%2 == 0 ? '-' : ''}5deg)` }, { transform: 'translate(0px, 0px) rotate(0deg)' }],
+        to: [{ transform: `translate(-3px, -9px) rotate(${num%2 == 0 && '-'}5deg)` }, { transform: 'translate(0px, 0px) rotate(0deg)' }],
         config:config,
-        delay: num%3 + 1,
         loop: true,
     });
 

@@ -2,6 +2,7 @@ import classes from './Estimate.module.scss';
 import { useState } from 'react';
 import ItemQuestionCard from './components/ItemQuestionCard';
 import ItemQuestionSlider from './components/ItemQuestionSlider';
+import Button from '../button/Button';
 
 const tab = [
     {
@@ -123,8 +124,10 @@ const Estimate = () => {
             <h2>Evaluez le montant de votre site web</h2>
             {formIsFinished() ? (
                 <div>
-                    <p>Votre site est estimé à : {points*60}€</p>
-                    <p className={classes.validate} onClick={() => setCurrentQuestion(0)}>Recommencer</p>
+                    <p style={{marginBottom: 30}}>Votre site est estimé à : {points * 60}€</p>
+                    <Button onClick={() => setCurrentQuestion(0)}>
+                        Recommencer
+                    </Button>
                 </div>
             ) : (
                 <div>
@@ -143,16 +146,18 @@ const Estimate = () => {
                             response={tab[currentQuestion].response}
                         />
                     )}
+                    <div className={classes.progressBar}>
+                        <div
+                            className={classes.contentProgressBar}
+                            style={{
+                                width:
+                                    (currentQuestion * 100) / (tab.length - 1) +
+                                    '%',
+                            }}
+                        ></div>
+                    </div>
                 </div>
             )}
-            <div className={classes.progressBar}>
-                <div
-                    className={classes.contentProgressBar}
-                    style={{
-                        width: (currentQuestion * 100) / (tab.length - 1) + '%',
-                    }}
-                ></div>
-            </div>
         </section>
     );
 };

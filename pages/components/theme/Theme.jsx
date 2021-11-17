@@ -27,7 +27,7 @@ const Theme = ({ music, setMusic }) => {
 
     const onClickCloseTheme = () => {
         document.getElementsByClassName(classes.theme)[0].style.transform =
-            'translateX(-50px)';
+            'translateX(-50%)';
     };
 
     return isDarkTheme ? (
@@ -54,11 +54,11 @@ const Theme = ({ music, setMusic }) => {
                 onClick={onClickDarkTheme}
             />
             { music
-                ? <IoVolumeMuteOutline
+                ? <IoVolumeHighOutline
                     className={iconClasses.musicController_iconToggle}
                     onClick={() => setMusic(false)}
                 />
-                : <IoVolumeHighOutline
+                : <IoVolumeMuteOutline
                     className={iconClasses.musicController_iconToggle}
                     onClick={() => setMusic(true)}
                 />

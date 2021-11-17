@@ -8,9 +8,8 @@ const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
         <div className={classes.itemQuestionSlider}>
             <p
                 onClick={() =>
-                    valueSlider > response.min
-                        ? setValueSlider(valueSlider - 1)
-                        : null
+                    valueSlider > response.min &&
+                    setValueSlider(valueSlider - 1)
                 }
                 className={classes.buttonSlider}
             >
