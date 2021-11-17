@@ -2,7 +2,7 @@ import React from 'react';
 import ContactForm from "./contact-form/ContactForm";
 import classes from "./Contact.module.scss";
 import Informations from "./informations/Informations";
-import useWindowDimensions from '../useWindowDimensions';
+import useWindowDimensions from '../../../hooks/useWindowDimensions';
 
 const Contact = () => {
 
