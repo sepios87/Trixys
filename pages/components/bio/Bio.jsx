@@ -7,10 +7,10 @@ const Bio = () => {
         <section className={classes.bioContainer}>
         <h2>L{'\''}agence</h2>
         <h3>Qui sommes nous ?</h3>
-        <p className={classes.contentText}>Trixys est une agence basée à la rochelle. <span>Composée de 4 membres, elle saura vous accompagner dans la créationd de vos projets à travers ses compétences dans l{'\''}expérience utilisateur, le design graphique et le développement web</span></p>
+        <p className={classes.contentText}>Trixys est une agence basée à La Rochelle. <span>Composée de 4 membres, elle saura vous accompagner dans la création de vos projets à travers ses compétences dans l{'\''}expérience utilisateur, le design graphique et le développement web</span></p>
         <Button href='#'>En savoir plus sur notre équipe</Button>
         </section>
-       
+
     </section>
 }
 
