@@ -25,8 +25,8 @@ const Theme = ({ music, setMusic }) => {
     };
 
     const onClickCloseTheme = () => {
-        document.getElementsByClassName(classes.theme)[0].style.transform =
-            'translateX(-50%)';
+        document.getElementsByClassName(classes.theme)[0].style.left =
+            '-100%';
     };
 
     return isDarkTheme ? (
