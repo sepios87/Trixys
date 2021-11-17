@@ -29,7 +29,7 @@ export default function Home() {
             <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
-            <div className="pagination"></div>
+            <div className="pagination"/>
             <Swiper
                 direction={'vertical'}
                 slidesPerView={1}
@@ -38,7 +38,6 @@ export default function Home() {
                 pagination={{
                     clickable: true,
                     el: '.pagination',
-                    clickable: true,
                     bulletActiveClass: 'pagination__number--active',
                     renderBullet: (_, className) =>
                         `<span class="${className} pagination__number"></span>`,
