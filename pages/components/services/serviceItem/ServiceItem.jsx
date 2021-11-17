@@ -21,7 +21,7 @@ const ServiceItem = (props) => {
                     alt=""
                     className={classes.back}
                     src={image.src}
-                    style={{ transform: `rotate(${Math.random() * 180}deg)` }}
+                    style={{ transform: `rotate(80deg)` }}
                 />
                 Service
             </div>
@@ -40,7 +40,7 @@ const ServiceItem = (props) => {
                     alt=""
                     className={classes.back}
                     src={image2.src}
-                    style={{ transform: `rotate(${Math.random() * 180}deg)` }}
+                    style={{ transform: `rotate(120deg)` }}
                 />
             </div>
             <figcaption>
