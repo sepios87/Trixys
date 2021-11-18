@@ -3,18 +3,24 @@ import classes from './Triangle.module.scss';
 import { useSpring, animated } from 'react-spring';
 
 const Triangle = ({ num, classNameTriangle }) => {
-    const config = { duration: 3200, tension: 50, mass: 50, friction: 200 };
+    const randomNumber = (min, max) => {
+        const num = min + Math.floor(Math.random() * (max - min));
+        return Math.random() > 0.5 ? -num : num;
+    };
 
-    const test = useSpring({
+    const transform = `translate(-3px, ${randomNumber(5, 15)}px) 
+    rotate(${randomNumber(3, 6)}deg)`;
+
+    const animation = useSpring({
         from: { transform: 'translate(0px, 0px) rotate(0deg)' },
-        to: [{ transform: `translate(-3px, -9px) rotate(${num%2 == 0 && '-'}5deg)` }, { transform: 'translate(0px, 0px) rotate(0deg)' }],
-        config:config,
-        loop: true,
+        to: { transform: transform },
+        config: { duration: 2800, tension: 50, mass: 50, friction: 80 },
+        loop: { reverse: true },
     });
 
     return (
         <animated.img
-            style={test}
+            style={animation}
             className={classNameTriangle + ' ' + classes.triangles}
             src={`/svg/triangle${num}.svg`}
             alt="triangleFlottant"

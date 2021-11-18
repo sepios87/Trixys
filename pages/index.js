@@ -1,4 +1,4 @@
-import React, { useState, createContext  } from 'react';
+import React, { useState, createContext } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SwiperCore, { Keyboard, Mousewheel, Pagination } from 'swiper';
@@ -12,7 +12,8 @@ import Contact from './components/contact/Contact';
 import SliderMembers from './components/slider-members/SliderMembers';
 import Theme from './components/theme/Theme';
 import useSound from 'use-sound';
-import Services from "./components/services/Services";
+import Services from './components/services/Services';
+import { useTransition, animated } from 'react-spring';
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -22,15 +23,30 @@ export { MusicContext };
 
 export default function Home() {
     const [waveTransition, setWaveTransition] = useState(false);
-    const [music, setMusic] = useState(null);
+    const [music, setMusic] = useState();
     const [play] = useSound('/sounds/transition.mp3');
+
+    const transitions = useTransition(music, {
+        from: { opacity: 0, transform: 'translate(100%, -50%)' },
+        enter: { opacity: 1, transform: 'translate(0, -50%)' },
+        leave: { opacity: 0, transform: 'translate(-100%, -50%)' },
+        delay: 200,
+    });
 
     return (
         <MusicContext.Provider value={music}>
             <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
-            <div className="pagination"/>
+            {transitions(({ opacity, transform }, item) => (
+                <animated.div
+                    className="pagination"
+                    style={{
+                        opacity: opacity,
+                        transform: transform
+                    }}
+                />
+            ))}
             <Swiper
                 direction={'vertical'}
                 slidesPerView={1}
@@ -57,7 +73,7 @@ export default function Home() {
                     <Bio />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Services/>
+                    <Services />
                 </SwiperSlide>
                 <SwiperSlide>
                     <SliderMembers />
