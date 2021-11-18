@@ -1,7 +1,7 @@
 import classes from './Estimate.module.scss';
 import { useState } from 'react';
-import ItemQuestionCard from './components/ItemQuestionCard';
-import ItemQuestionSlider from './components/ItemQuestionSlider';
+import ItemQuestionCard from './ItemQuestionCard';
+import ItemQuestionSlider from './ItemQuestionSlider';
 import Button from '../button/Button';
 
 const tab = [
@@ -141,13 +141,19 @@ const Estimate = () => {
                     {tab[currentQuestion].response1 != null ? (
                         <ItemQuestionCard
                             onFinishedQuestion={(e) => onFinishedQuestion(e)}
-                            response1={tab[currentQuestion].response1}
-                            response2={tab[currentQuestion].response2}
+                            image1={tab[currentQuestion].response1.image}
+                            image2={tab[currentQuestion].response2.image}
+                            name1={tab[currentQuestion].response1.name}
+                            name2={tab[currentQuestion].response2.name}
+                            point1={tab[currentQuestion].response1.point}
+                            point2={tab[currentQuestion].response2.point}
                         />
                     ) : (
                         <ItemQuestionSlider
                             onFinishedQuestion={(e) => onFinishedQuestion(e)}
-                            response={tab[currentQuestion].response}
+                            min={tab[currentQuestion].response.min}
+                            max={tab[currentQuestion].response.max}
+                            point={tab[currentQuestion].response.point}
                         />
                     )}
                     <div className={classes.estimate__progressBar}>

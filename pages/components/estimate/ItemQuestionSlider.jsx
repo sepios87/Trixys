@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import classes from '../Estimate.module.scss';
+import classes from './Estimate.module.scss';
 
-const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
-    const [valueSlider, setValueSlider] = useState(response.min);
+const ItemQuestionSlider = ({ min, max, point, onFinishedQuestion }) => {
+    const [valueSlider, setValueSlider] = useState(min);
 
     return (
         <div className={classes.estimate__itemQuestionSlider}>
             <p
                 onClick={() =>
-                    valueSlider > response.min &&
+                    valueSlider > min &&
                     setValueSlider(valueSlider - 1)
                 }
                 className={classes.buttonSlider}
@@ -18,7 +18,7 @@ const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
             <p className={classes.value}>{valueSlider}</p>
             <p
                 onClick={() =>
-                    valueSlider < response.max
+                    valueSlider < max
                         ? setValueSlider(valueSlider + 1)
                         : null
                 }
@@ -29,7 +29,7 @@ const ItemQuestionSlider = ({ response, onFinishedQuestion }) => {
             <p
                 className={classes.estimate__validate}
                 onClick={() => {
-                    onFinishedQuestion(valueSlider * response.point);
+                    onFinishedQuestion(valueSlider * point);
                     setValueSlider(0);
                 }}
             >
