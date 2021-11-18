@@ -9,8 +9,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 10px;
-  transition: all 1s ease-out;
   z-index: 100;
+  transition: left 15s;
 
   svg {
     cursor: pointer;
