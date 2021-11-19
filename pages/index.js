@@ -13,6 +13,7 @@ import SliderMembers from './components/slider-members/SliderMembers';
 import Theme from './components/theme/Theme';
 import useSound from 'use-sound';
 import Services from "./components/services/Services";
+import ConditionalWrapper from './components/conditionalwrapper/ConditionalWrapper'
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -26,52 +27,34 @@ export default function Home() {
     const [play] = useSound('/sounds/transition.mp3');
 
     return (
-        <MusicContext.Provider value={music}>
+         <MusicContext.Provider value={music}>
             <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
             <div className="pagination"/>
-            <Swiper
-                direction={'vertical'}
-                slidesPerView={1}
-                mousewheel={true}
-                keyboard={{ enabled: true, onlyInViewport: false }}
-                pagination={{
-                    clickable: true,
-                    el: '.pagination',
-                    bulletActiveClass: 'pagination__number--active',
-                    renderBullet: (_, className) =>
-                        `<span class="${className} pagination__number"></span>`,
-                }}
-                onSlideChange={() => {
-                    music && play();
-                    setWaveTransition(true);
-                    setTimeout(() => setWaveTransition(false), 800);
-                }}
-                speed={800}
-            >
-                <SwiperSlide>
-                    <Header />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Bio />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Services/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <SliderMembers />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Projet />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Estimate />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Contact />
-                </SwiperSlide>
-            </Swiper>
+             <ConditionalWrapper>
+                 <SwiperSlide>
+                     <Header />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Bio />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Services/>
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <SliderMembers />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Projet />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Estimate />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Contact />
+                 </SwiperSlide>
+             </ConditionalWrapper>
         </MusicContext.Provider>
     );
 }

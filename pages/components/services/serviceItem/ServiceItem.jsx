@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import classes from './ServiceItem.module.scss';
-import ServiceImage from "../../service-image/ServiceImage";
+import ServiceImage from "./serviceImage/ServiceImage";
 import image from '../../../../public/images/back-dark.png';
 import image2 from '../../../../public/images/back-white.png';
 
@@ -16,14 +16,10 @@ const ServiceItem = (props) => {
             <ServiceImage
                 name={props.name}
             />
-            <div className={classes.illustration}>
-                <img
-                    alt=""
-                    className={classes.back}
-                    src={image.src}
-                    style={{ transform: `rotate(80deg)` }}
+            <div className={classes.services__illustration}>
+                <div
+                    className={classes.services__back}
                 />
-                Service
             </div>
             <figcaption>
                 <h3>{props.name}</h3>
@@ -35,12 +31,9 @@ const ServiceItem = (props) => {
             <ServiceImage
                 name={props.name}
             />
-            <div className={classes.illustration}>
-                <img
-                    alt=""
-                    className={classes.back}
-                    src={image2.src}
-                    style={{ transform: `rotate(120deg)` }}
+            <div className={classes.services__illustration}>
+                <div
+                    className={classes.services__back}
                 />
             </div>
             <figcaption>
