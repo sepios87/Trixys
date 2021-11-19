@@ -42,7 +42,7 @@ const Projet = () => {
                             </article>
                         </SwiperSlide>
                     ))}
-                    <div className="project__pagination" />
+                    <div className={`project__pagination ${classes.project__pagination}`} />
                 </Swiper>
         </section>
     );

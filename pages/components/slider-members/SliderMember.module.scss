@@ -4,3 +4,29 @@
   align-items: center;
   margin: auto;
 }
+
+.swiperButtonPrev, .swiperButtonNext {
+  position: relative;
+  color: var(--secondary);
+  font-size: 30px;
+  z-index: 2;
+  transition: .1s;
+
+  &:hover {
+    color: #f6c952;
+  }
+}
+
+.swiperButtonPrev {
+  left: 10%;
+}
+
+.swiperButtonNext {
+  right: 10%;
+}
+
+.member__pagination {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--secondary);
+}

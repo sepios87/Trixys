@@ -6,6 +6,8 @@
 
     &__card {
         background-image: url("https://picsum.photos/900/1000");
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 50vh;
         width: 60vw;
         margin: auto;
@@ -22,3 +24,9 @@
         padding: 0 2rem;
     }
 }
+
+.project__pagination {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--secondary);
+  }

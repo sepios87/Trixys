@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Member from './member/Member';
-import SwiperCore, {Pagination} from "swiper";
-
-import classes from './SliderMember.module.scss'
+import SwiperCore, { Pagination, Controller } from 'swiper';
+import { BiRightArrow, BiLeftArrow } from 'react-icons/bi';
+import classes from './SliderMember.module.scss';
 
 const tabMembers = [
     {
@@ -31,20 +31,26 @@ const tabMembers = [
     },
 ];
 
-SwiperCore.use([Pagination])
+SwiperCore.use([Pagination, Controller]);
 
 const SliderMembers = () => {
     return (
         <section className={classes.members}>
+            <div className={`swiper-button-prev ${classes.swiperButtonPrev}`}>
+                <BiLeftArrow />
+            </div>
             <Swiper
                 autoHeight={true}
                 keyboard={true}
                 mousewheel={false}
-                navigation={true}
                 speed={800}
                 pagination={{
                     el: '.member__pagination',
-                    type: 'fraction'
+                    type: 'fraction',
+                }}
+                navigation={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 }}
             >
                 {tabMembers.map((e, index) => (
@@ -57,8 +63,11 @@ const SliderMembers = () => {
                         />
                     </SwiperSlide>
                 ))}
-                <div className="member__pagination" />
+                <div className={`member__pagination ${classes.member__pagination}`} />
             </Swiper>
+            <div className={`swiper-button-next ${classes.swiperButtonNext}`}>
+                <BiRightArrow />
+            </div>
         </section>
     );
 };

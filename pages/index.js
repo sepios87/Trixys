@@ -26,7 +26,7 @@ export { MusicContext };
 export default function Home() {
     const [waveTransition, setWaveTransition] = useState(false);
     const [music, setMusic] = useState();
-    const [play] = useSound('/sounds/transition.mp4');
+    const [play] = useSound('/sounds/transition.mp3');
 
     const {width} = useWindowDimensions();
 
@@ -49,7 +49,6 @@ export default function Home() {
                     <Swiper
                         direction={'vertical'}
                         slidesPerView={1}
-                        scrollEnabled={false}
                         mousewheel={true}
                         keyboard={{ enabled: true, onlyInViewport: false }}
                         pagination={{
