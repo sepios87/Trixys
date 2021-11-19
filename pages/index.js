@@ -15,6 +15,7 @@ import useSound from 'use-sound';
 import Services from './components/services/Services';
 import ConditionalWrapper from './components/conditionalwrapper/ConditionalWrapper';
 import { useTransition } from 'react-spring';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -26,6 +27,8 @@ export default function Home() {
     const [waveTransition, setWaveTransition] = useState(false);
     const [music, setMusic] = useState();
     const [play] = useSound('/sounds/transition.mp4');
+
+    const {width} = useWindowDimensions();
 
     const transitions = useTransition(music, {
         from: { opacity: 0, transform: 'translate(100%, -50%)' },
@@ -39,9 +42,9 @@ export default function Home() {
             <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
-            <div className="pagination" />
+            {width > 780 && <div className="pagination" />}
             <ConditionalWrapper
-                condition={true}
+                condition={width > 780}
                 wrapper={(children) => (
                     <Swiper
                         direction={'vertical'}

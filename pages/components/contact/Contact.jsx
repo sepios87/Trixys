@@ -1,22 +1,19 @@
 import React from 'react';
-import ContactForm from "./contact-form/ContactForm";
-import classes from "./Contact.module.scss";
-import Informations from "./informations/Informations";
-import useWindowDimensions from '../../../hooks/useWindowDimensions';
+import ContactForm from './contact-form/ContactForm';
+import classes from './Contact.module.scss';
+import Informations from './informations/Informations';
 
 const Contact = () => {
-
-    const { width } = useWindowDimensions();
-
-    return <section className={classes.contact}>
-        {width > 700 && <div className={classes.contact__item}>
-            <ContactForm/>
-        </div>}
-        {width > 700 && <div className={classes.contact__item}>
-            <Informations />
-        </div>}
-        {width <= 700 && <ContactForm/>}
-    </section>
-}
+    return (
+        <section className={classes.contact}>
+            <div className={classes.contact__item}>
+                <ContactForm />
+            </div>
+            <div className={classes.contact__item}>
+                <Informations />
+            </div>
+        </section>
+    );
+};
 
 export default Contact;

@@ -3,13 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: auto;
     padding: 15px;
     font-weight: 100;
     box-sizing: border-box;
     margin: 0;
     position: relative;
+
+    @media screen and (min-width: 780px) {
+        height: 100vh;
+    }
 
     .illustration {
         display: block;
@@ -40,7 +43,7 @@
         margin: 50px auto;
         row-gap: 5vh;
 
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 780px) {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
