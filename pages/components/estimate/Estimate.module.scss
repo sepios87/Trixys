@@ -1,7 +1,7 @@
 .estimate {
     display: grid;
     grid-template-rows: 12vh 8rem 1fr 1fr 1fr;
-    grid-template-columns: 80%;
+    grid-template-columns: 100%;
     grid-row: auto;
     height: 100vh;
     padding: 0 15%;
@@ -11,6 +11,7 @@
 
     @media screen and (min-width: 780px) {
         grid-template-rows: 20vh 5rem 8rem 1fr 1fr;
+        grid-template-columns: 80%;
         padding: 0;
     }
 
