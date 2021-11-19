@@ -116,12 +116,13 @@
             width: 40%;
             left: 9vw;
             transform: translate(0, -50%);
+            z-index: -1;
 
             h1 {
                 font-size: 1.25rem;
 
                 span {
-                    font-size: 10vw;
+                    font-size: 18vw;
                 }
             }
         }

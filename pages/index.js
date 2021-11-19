@@ -12,8 +12,8 @@ import Contact from './components/contact/Contact';
 import SliderMembers from './components/slider-members/SliderMembers';
 import Theme from './components/theme/Theme';
 import useSound from 'use-sound';
-import Services from './components/services/Services';
-import { useTransition, animated } from 'react-spring';
+import Services from "./components/services/Services";
+import ConditionalWrapper from './components/conditionalwrapper/ConditionalWrapper'
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -34,60 +34,34 @@ export default function Home() {
     });
 
     return (
-        <MusicContext.Provider value={music}>
+         <MusicContext.Provider value={music}>
             <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
-            {transitions(({ opacity, transform }, item) => (
-                <animated.div
-                    className="pagination"
-                    style={{
-                        opacity: opacity,
-                        transform: transform
-                    }}
-                />
-            ))}
-            <Swiper
-                direction={'vertical'}
-                slidesPerView={1}
-                mousewheel={true}
-                keyboard={{ enabled: true, onlyInViewport: false }}
-                pagination={{
-                    clickable: true,
-                    el: '.pagination',
-                    bulletActiveClass: 'pagination__number--active',
-                    renderBullet: (_, className) =>
-                        `<span class="${className} pagination__number"></span>`,
-                }}
-                onSlideChange={() => {
-                    music && play();
-                    setWaveTransition(true);
-                    setTimeout(() => setWaveTransition(false), 800);
-                }}
-                speed={800}
-            >
-                <SwiperSlide>
-                    <Header />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Bio />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Services />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <SliderMembers />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Projet />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Estimate />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Contact />
-                </SwiperSlide>
-            </Swiper>
+            <div className="pagination"/>
+             <ConditionalWrapper>
+                 <SwiperSlide>
+                     <Header />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Bio />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Services/>
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <SliderMembers />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Projet />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Estimate />
+                 </SwiperSlide>
+                 <SwiperSlide>
+                     <Contact />
+                 </SwiperSlide>
+             </ConditionalWrapper>
         </MusicContext.Provider>
     );
 }
