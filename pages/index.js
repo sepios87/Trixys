@@ -6,7 +6,7 @@ import MusicController from './components/music-controller/MusicController';
 import Vague from './components/vague/Vague';
 import Header from './components/header/Header';
 import Bio from './components/bio/Bio';
-import Projet from './components/projet/Projet';
+import Projet from './components/slider-projet/Projet';
 import Estimate from './components/estimate/Estimate';
 import Contact from './components/contact/Contact';
 import SliderMembers from './components/slider-members/SliderMembers';
@@ -25,7 +25,7 @@ export { MusicContext };
 export default function Home() {
     const [waveTransition, setWaveTransition] = useState(false);
     const [music, setMusic] = useState();
-    const [play] = useSound('/sounds/transition.mp3');
+    const [play] = useSound('/sounds/transition.mp4');
 
     const transitions = useTransition(music, {
         from: { opacity: 0, transform: 'translate(100%, -50%)' },

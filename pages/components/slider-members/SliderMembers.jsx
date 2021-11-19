@@ -1,5 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Member from './member/Member';
+import SwiperCore, {Pagination} from "swiper";
+
+import classes from './SliderMember.module.scss'
 
 const tabMembers = [
     {
@@ -28,26 +31,35 @@ const tabMembers = [
     },
 ];
 
+SwiperCore.use([Pagination])
+
 const SliderMembers = () => {
     return (
-        <Swiper
-            direction={'horizontal'}
-            slidesPerView={1}
-            spaceBetween={30}
-            keyboard={true}
-            speed={800}
-        >
-            {tabMembers.map((e, index) => (
-                <SwiperSlide key={index}>
-                    <Member
-                        image={e.image}
-                        name={e.name}
-                        status={e.status}
-                        descr={e.descr}
-                    />
-                </SwiperSlide>
-            ))}
-        </Swiper>
+        <section className={classes.members}>
+            <Swiper
+                autoHeight={true}
+                keyboard={true}
+                mousewheel={false}
+                navigation={true}
+                speed={800}
+                pagination={{
+                    el: '.member__pagination',
+                    type: 'fraction'
+                }}
+            >
+                {tabMembers.map((e, index) => (
+                    <SwiperSlide key={index}>
+                        <Member
+                            image={e.image}
+                            name={e.name}
+                            status={e.status}
+                            descr={e.descr}
+                        />
+                    </SwiperSlide>
+                ))}
+                <div className="member__pagination" />
+            </Swiper>
+        </section>
     );
 };
 
