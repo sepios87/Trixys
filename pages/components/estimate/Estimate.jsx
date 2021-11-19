@@ -1,7 +1,7 @@
 import classes from './Estimate.module.scss';
 import { useState } from 'react';
-import ItemQuestionCard from './ItemQuestionCard';
-import ItemQuestionSlider from './ItemQuestionSlider';
+import ItemQuestionCard from './itemQuestionCard/ItemQuestionCard';
+import ItemQuestionNumber from './itemQuestionNumber/ItemQuestionNumber';
 import Button from '../button/Button';
 
 const tab = [
@@ -127,14 +127,14 @@ const Estimate = () => {
             {formIsFinished() ? (
                 <div>
                     <p style={{ marginBottom: 30 }}>
-                        Votre site est estimé à : {points * 60}€
+                        Votre site est estimé à : {points * 65}€
                     </p>
                     <Button onClick={() => setCurrentQuestion(0)}>
                         Recommencer
                     </Button>
                 </div>
             ) : (
-                <div>
+                <>
                     <h3 className={classes.estimate__titleQuestion}>
                         {tab[currentQuestion].question}
                     </h3>
@@ -149,7 +149,7 @@ const Estimate = () => {
                             point2={tab[currentQuestion].response2.point}
                         />
                     ) : (
-                        <ItemQuestionSlider
+                        <ItemQuestionNumber
                             onFinishedQuestion={(e) => onFinishedQuestion(e)}
                             min={tab[currentQuestion].response.min}
                             max={tab[currentQuestion].response.max}
@@ -166,7 +166,7 @@ const Estimate = () => {
                             }}
                         ></div>
                     </div>
-                </div>
+                </>
             )}
         </section>
     );

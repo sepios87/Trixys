@@ -1,0 +1,33 @@
+.containerQuestion {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    cursor: pointer;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 2vh;
+
+    &__itemQuestion {
+        margin: 2vh 5%;
+        box-shadow: -4px 4px 22px -4px rgba(0, 0, 0, 0.5);
+        transition: .1s;
+
+        @media screen and (min-width: 780px) {
+            width: 35%;
+        }
+
+        img {
+            height: 13vh;
+        }
+
+        &:hover {
+            box-shadow: -5px 5px 25px -5px rgba(0, 0, 0, 0.7);
+            transform: scale(1.03);
+        }
+    }
+
+    @media screen and (min-width: 780px) {
+        margin: 0 auto 10%;
+        flex-direction: row;
+    }
+}

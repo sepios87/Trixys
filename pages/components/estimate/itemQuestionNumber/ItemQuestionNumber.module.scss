@@ -1,0 +1,30 @@
+.itemQuestionNumber {
+    div {
+        display: grid;
+        grid-template-columns: 25% 1fr 25%;
+        margin: auto;
+
+        @media screen and (min-width: 780px) {
+            width: 25%;
+        }
+    }
+
+    &__validate {
+        cursor: pointer;
+        user-select: none;
+        width: 100%;
+    }
+
+    &__button {
+        margin: auto;
+        background-color: #f6c952;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+    }
+}
