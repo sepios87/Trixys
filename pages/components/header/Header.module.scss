@@ -70,23 +70,10 @@
     }
 }
 
-.triangle1 {
-    width: 6rem;
-    top: 20vh;
-    left: 10vw;
-    position: fixed;
-}
-
 .triangle2 {
     width: 10rem;
     top: 16vh;
     right: -4vh;
-}
-
-.triangle3 {
-    bottom: 12vh;
-    width: 5rem;
-    position: fixed;
 }
 
 .triangle4 {
@@ -136,18 +123,9 @@
         }
     }
 
-    .triangle1 {
-        width: 8rem;
-        top: 8vh;
-    }
-
     .triangle2 {
         width: 18rem;
         right: 3vw;
-    }
-
-    .triangle3 {
-        width: 12rem;
     }
 
     .triangle4 {
@@ -172,13 +150,5 @@
         width: 10rem;
         right: 35vw;
         top: 30vh;
-    }
-
-    .triangle8 {
-        display: block;
-        width: 16rem;
-        left: 40vw;
-        top: 5vh;
-        position: fixed;
     }
 }

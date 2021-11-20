@@ -5,19 +5,19 @@
     align-items: center;
 
     &__card {
-        background-image: url("https://picsum.photos/900/1000");
+        background-image: url('https://picsum.photos/900/1000');
         background-repeat: no-repeat;
         background-size: cover;
         height: 50vh;
         width: 60vw;
         margin: 30px auto; //sinon le slider en height auto crop l'ombre
         box-shadow: -3px 3px 18px -3px rgba(0, 0, 0, 0.3);
-        transition: .1s;
+        transition: 0.1s;
         position: relative;
     }
 
     &__infos {
-        background-color: rgba(255, 255, 255, .6);
+        background-color: rgba(255, 255, 255, 0.6);
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -29,4 +29,25 @@
     text-align: center;
     margin-top: 2rem;
     color: var(--secondary);
-  }
+}
+
+.swiperButtonPrev,
+.swiperButtonNext {
+    position: relative;
+    color: var(--secondary);
+    font-size: 30px;
+    z-index: 2;
+    transition: 0.1s;
+
+    &:hover {
+        color: #f6c952;
+    }
+}
+
+.swiperButtonPrev {
+    left: 10%;
+}
+
+.swiperButtonNext {
+    right: 10%;
+}

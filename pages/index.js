@@ -16,6 +16,8 @@ import Services from './components/services/Services';
 import ConditionalWrapper from './components/conditionalwrapper/ConditionalWrapper';
 import { useTransition } from 'react-spring';
 import useWindowDimensions from '../hooks/useWindowDimensions';
+import Triangle from './components/triangle/Triangle';
+import classes from '../styles/Home.module.scss';
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -42,6 +44,10 @@ export default function Home() {
             <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
+            <Triangle num={3} classNameTriangle={classes.triangle1} />
+            <Triangle num={1} classNameTriangle={classes.triangle3} />
+            <Triangle num={5} classNameTriangle={classes.triangle8} />
+
             {width > 780 && <div className="pagination" />}
             <ConditionalWrapper
                 condition={width > 780}
