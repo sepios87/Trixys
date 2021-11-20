@@ -10,8 +10,8 @@
         background-size: cover;
         height: 50vh;
         width: 60vw;
-        margin: auto;
-        box-shadow: -4px 4px 22px -4px rgba(0, 0, 0, 0.5);
+        margin: 30px auto; //sinon le slider en height auto crop l'ombre
+        box-shadow: -3px 3px 18px -3px rgba(0, 0, 0, 0.3);
         transition: .1s;
         position: relative;
     }
