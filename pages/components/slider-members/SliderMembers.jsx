@@ -36,7 +36,9 @@ SwiperCore.use([Pagination, Controller]);
 const SliderMembers = () => {
     return (
         <section className={classes.members}>
-            <div className={`swiper-button-prev ${classes.swiperButtonPrev}`}>
+            <div
+                className={`swiper-member-button-prev ${classes.swiperButtonPrev}`}
+            >
                 <BiLeftArrow />
             </div>
             <Swiper
@@ -49,8 +51,8 @@ const SliderMembers = () => {
                     type: 'fraction',
                 }}
                 navigation={{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-member-button-next',
+                    prevEl: '.swiper-member-button-prev',
                 }}
             >
                 {tabMembers.map((e, index) => (
@@ -63,9 +65,13 @@ const SliderMembers = () => {
                         />
                     </SwiperSlide>
                 ))}
-                <div className={`member__pagination ${classes.member__pagination}`} />
+                <div
+                    className={`member__pagination ${classes.member__pagination}`}
+                />
             </Swiper>
-            <div className={`swiper-button-next ${classes.swiperButtonNext}`}>
+            <div
+                className={`swiper-member-button-next ${classes.swiperButtonNext}`}
+            >
                 <BiRightArrow />
             </div>
         </section>
