@@ -6,7 +6,7 @@ import classes from './Theme.module.scss';
 // ui icons import
 import { BsBrightnessHighFill, BsBrightnessHigh } from 'react-icons/bs';
 import { MdOutlineBrightness2, MdBrightness2 } from 'react-icons/md';
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import { BsChevronLeft } from 'react-icons/bs';
 import { IoVolumeHighOutline, IoVolumeMuteOutline } from 'react-icons/io5';
 
 const Theme = ({ music, setMusic }) => {
@@ -32,55 +32,56 @@ const Theme = ({ music, setMusic }) => {
         setIsDarkTheme(!isDarkTheme);
     };
 
-    return isDarkTheme ? (
+    return (
         <div className={classes.theme}>
-            <BsBrightnessHigh
-                className={hidden && classes.hidden}
-                onClick={onClickDarkTheme}
-            />
-            <MdBrightness2
-                className={`${classes.theme__moon} ${hidden && classes.hidden}`}
-            />
+            {isDarkTheme ? (
+                <BsBrightnessHigh
+                    className={`${hidden && classes.hidden} ${
+                        classes.theme__icon
+                    }`}
+                    onClick={onClickDarkTheme}
+                />
+            ) : (
+                <BsBrightnessHighFill
+                    className={`${hidden && classes.hidden} ${
+                        classes.theme__icon
+                    }`}
+                />
+            )}
+            {isDarkTheme ? (
+                <MdBrightness2
+                    className={`${classes.theme__moon} ${
+                        hidden && classes.hidden
+                    } ${classes.theme__icon}`}
+                />
+            ) : (
+                <MdOutlineBrightness2
+                    className={`${classes.theme__moon} ${
+                        hidden && classes.hidden
+                    } ${classes.theme__icon}
+                    `}
+                    onClick={onClickDarkTheme}
+                />
+            )}
             {music ? (
                 <IoVolumeMuteOutline
-                    className={hidden && classes.hidden}
+                    className={`${hidden && classes.hidden} ${
+                        classes.theme__icon
+                    }`}
                     onClick={() => setMusic(false)}
                 />
             ) : (
                 <IoVolumeHighOutline
-                    className={hidden && classes.hidden}
+                    className={`${hidden && classes.hidden} ${
+                        classes.theme__icon
+                    }`}
                     onClick={() => setMusic(true)}
                 />
             )}
-            {hidden ? (
-                <BsChevronRight onClick={() => setHidden(!hidden)} />
-            ) : (
-                <BsChevronLeft onClick={() => setHidden(!hidden)} />
-            )}
-        </div>
-    ) : (
-        <div className={`${classes.theme} ${hidden && classes.themeRotate}`}>
-            <BsBrightnessHighFill className={hidden && classes.hidden} />
-            <MdOutlineBrightness2
-                className={`${classes.theme__moon} ${hidden && classes.hidden}`}
-                onClick={onClickDarkTheme}
+            <BsChevronLeft
+                className={`${classes.theme__icon} ${hidden && classes.chevronRight}`}
+                onClick={() => setHidden(!hidden)}
             />
-            {music ? (
-                <IoVolumeMuteOutline
-                    className={hidden && classes.hidden}
-                    onClick={() => setMusic(false)}
-                />
-            ) : (
-                <IoVolumeHighOutline
-                    className={hidden && classes.hidden}
-                    onClick={() => setMusic(true)}
-                />
-            )}
-            {hidden ? (
-                <BsChevronRight onClick={() => setHidden(!hidden)} />
-            ) : (
-                <BsChevronLeft onClick={() => setHidden(!hidden)} />
-            )}
         </div>
     );
 };

@@ -14,7 +14,7 @@ import Theme from './components/theme/Theme';
 import useSound from 'use-sound';
 import Services from './components/services/Services';
 import ConditionalWrapper from './components/conditionalwrapper/ConditionalWrapper';
-import { useTransition } from 'react-spring';
+import { useTransition, animated } from 'react-spring';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import Triangle from './components/triangle/Triangle';
 import classes from '../styles/Home.module.scss';
@@ -48,7 +48,15 @@ export default function Home() {
             <Triangle num={1} classNameTriangle={classes.triangle3} />
             <Triangle num={5} classNameTriangle={classes.triangle8} />
 
-            {width > 780 && <div className="pagination" />}
+            {width > 780 && transitions(({ opacity, transform }, item) => (
+                <animated.div
+                    className="pagination"
+                    style={{
+                        opacity: opacity,
+                        transform: transform
+                    }}
+                />
+            ))}
             <ConditionalWrapper
                 condition={width > 780}
                 wrapper={(children) => (
