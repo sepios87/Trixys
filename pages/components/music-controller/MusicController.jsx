@@ -1,22 +1,46 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import classes from './MusicController.module.scss';
-import { IoVolumeHighOutline, IoVolumeMuteOutline } from 'react-icons/io5';
+import { IoVolumeHighOutline } from 'react-icons/io5';
 import Button from '../button/Button';
+import { useTransition, animated } from 'react-spring';
 
 const MusicController = ({ music, setMusic }) => {
-    return (music == null &&
-        <section className={classes.musicController}>
+
+    useEffect(() => {
+        if (music == null) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [music]);
+
+    const transitions = useTransition(music != null ? [] : true, {
+        from: { opacity: 1 },
+        enter: { opacity: 1 },
+        leave: { opacity: 0 },
+        config: {duration: 1000}
+    });
+
+    return transitions(({ opacity }) => (
+        <animated.section
+            style={{ opacity: opacity }}
+            className={classes.musicController}
+        >
             <IoVolumeHighOutline className={classes.musicController__icon} />
             <p>
                 Notre agence vous propose une expérience sonore lors de votre
                 navigation. Souhaitez-vous en bénéficier ?
             </p>
             <div className={classes.musicController__buttons}>
-                <Button whiteTheme={true} onClick={() => setMusic(true)}>Oui</Button>
-                <Button whiteTheme={true} onClick={() => setMusic(false)}>Non</Button>
+                <Button whiteTheme={true} onClick={() => setMusic(true)}>
+                    Oui
+                </Button>
+                <Button whiteTheme={true} onClick={() => setMusic(false)}>
+                    Non
+                </Button>
             </div>
-        </section>
-    );
+        </animated.section>
+    ));
 };
 
 export default MusicController;

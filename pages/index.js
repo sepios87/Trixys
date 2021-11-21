@@ -27,16 +27,16 @@ export { MusicContext };
 
 export default function Home() {
     const [waveTransition, setWaveTransition] = useState(false);
-    const [music, setMusic] = useState();
+    const [music, setMusic] = useState(null);
     const [play] = useSound('/sounds/transition.mp3');
 
     const {width} = useWindowDimensions();
 
-    const transitions = useTransition(music, {
+    const transitions = useTransition(music == null  ? [] : true, {
         from: { opacity: 0, transform: 'translate(100%, -50%)' },
         enter: { opacity: 1, transform: 'translate(0, -50%)' },
         leave: { opacity: 0, transform: 'translate(-100%, -50%)' },
-        delay: 200,
+        delay: 1000,
     });
 
     return (
@@ -48,7 +48,7 @@ export default function Home() {
             <Triangle num={1} classNameTriangle={classes.triangle3} />
             <Triangle num={5} classNameTriangle={classes.triangle8} />
 
-            {width > 780 && transitions(({ opacity, transform }, item) => (
+            {width > 780 && transitions(({ opacity, transform }) => (
                 <animated.div
                     className="pagination"
                     style={{

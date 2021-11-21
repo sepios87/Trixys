@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 8px;
+    padding: 10px 7px;
     z-index: 100;
 
     &__icon {
@@ -16,7 +16,7 @@
         padding: 5px 0;
         height: 30px;
         display: block;
-        transition: .2s ease-in;
+        transition: 0.2s ease-in;
     }
 
     &__moon {
@@ -25,12 +25,13 @@
 }
 
 .hidden {
+    opacity: 0;
     height: 0;
     font-size: 0;
     padding: 0;
-    transform: translate(50%, -100%) rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .chevronRight {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }

@@ -10,7 +10,7 @@
     &__itemQuestion {
         margin: 2vh 5%;
         box-shadow: -4px 4px 22px -4px rgba(0, 0, 0, 0.5);
-        transition: .1s;
+        transition: .15s;
 
         @media screen and (min-width: 780px) {
             width: 35%;
@@ -18,6 +18,11 @@
 
         img {
             height: 13vh;
+            margin: 2vh 0;
+        }
+
+        p {
+            margin: 0 0 2vh;
         }
 
         &:hover {
