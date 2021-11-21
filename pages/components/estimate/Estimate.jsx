@@ -9,12 +9,12 @@ const tab = [
         question: 'Est-ce pour une création ou une refonte de site ?',
         response1: {
             name: 'Creation',
-            image: '/svg/creation.svg',
+            image: 'svg/creation.svg',
             point: 5,
         },
         response2: {
             name: 'Refonte',
-            image: '/svg/refonte.svg',
+            image: 'svg/refonte.svg',
             point: 3,
         },
     },
@@ -22,12 +22,12 @@ const tab = [
         question: "Quel est l'objectif du site ?",
         response1: {
             name: 'Site de e vitrine',
-            image: '/svg/evitrine.svg',
+            image: 'svg/evitrine.svg',
             point: 1,
         },
         response2: {
             name: 'Site de e commerce',
-            image: '/svg/ecommerce.svg',
+            image: 'svg/ecommerce.svg',
             point: 3,
         },
     },
@@ -35,12 +35,12 @@ const tab = [
         question: 'Fournissez vous les images pour le contenu du site ?',
         response1: {
             name: 'Oui',
-            image: '/svg/imageYes.svg',
+            image: 'svg/imageYes.svg',
             point: 0,
         },
         response2: {
             name: 'Non',
-            image: '/svg/imageNo.svg',
+            image: 'svg/imageNo.svg',
             point: 1,
         },
     },
@@ -66,12 +66,12 @@ const tab = [
             'Souhaitez-vous que votre site s’adapte aux mobiles et tablettes ?',
         response1: {
             name: 'Oui',
-            image: '/svg/responsiveYes.svg',
+            image: 'svg/responsiveYes.svg',
             point: 2,
         },
         response2: {
             name: 'Non',
-            image: '/svg/responsiveNo.svg',
+            image: 'svg/responsiveNo.svg',
             point: 0,
         },
     },
@@ -80,12 +80,12 @@ const tab = [
             "Qui doit gérer l'hébergement et la gestion des noms de domaines ?",
         response1: {
             name: 'Vous',
-            image: '/svg/domaine.svg',
+            image: 'svg/domaine.svg',
             point: 0,
         },
         response2: {
             name: 'Le prestataire (Nous)',
-            image: '/svg/domaine.svg',
+            image: 'svg/domaine.svg',
             point: 2,
         },
     },
@@ -94,12 +94,12 @@ const tab = [
             'Souhaitez vous une optimisation et une expertise SEO ? (réferencement)',
         response1: {
             name: 'Oui',
-            image: '/svg/seoYes.svg',
+            image: 'svg/seoYes.svg',
             point: 2,
         },
         response2: {
             name: 'Non',
-            image: '/svg/seoNo.svg',
+            image: 'svg/seoNo.svg',
             point: 0,
         },
     },

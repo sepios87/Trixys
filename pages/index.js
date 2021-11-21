@@ -13,7 +13,7 @@ import SliderMembers from './components/slider-members/SliderMembers';
 import Theme from './components/theme/Theme';
 import useSound from 'use-sound';
 import Services from './components/services/Services';
-import ConditionalWrapper from './components/conditionalwrapper/ConditionalWrapper';
+import ConditionalWrapper from '../components/conditionalwrapper/ConditionalWrapper';
 import { useTransition, animated } from 'react-spring';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import Triangle from './components/triangle/Triangle';
@@ -58,7 +58,7 @@ export default function Home() {
                 />
             ))}
             <ConditionalWrapper
-                condition={width > 780}
+                condition={true}
                 wrapper={(children) => (
                     <Swiper
                         direction={'vertical'}

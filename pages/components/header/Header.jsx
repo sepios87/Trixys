@@ -8,17 +8,17 @@ const Header = ({ isWaiting }) => {
         <section className={classes.header}>
             <img
                 className={classes.header__pointsDroite}
-                src="/svg/points.svg"
+                src="svg/points.svg"
                 alt="pointsDroite"
             />
             <img
                 className={classes.header__pointsGauche}
-                src="/svg/points.svg"
+                src="svg/points.svg"
                 alt="pointsGauche"
             />
             <img
                 className={classes.header__rond}
-                src="/svg/rond.svg"
+                src="svg/rond.svg"
                 alt="rondFlottant"
             />
             {/* Affiché sur mobile */}
