@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'Quick';
-    src: url('../public/fonts/quick/Quick.woff') format('woff'),
-        url('../public/fonts/quick/Quick.woff2') format('woff2');
+    src: url('/fonts/quick/Quick.woff') format('woff'),
+        url('/fonts/quick/Quick.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('../public/fonts/poppins/Poppins-Regular.woff') format('woff'),
-        url('../public/fonts/poppins/Poppins-Regular.woff2') format('woff2');
+    src: url('/fonts/poppins/Poppins-Regular.woff') format('woff'),
+        url('/fonts/poppins/Poppins-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../public/fonts/icomoon/icomoon.eot');
-    src: url('../public/fonts/icomoon/icomoon.eot?#iefix')
+    src: url('/fonts/icomoon/icomoon.eot');
+    src: url('/fonts/icomoon/icomoon.eot?#iefix')
             format('embedded-opentype'),
-        url('../public/fonts/icomoon/icomoon.woff') format('woff'),
-        url('../public/fonts/icomoon/icomoon.ttf') format('truetype'),
-        url('../public/fonts/icomoon/icomoon.svg#icomoon') format('svg');
+        url('/fonts/icomoon/icomoon.woff') format('woff'),
+        url('/fonts/icomoon/icomoon.ttf') format('truetype'),
+        url('/fonts/icomoon/icomoon.svg#icomoon') format('svg');
 }
 
 :root {
