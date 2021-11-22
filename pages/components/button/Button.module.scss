@@ -19,6 +19,7 @@
     &:hover {
         border-color: #f6c952;
         background-color: #f6c952;
+        box-shadow: -2px 2px 12px -2px rgba(0, 0, 0, .1);
         color: var(--primary);
     }
 }

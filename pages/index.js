@@ -58,7 +58,7 @@ export default function Home() {
                 />
             ))}
             <ConditionalWrapper
-                condition={true}
+                condition={width > 780}
                 wrapper={(children) => (
                     <Swiper
                         direction={'vertical'}

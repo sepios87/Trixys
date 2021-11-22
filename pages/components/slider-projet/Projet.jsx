@@ -6,12 +6,14 @@ import { BiRightArrow, BiLeftArrow } from 'react-icons/bi';
 
 const projets = [
     {
-        titre: 'Projet 1',
-        texte: 'Lorem ipsu dorl erger zberoinvbe rabierzb eribe rbiàern berb erboie rberi berb erb',
+        titre: 'Unumondo',
+        texte: "Refonte du site web de l'association Unumondo sensibilisant au réchauffement climatique",
+        img: 'img/unumondo.png',
     },
     {
-        titre: 'Projet 2',
-        texte: 'Lorem ipsu dorl erger zberoinvbe rabierzb eribe rbiàern berb erboie rberi berb erb',
+        titre: 'Trixys',
+        texte: 'Création de notre site vitrine',
+        img: 'img/trixys.png',
     },
 ];
 
@@ -41,7 +43,10 @@ const Projet = () => {
             >
                 {projets.map((e, index) => (
                     <SwiperSlide key={index}>
-                        <article className={classes.projet__card}>
+                        <article
+                            style={{ backgroundImage: `url(${e.img})` }}
+                            className={classes.projet__card}
+                        >
                             <div className={classes.projet__infos}>
                                 <h2>{e.titre}</h2>
                                 <p>{e.texte}</p>
