@@ -138,6 +138,16 @@ const Estimate = () => {
                     <h3 className={classes.estimate__titleQuestion}>
                         {tab[currentQuestion].question}
                     </h3>
+                    <div className={classes.estimate__progressBar}>
+                        <div
+                            className={classes.estimate__progressBarContent}
+                            style={{
+                                width:
+                                    (currentQuestion * 100) / (tab.length - 1) +
+                                    '%',
+                            }}
+                        ></div>
+                    </div>
                     {tab[currentQuestion].response1 != null ? (
                         <ItemQuestionCard
                             onFinishedQuestion={(e) => onFinishedQuestion(e)}
@@ -156,16 +166,6 @@ const Estimate = () => {
                             point={tab[currentQuestion].response.point}
                         />
                     )}
-                    <div className={classes.estimate__progressBar}>
-                        <div
-                            className={classes.estimate__progressBarContent}
-                            style={{
-                                width:
-                                    (currentQuestion * 100) / (tab.length - 1) +
-                                    '%',
-                            }}
-                        ></div>
-                    </div>
                 </>
             )}
         </section>

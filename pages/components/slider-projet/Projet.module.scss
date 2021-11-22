@@ -3,9 +3,11 @@
     width: 100vw;
     display: flex;
     align-items: center;
+    margin: 8vh auto 0;
 
     @media screen and (min-width: 780px) {
         height: 100vh;
+        margin: auto;
     }
 
     &__card {
