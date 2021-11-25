@@ -34,7 +34,7 @@
         h2::after,
         h3::after {
             content: '';
-            background-color: #f6c952;
+            background-color: var(--yellow);
             position: relative;
             display: block;
         }
