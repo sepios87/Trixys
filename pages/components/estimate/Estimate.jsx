@@ -138,7 +138,7 @@ const Estimate = () => {
                     <h3 className={classes.estimate__titleQuestion}>
                         {tab[currentQuestion].question}
                     </h3>
-                    <div className={classes.estimate__progressBar}>
+                    <div className={`${classes.estimate__progressBar} ${currentQuestion == 0 && classes.hidden}`}>
                         <div
                             className={classes.estimate__progressBarContent}
                             style={{

@@ -1,12 +1,13 @@
 .member {
     display: flex;
     color: var(--secondary);
+    min-height: 50vh;
 
     &__imageProfil {
         width: 10rem;
         height: 10rem;
         border-radius: 50%;
-        margin-bottom: 5vh;
+        margin-top: 2rem;
     }
 
     figure {

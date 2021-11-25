@@ -48,14 +48,14 @@ const Theme = ({ music, setMusic }) => {
                 onClick={onClickDarkTheme}
             />
             {music ? (
-                <IoVolumeMuteOutline
+                <IoVolumeHighOutline
                     className={`${hidden && classes.hidden} ${
                         classes.theme__icon
                     }`}
                     onClick={() => setMusic(false)}
                 />
             ) : (
-                <IoVolumeHighOutline
+                <IoVolumeMuteOutline
                     className={`${hidden && classes.hidden} ${
                         classes.theme__icon
                     }`}
