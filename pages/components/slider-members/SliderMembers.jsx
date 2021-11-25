@@ -1,5 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Member from './member/Member';
+import SwiperCore, { Pagination, Controller } from 'swiper';
+import { BiRightArrow, BiLeftArrow } from 'react-icons/bi';
+import classes from './SliderMember.module.scss';
 
 const tabMembers = [
     {
@@ -28,26 +31,50 @@ const tabMembers = [
     },
 ];
 
+SwiperCore.use([Pagination, Controller]);
+
 const SliderMembers = () => {
     return (
-        <Swiper
-            direction={'horizontal'}
-            slidesPerView={1}
-            spaceBetween={30}
-            keyboard={true}
-            speed={800}
-        >
-            {tabMembers.map((e, index) => (
-                <SwiperSlide key={index}>
-                    <Member
-                        image={e.image}
-                        name={e.name}
-                        status={e.status}
-                        descr={e.descr}
-                    />
-                </SwiperSlide>
-            ))}
-        </Swiper>
+        <section className={classes.members}>
+            <div
+                className={`swiper-member-button-prev ${classes.swiperButtonPrev}`}
+            >
+                <BiLeftArrow />
+            </div>
+            <Swiper
+                autoHeight={true}
+                keyboard={true}
+                mousewheel={false}
+                speed={800}
+                pagination={{
+                    el: '.member__pagination',
+                    type: 'fraction',
+                }}
+                navigation={{
+                    nextEl: '.swiper-member-button-next',
+                    prevEl: '.swiper-member-button-prev',
+                }}
+            >
+                {tabMembers.map((e, index) => (
+                    <SwiperSlide key={index}>
+                        <Member
+                            image={e.image}
+                            name={e.name}
+                            status={e.status}
+                            descr={e.descr}
+                        />
+                    </SwiperSlide>
+                ))}
+                <div
+                    className={`member__pagination ${classes.member__pagination}`}
+                />
+            </Swiper>
+            <div
+                className={`swiper-member-button-next ${classes.swiperButtonNext}`}
+            >
+                <BiRightArrow />
+            </div>
+        </section>
     );
 };
 

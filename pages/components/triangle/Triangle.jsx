@@ -22,7 +22,7 @@ const Triangle = ({ num, classNameTriangle }) => {
         <animated.img
             style={animation}
             className={classNameTriangle + ' ' + classes.triangles}
-            src={`/svg/triangle${num}.svg`}
+            src={`svg/triangle${num}.svg`}
             alt="triangleFlottant"
         ></animated.img>
     );

@@ -3,6 +3,7 @@
   background: none;
   color: var(--secondary);
   box-sizing: border-box;
+  margin: 8vh auto;
 
   &__icon {
     margin-right: 25px;
@@ -12,6 +13,7 @@
     background: rgba(112,112,112,0.9);
     color: white;
     padding: 20px 0 100px 55px;
+    margin: auto;
   }
 
   h2 {

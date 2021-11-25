@@ -8,30 +8,27 @@ const Header = ({ isWaiting }) => {
         <section className={classes.header}>
             <img
                 className={classes.header__pointsDroite}
-                src="/svg/points.svg"
+                src="svg/points.svg"
                 alt="pointsDroite"
             />
             <img
                 className={classes.header__pointsGauche}
-                src="/svg/points.svg"
+                src="svg/points.svg"
                 alt="pointsGauche"
             />
             <img
                 className={classes.header__rond}
-                src="/svg/rond.svg"
+                src="svg/rond.svg"
                 alt="rondFlottant"
             />
             {/* Affiché sur mobile */}
-            <Triangle num={3} classNameTriangle={classes.triangle1} />
             <Triangle num={7} classNameTriangle={classes.triangle2} />
-            <Triangle num={1} classNameTriangle={classes.triangle3} />
             <Triangle num={6} classNameTriangle={classes.triangle4} />
             <Triangle num={3} classNameTriangle={classes.triangle5} />
 
             {/* Affiché sur pc */}
             <Triangle num={2} classNameTriangle={classes.triangle6} />
             <Triangle num={4} classNameTriangle={classes.triangle7} />
-            <Triangle num={5} classNameTriangle={classes.triangle8} />
 
             <div className={classes.header__titleDiv}>
                 <h1>

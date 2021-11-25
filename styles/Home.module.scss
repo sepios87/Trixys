@@ -1,0 +1,39 @@
+.triangle1 {
+    width: 6rem;
+    top: 20vh;
+    left: 10vw;
+}
+
+.triangle3 {
+    bottom: 12vh;
+    width: 5rem;
+}
+
+.triangle8 {
+    display: none;
+}
+
+@media screen and (min-width: 780px) {
+    .triangles {
+        max-width: 30vw;
+    }
+
+    .triangle3 {
+        width: 12rem;
+        position: fixed;
+    }
+
+    .triangle1 {
+        width: 8rem;
+        top: 8vh;
+        position: fixed;
+    }
+
+    .triangle8 {
+        display: block;
+        width: 16rem;
+        left: 40vw;
+        top: 5vh;
+        position: fixed;
+    }
+}

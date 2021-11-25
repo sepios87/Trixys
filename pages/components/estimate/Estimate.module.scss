@@ -1,18 +1,18 @@
 .estimate {
-    display: grid;
-    grid-template-rows: 12vh 8rem 1fr 1fr 1fr;
-    grid-template-columns: 100%;
-    grid-row: auto;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 8vh auto 0;
+    height: auto;
     padding: 0 15%;
     text-align: center;
     color: var(--secondary);
     justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: 780px) {
-        grid-template-rows: 20vh 5rem 8rem 1fr 1fr;
-        grid-template-columns: 80%;
         padding: 0;
+        height: 100vh;
+        margin: auto;
     }
 
     &__questionNum {
@@ -25,7 +25,8 @@
         justify-content: center;
         align-items: center;
         color: var(--primary);
-        margin: auto;
+        margin: 2vh auto;
+        box-shadow: -3px 3px 18px -3px rgba(0, 0, 0, 0.3);
     }
 
     &__progressBar {
@@ -33,6 +34,13 @@
         border-radius: 3px;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.1);
+        margin: 2vh auto;
+        width: 90%;
+
+        @media screen and (min-width: 780px) {
+            width: 50%;
+            margin: 2vh auto 10vh;
+        }
     }
 
     &__progressBarContent {

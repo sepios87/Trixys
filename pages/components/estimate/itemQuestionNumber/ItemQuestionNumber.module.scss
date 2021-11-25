@@ -1,12 +1,16 @@
 .itemQuestionNumber {
+    width: 20%;
+    min-width: 150px;
+
+    @media screen and (min-width: 780px) {
+        margin-bottom: 20%;
+        height: 10vh;
+    }
+
     div {
         display: grid;
         grid-template-columns: 25% 1fr 25%;
         margin: auto;
-
-        @media screen and (min-width: 780px) {
-            width: 25%;
-        }
     }
 
     &__validate {

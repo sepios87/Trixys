@@ -36,6 +36,7 @@
                 font-family: 'Quick', sans-serif;
                 font-size: 18vw;
                 letter-spacing: 5px;
+                margin-left: -1vw;
             }
         }
     }
@@ -69,21 +70,10 @@
     }
 }
 
-.triangle1 {
-    width: 6rem;
-    top: 20vh;
-    left: 10vw;
-}
-
 .triangle2 {
     width: 10rem;
     top: 16vh;
     right: -4vh;
-}
-
-.triangle3 {
-    bottom: 12vh;
-    width: 5rem;
 }
 
 .triangle4 {
@@ -113,7 +103,6 @@
         }
 
         &__titleDiv {
-            width: 40%;
             left: 9vw;
             transform: translate(0, -50%);
             z-index: -1;
@@ -122,7 +111,7 @@
                 font-size: 1.25rem;
 
                 span {
-                    font-size: 18vw;
+                    font-size: 17.5vw;
                 }
             }
         }
@@ -134,18 +123,9 @@
         }
     }
 
-    .triangle1 {
-        width: 8rem;
-        top: 8vh;
-    }
-
     .triangle2 {
         width: 18rem;
         right: 3vw;
-    }
-
-    .triangle3 {
-        width: 12rem;
     }
 
     .triangle4 {
@@ -170,12 +150,5 @@
         width: 10rem;
         right: 35vw;
         top: 30vh;
-    }
-
-    .triangle8 {
-        display: block;
-        width: 16rem;
-        left: 40vw;
-        top: 5vh;
     }
 }

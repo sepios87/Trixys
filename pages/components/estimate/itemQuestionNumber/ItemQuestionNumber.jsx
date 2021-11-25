@@ -2,7 +2,7 @@ import { useState } from 'react';
 import classes from './ItemQuestionNumber.module.scss';
 
 const ItemQuestionNumber = ({ min, max, point, onFinishedQuestion }) => {
-    const [valueSlider, setValueSlider] = useState(min);
+    const [valueSlider, setValueSlider] = useState(1);
 
     return (
         <div className={classes.itemQuestionNumber}>
@@ -31,7 +31,7 @@ const ItemQuestionNumber = ({ min, max, point, onFinishedQuestion }) => {
                 className={classes.itemQuestionNumber__validate}
                 onClick={() => {
                     onFinishedQuestion(valueSlider * point);
-                    setValueSlider(0);
+                    setValueSlider(1);
                 }}
             >
                 Valider
