@@ -2,14 +2,17 @@
     width: 6rem;
     top: 20vh;
     left: 10vw;
+    z-index: 1;
 }
 
 .triangle3 {
     bottom: 12vh;
     width: 5rem;
+    z-index: 1;
 }
 
 .triangle8 {
+    z-index: 1;
     display: none;
 }
 

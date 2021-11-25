@@ -3,6 +3,7 @@ import Member from './member/Member';
 import SwiperCore, { Pagination, Controller } from 'swiper';
 import { BiRightArrow, BiLeftArrow } from 'react-icons/bi';
 import classes from './SliderMember.module.scss';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const tabMembers = [
     {
@@ -39,7 +40,7 @@ const SliderMembers = () => {
             <div
                 className={`swiper-member-button-prev ${classes.swiperButtonPrev}`}
             >
-                <BiLeftArrow />
+                <BsChevronLeft />
             </div>
             <Swiper
                 autoHeight={true}
@@ -72,7 +73,7 @@ const SliderMembers = () => {
             <div
                 className={`swiper-member-button-next ${classes.swiperButtonNext}`}
             >
-                <BiRightArrow />
+                <BsChevronRight />
             </div>
         </section>
     );
