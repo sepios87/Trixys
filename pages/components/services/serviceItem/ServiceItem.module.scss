@@ -34,7 +34,7 @@
             z-index: -1;
             left: 10px;
             top: 10px;
-            background: #FED053;
+            background: var(--yellow);
             display: block;
             content: "";
             position: absolute;
@@ -54,6 +54,22 @@
         }
     }
 
+    &__isopen {
+        .services__chevron {
+            transform: rotate(180deg) !important;
+        }
+
+        p {
+            height : auto !important;
+        }
+    }
+
+    &__chevron {
+        display: block;
+        margin: 10px auto;
+        transition: all 0.3s ease-in-out;
+    }
+
     figcaption {
         h3 {
             font-family: 'Quick', sans-serif;
@@ -66,11 +82,24 @@
             font-size: 12px;
             line-height: 150%;
             font-family: 'Poppins', sans-serif;
+            height : 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
         }
     }
 
     @media screen and (min-width: 780px) {
         width: 45%;
+
+        &__chevron {
+            display: none;
+        }
+
+        figcaption {
+            p {
+                height: auto;
+            }
+        }
     }
 
     @media screen and (min-width: 960px) {

@@ -19,7 +19,7 @@
         width: 3rem;
         height: 3rem;
         display: block;
-        background-color: #f6c952;
+        background-color: var(--yellow);
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -47,7 +47,7 @@
         transition: width 0.5s;
         height: 4px;
         border-radius: 3px;
-        background-color: #f6c952;
+        background-color: var(--yellow);
     }
 
     &__titleQuestion {
@@ -72,7 +72,7 @@
         &::-moz-range-thumb {
             -webkit-appearance: none;
             border: none;
-            background-color: #f6c952;
+            background-color: var(--yellow);
             box-shadow: -3px 3px 14px -4px #000000;
             cursor: grab;
         }
