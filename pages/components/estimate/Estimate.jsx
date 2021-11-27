@@ -8,7 +8,7 @@ const tab = [
     {
         question: 'Est-ce pour une création ou une refonte de site ?',
         response1: {
-            name: 'Creation',
+            name: 'Création',
             image: 'svg/creation.svg',
             point: 5,
         },
@@ -21,18 +21,18 @@ const tab = [
     {
         question: "Quel est l'objectif du site ?",
         response1: {
-            name: 'Site de e vitrine',
+            name: 'Site vitrine',
             image: 'svg/evitrine.svg',
             point: 1,
         },
         response2: {
-            name: 'Site de e commerce',
+            name: 'Site de e-commerce',
             image: 'svg/ecommerce.svg',
             point: 3,
         },
     },
     {
-        question: 'Fournissez vous les images pour le contenu du site ?',
+        question: 'Fournissez-vous les images pour le contenu du site ?',
         response1: {
             name: 'Oui',
             image: 'svg/imageYes.svg',
@@ -77,7 +77,7 @@ const tab = [
     },
     {
         question:
-            "Qui doit gérer l'hébergement et la gestion des noms de domaines ?",
+            "Qui doit gérer l'hébergement et le nom de domaine ?",
         response1: {
             name: 'Vous',
             image: 'svg/domaine.svg',
@@ -91,7 +91,7 @@ const tab = [
     },
     {
         question:
-            'Souhaitez vous une optimisation et une expertise SEO ? (réferencement)',
+            'Souhaitez-vous une optimisation et une expertise SEO ? (référencement)',
         response1: {
             name: 'Oui',
             image: 'svg/seoYes.svg',

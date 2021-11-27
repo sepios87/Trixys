@@ -11,11 +11,11 @@ const Informations = () => {
         <ul>
             <li>
                 <AiOutlineMail className={classes.informations__icon}/>
-                <a href="#">contact.trixys@gmail.com</a>
+                <a href="mailto:contact.trixys@gmail.com">contact.trixys@gmail.com</a>
             </li>
             <li>
                 <AiOutlinePhone className={classes.informations__icon}/>
-                <a href="#">06 06 06 06 06</a>
+                <a href="tel:0606060606">06 06 06 06 06</a>
             </li>
             <li>
                 <BsMap className={classes.informations__icon}/>

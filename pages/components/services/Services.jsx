@@ -11,17 +11,17 @@ const servicesList = [
     {
         name: 'Graphisme',
         description:
-            'D’un simple site web statique à un site plus complexe, Trixys vous accompagne dans la conception de votre site internet, en concevant des maquettes adaptées à chaque support numérique.',
+            'D’un simple site web statique à une application complexe, nous vous accompagnons dans la conception de votre projet, en concevant des maquettes adaptées à chaque support numérique.',
     },
     {
         name: 'Développement Web',
         description:
-            'Nos développeurs travaillent main dans la main pour transformer vos simples maquettes en de véritables sites fonctionnels, en respectant le cahier des charges défini au préalable et en vous offrant un accompagnement sur le long terme.',
+            'Nos développeurs travaillent main dans la main pour donner vie à vos maquettes, en respectant le cahier des charges défini au préalable et en vous offrant un accompagnement personnalisé sur le long terme.',
     },
     {
         name: 'UX / UI Design',
         description:
-            'Trixys adopte une démarche centrée sur l’utilisateur afin de lui garantir une expérience optimale, en rendant votre futur site web accessible et facile d’utilisation, de par son design cohérent et ses fonctionnalités intuitives',
+            'Nous adoptons une démarche centrée utilisateur afin de lui garantir une expérience optimale, en rendant votre futur site web accessible et facile d’utilisation, de par la création d\'un design cohérent et de fonctionnalités intuitives',
     },
 ];
 
