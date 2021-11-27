@@ -23,11 +23,7 @@ const Header = ({ isWaiting }) => {
             />
             {/* Affiché sur mobile */}
             <Triangle num={7} classNameTriangle={classes.triangle2} />
-            <Triangle num={6} classNameTriangle={classes.triangle4} />
             <Triangle num={3} classNameTriangle={classes.triangle5} />
-
-            {/* Affiché sur pc */}
-            <Triangle num={2} classNameTriangle={classes.triangle6} />
 
             <div className={classes.header__titleDiv}>
                 <h1>
