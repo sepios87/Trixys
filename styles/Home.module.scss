@@ -16,6 +16,13 @@
     display: none;
 }
 
+.triangle6 {
+    z-index: 1;
+    width: 15rem;
+    bottom: 10vh;
+    right: 10vw;
+}
+
 @media screen and (min-width: 780px) {
     .triangles {
         max-width: 30vw;
@@ -37,6 +44,10 @@
         width: 16rem;
         left: 40vw;
         top: 5vh;
+        position: fixed;
+    }
+
+    .triangle6 {
         position: fixed;
     }
 }
