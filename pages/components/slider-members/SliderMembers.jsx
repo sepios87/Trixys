@@ -48,6 +48,7 @@ const SliderMembers = () => {
                 keyboard={true}
                 mousewheel={false}
                 speed={800}
+                loop={true}
                 pagination={{
                     el: '.member__pagination',
                     type: 'fraction',
