@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="117" height="95" viewBox="0 0 117 95">
+  <g id="Groupe_90" data-name="Groupe 90" transform="translate(-1133 -655)">
+    <circle id="Ellipse_46" data-name="Ellipse 46" cx="13.5" cy="13.5" r="13.5" transform="translate(1223 723)" fill="#919191" opacity="0.17"/>
+    <circle id="Ellipse_48" data-name="Ellipse 48" cx="40" cy="40" r="40" transform="translate(1133 655)" fill="#fecf0d" opacity="0.1"/>
+    <g id="vuesax_outline_timer" data-name="vuesax/outline/timer" transform="translate(937 487)">
+      <g id="timer" transform="translate(236 188)">
+        <path id="Vector" d="M25.729,51.458A25.729,25.729,0,1,1,51.458,25.729,25.752,25.752,0,0,1,25.729,51.458Zm0-47.4A21.667,21.667,0,1,0,47.4,25.729,21.7,21.7,0,0,0,25.729,4.063Z" transform="translate(6.771 10.156)" fill="#fecf0d"/>
+        <path id="Vector-2" data-name="Vector" d="M2.031,17.6A2.046,2.046,0,0,1,0,15.573V2.031A2.046,2.046,0,0,1,2.031,0,2.046,2.046,0,0,1,4.063,2.031V15.573A2.046,2.046,0,0,1,2.031,17.6Z" transform="translate(30.469 19.635)" fill="#fecf0d"/>
+        <path id="Vector-3" data-name="Vector" d="M18.281,4.063H2.031A2.046,2.046,0,0,1,0,2.031,2.046,2.046,0,0,1,2.031,0h16.25a2.046,2.046,0,0,1,2.031,2.031A2.046,2.046,0,0,1,18.281,4.063Z" transform="translate(22.344 3.385)" fill="#fecf0d"/>
+        <path id="Vector-4" data-name="Vector" d="M0,0H65V65H0Z" fill="none" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

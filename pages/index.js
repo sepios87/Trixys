@@ -45,10 +45,6 @@ export default function Home() {
             <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
-            <Triangle num={3} classNameTriangle={classes.triangle1} />
-            <Triangle num={1} classNameTriangle={classes.triangle3} />
-            <Triangle num={5} classNameTriangle={classes.triangle8} />
-            <Triangle num={6} classNameTriangle={classes.triangle6} />
 
             {width > 780 &&
                 transitions(({ opacity, transform }) => (

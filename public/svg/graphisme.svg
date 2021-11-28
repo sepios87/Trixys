@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111.002" height="80" viewBox="0 0 111.002 80">
+  <g id="Groupe_93" data-name="Groupe 93" transform="translate(-689 -365)">
+    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(725 427)" fill="none" stroke="#fecf0d" stroke-width="2">
+      <path d="M0,0H48a0,0,0,0,1,0,0V8a0,0,0,0,1,0,0H8A8,8,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M1.6,1H46.4a.6.6,0,0,1,.6.6V6.4a.6.6,0,0,1-.6.6H6.4A5.4,5.4,0,0,1,1,1.6v0A.6.6,0,0,1,1.6,1Z" fill="none"/>
+    </g>
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(727 393)" fill="none" stroke="#fecf0d" stroke-width="2">
+      <rect width="52" height="31" rx="5" stroke="none"/>
+      <rect x="1" y="1" width="50" height="29" rx="4" fill="none"/>
+    </g>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="21" height="33" rx="7" transform="translate(765 405)" fill="#fff"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="40" cy="40" r="40" transform="translate(689 365)" fill="#fecf0d" opacity="0.1"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="13.5" cy="13.5" r="13.5" transform="translate(761 379)" fill="#919191" opacity="0.17"/>
+    <path id="lnr-pencil" d="M33.476,1.551a5.216,5.216,0,0,0-7.374,0L3.76,23.893a.87.87,0,0,0-.2.321l-3.5,9.638a.874.874,0,0,0,.824,1.174.892.892,0,0,0,.3-.053l9.638-3.5a.893.893,0,0,0,.321-.2L33.476,8.923a5.216,5.216,0,0,0,0-7.374ZM10.032,29.889l-7.691,2.8,2.8-7.691L24.532,5.6l4.894,4.894L10.032,29.889Zm22.2-22.2-1.57,1.57L25.771,4.36l1.57-1.57a3.459,3.459,0,0,1,4.892,4.892Z" transform="translate(765 399.975)" fill="#fecf0d"/>
+  </g>
+</svg>
