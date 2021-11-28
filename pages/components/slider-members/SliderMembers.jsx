@@ -9,7 +9,7 @@ const tabMembers = [
         image: 'https://picsum.photos/900/1000',
         name: 'Florian TORIBIO',
         status: 'Développeur Web',
-        descr: "Passionné d'informatique, j'aime mettre ma passion au service des autres. J'adore aider des personnes à résoudre des problèmes et leur simplifier la vie ! C'est pourquoi j'ai rejoint Trixys en tant que développeur web afin de mener des projets qui concrétiseront vos idées.",
+        descr: "Passionné d'informatique, j'aime mettre ma passion au service des autres. J'adore aider des personnes à résoudre des problèmes et leur simplifier la vie !\n C'est pourquoi j'ai rejoint Trixys en tant que développeur web afin de mener des projets qui concrétiseront vos idées.",
         portfolio: 'https://www.sepios.fr',
     },
     {
@@ -40,9 +40,6 @@ SwiperCore.use([Pagination, Navigation]);
 const SliderMembers = () => {
     return (
         <section className={classes.members} id="members">
-            <BsChevronLeft
-                className={`swiper-member-button-prev ${classes.swiperButtonPrev}`}
-            />
             <Swiper
                 autoHeight={true}
                 keyboard={true}
@@ -69,13 +66,18 @@ const SliderMembers = () => {
                         />
                     </SwiperSlide>
                 ))}
+            </Swiper>
+            <div className={classes.numChevron}>
+                <BsChevronLeft
+                    className={`swiper-member-button-prev ${classes.swiperButtonPrev}`}
+                />
                 <div
                     className={`member__pagination ${classes.member__pagination}`}
                 />
-            </Swiper>
-            <BsChevronRight
-                className={`swiper-member-button-next ${classes.swiperButtonNext}`}
-            />
+                <BsChevronRight
+                    className={`swiper-member-button-next ${classes.swiperButtonNext}`}
+                />
+            </div>
         </section>
     );
 };

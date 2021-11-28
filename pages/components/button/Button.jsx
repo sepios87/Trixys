@@ -1,11 +1,11 @@
 import classes from './Button.module.scss';
 import { useContext } from 'react';
 import { MusicContext } from '../../index';
-// import useSound from 'use-sound';
+import useSound from 'use-sound';
 
 const Button = ({ href, children, whiteTheme, submitType, newPage = false, ...rest }) => {
     const music = useContext(MusicContext);
-    // const [play] = useSound('/sounds/transition.mp3');
+    const [play] = useSound('/sounds/button.mp3');
 
     return submitType ? (
         <input
@@ -16,7 +16,7 @@ const Button = ({ href, children, whiteTheme, submitType, newPage = false, ...re
     ) : (
         <a
             {...rest}
-            // onMouseEnter={() => music && isMounted && play()}
+            onMouseEnter={() => music && play()}
             className={`${classes.button} ${whiteTheme && classes.buttonWhite}`}
             href={href}
             {... newPage && {target: "_blank"}} 

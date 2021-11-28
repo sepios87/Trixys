@@ -86,11 +86,11 @@ body {
         width: max-content;
         padding: 3px 26px 3px 8px;
         text-align: right;
-        color: rgb(58, 58, 58);
+        color: var(--secondary);
         font-size: 10px;
         transform: translate(calc(-100% + 16px), -4px);
         right: -5px;
-        font-family: Quick;
+        text-transform: uppercase;
     }
 
     &__number:hover::before {
