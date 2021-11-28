@@ -6,7 +6,6 @@ import MusicController from './components/music-controller/MusicController';
 import Vague from './components/vague/Vague';
 import Header from './components/header/Header';
 import Bio from './components/bio/Bio';
-import Projet from './components/slider-projet/Projet';
 import Estimate from './components/estimate/Estimate';
 import Contact from './components/contact/Contact';
 import SliderMembers from './components/slider-members/SliderMembers';
@@ -18,6 +17,7 @@ import { useTransition, animated } from 'react-spring';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import Triangle from './components/triangle/Triangle';
 import classes from '../styles/Home.module.scss';
+import Projets from './components/projets/Projets';
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -97,7 +97,7 @@ export default function Home() {
                     <SliderMembers />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Projet />
+                    <Projets />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Estimate />

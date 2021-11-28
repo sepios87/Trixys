@@ -6,7 +6,6 @@
     padding: 0 15%;
     text-align: center;
     color: var(--secondary);
-    justify-content: center;
     align-items: center;
 
     @media screen and (min-width: 780px) {
@@ -18,15 +17,14 @@
     &__questionNum {
         width: 3rem;
         height: 3rem;
-        display: block;
         background-color: var(--yellow);
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         color: var(--primary);
-        margin: 2vh auto;
         box-shadow: -3px 3px 18px -3px rgba(0, 0, 0, 0.3);
+        margin-top: 10vh;
     }
 
     &__progressBar {
