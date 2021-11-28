@@ -30,8 +30,7 @@ const ContactForm = () => {
             <input required type="email" name="email" placeholder="Adresse mail" className={classes.contactForm__input + ' form__input'}/>
             <input required type="text" name="objet" placeholder="Objet" className={classes.contactForm__input + ' form__input'}/>
             <input required type="text" name="message" placeholder="Votre message" className={classes.contactForm__input + ' form__input'}/>
-            <p className={classes.contactForm__message}>En envoyant ce message, vous consentez à la collecte et au traitement des données renseignées ci-dessus pour l’usage exclusif. <a
-                href="#">En savoir plus</a></p>
+            <p className={classes.contactForm__message}>En envoyant ce message, vous nous autorisez à vous recontacter avec le mail fourni dans ce formulaire.</p>
                 <Button submitType={true}>Envoyer le message</Button>
         </form>
         {
