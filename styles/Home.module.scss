@@ -21,6 +21,7 @@
     width: 15rem;
     bottom: 10vh;
     right: 10vw;
+    display: none;
 }
 
 @media screen and (min-width: 780px) {
@@ -49,5 +50,6 @@
 
     .triangle6 {
         position: fixed;
+        display: block;
     }
 }
