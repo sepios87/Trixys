@@ -6,18 +6,18 @@ import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const tabMembers = [
     {
-        image: 'https://picsum.photos/900/1000',
         name: 'Florian TORIBIO',
         status: 'Développeur Web',
         descr: "Passionné d'informatique, j'aime mettre ma passion au service des autres. J'adore aider des personnes à résoudre des problèmes et leur simplifier la vie !\n C'est pourquoi j'ai rejoint Trixys en tant que développeur web afin de mener des projets qui concrétiseront vos idées.",
         portfolio: 'https://www.sepios.fr',
+        image: 'img/flo.jpeg'
     },
     {
-        image: 'https://picsum.photos/900/1000',
         name: 'Benjamin PELAUDEIX',
         status: 'Développeur Web',
         descr: 'Attiré par le développement Web et à la recherche de nouveaux défis, j’ai décidé de rejoindre l’agence Trixys en septembre 2021 en tant que développeur web. Rigoureux, collectif et force de proposition, je serai en capacité de vous guider et répondre à vos besoins tout au long de vos projets.',
         portfolio: 'https://benjaminpelaudeix.fr/',
+        image: 'img/ben.jpg'
     },
     {
         image: 'https://picsum.photos/900/1000',
@@ -27,11 +27,11 @@ const tabMembers = [
         portfolio: 'https://www.remihr.fr/v1/',
     },
     {
-        image: 'https://picsum.photos/900/1000',
         name: 'Océane Guilloizeau',
         status: 'Web designeuse',
         descr: "Passionnée par le graphisme et le web design, je saurais créer des maquettes et des visuels adaptés à tous vos projets. A l'écoute, création et soucieuse du détail, je vous accompagnerai et vous conseillerai dans vos projets pour une identité visuelle de qualité.",
         portfolio: 'https://oceaneguilloizeau.alwaysdata.net/',
+        image: 'img/oceane.jpg'
     },
 ];
 
