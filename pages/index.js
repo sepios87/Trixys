@@ -36,7 +36,7 @@ export default function Home() {
         from: { opacity: 0, transform: 'translate(100%, -50%)' },
         enter: { opacity: 1, transform: 'translate(0, -50%)' },
         leave: { opacity: 0, transform: 'translate(-100%, -50%)' },
-        delay: 800,
+        delay: 750,
     });
 
     return (
