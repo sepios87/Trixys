@@ -1,7 +1,7 @@
 import Button from '../../button/Button';
 import classes from './Member.module.scss';
 
-const Member = ({image, name, status, descr}) => {
+const Member = ({image, name, status, descr, portfolio}) => {
     return <section className={classes.member}>
         <figure>
             <img alt="" className={classes.member__imageProfil} src={image}/>
@@ -9,7 +9,7 @@ const Member = ({image, name, status, descr}) => {
                 <h2>{name}</h2>
                 <h3>{status}</h3>
                 <p>{descr}</p>
-                <Button style={{marginLeft: '10%'}}>Voir son portfolio</Button>
+                <Button href={portfolio} style={{marginLeft: '10%'}}>Voir son portfolio</Button>
             </figcaption>
         </figure>
     </section>

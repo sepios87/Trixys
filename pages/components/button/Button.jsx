@@ -19,6 +19,8 @@ const Button = ({ href, children, whiteTheme, submitType, ...rest }) => {
             // onMouseEnter={() => music && isMounted && play()}
             className={`${classes.button} ${whiteTheme && classes.buttonWhite}`}
             href={href}
+            target="_blank"
+            rel="noreferrer"
         >
             {children}
         </a>
