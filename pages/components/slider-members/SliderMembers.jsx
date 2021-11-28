@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Member from './member/Member';
-import SwiperCore, { Pagination, Controller } from 'swiper';
+import SwiperCore, { Pagination, Navigation } from 'swiper';
 import classes from './SliderMember.module.scss';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
@@ -35,7 +35,7 @@ const tabMembers = [
     },
 ];
 
-SwiperCore.use([Pagination, Controller]);
+SwiperCore.use([Pagination, Navigation]);
 
 const SliderMembers = () => {
     return (
