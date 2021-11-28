@@ -21,7 +21,7 @@ const servicesList = [
     {
         name: 'UX / UI Design',
         description:
-            'Nous adoptons une démarche centrée utilisateur afin de lui garantir une expérience optimale, en rendant votre futur site web accessible et facile d’utilisation, de par la création d\'un design cohérent et de fonctionnalités intuitives',
+            "Nous adoptons une démarche centrée utilisateur afin de lui garantir une expérience optimale, en rendant votre futur site web accessible et facile d’utilisation, de par la création d'un design cohérent et de fonctionnalités intuitives",
     },
 ];
 

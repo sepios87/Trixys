@@ -8,10 +8,16 @@
     background: rgba(255, 255, 255, 0.95);
     margin: 0;
     position: relative;
-    transition: .15s;
+    transition: 0.15s;
+
+    &__chevron {
+        display: block;
+        margin: 10px auto;
+        transition: all 0.3s ease-in-out;
+    }
 
     &:hover {
-        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, .1);
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
         transform: scale(1.03);
     }
 
@@ -36,7 +42,7 @@
             top: 10px;
             background: var(--yellow);
             display: block;
-            content: "";
+            content: '';
             position: absolute;
         }
 
@@ -49,7 +55,7 @@
             right: 10px;
             background: grey;
             display: block;
-            content: "";
+            content: '';
             position: absolute;
         }
     }
@@ -60,14 +66,8 @@
         }
 
         p {
-            height : auto !important;
+            height: auto !important;
         }
-    }
-
-    &__chevron {
-        display: block;
-        margin: 10px auto;
-        transition: all 0.3s ease-in-out;
     }
 
     figcaption {
@@ -82,7 +82,7 @@
             font-size: 12px;
             line-height: 150%;
             font-family: 'Poppins', sans-serif;
-            height : 0;
+            height: 0;
             overflow: hidden;
             transition: all 0.3s ease-in-out;
         }
