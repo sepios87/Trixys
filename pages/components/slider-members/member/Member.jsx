@@ -9,7 +9,7 @@ const Member = ({image, name, status, descr, portfolio}) => {
                 <h2>{name}</h2>
                 <h3>{status}</h3>
                 <p>{descr}</p>
-                <Button href={portfolio} style={{marginLeft: '10%'}}>Voir son portfolio</Button>
+                <Button newPage={true} href={portfolio} style={{marginLeft: '10%'}}>Voir son portfolio</Button>
             </figcaption>
         </figure>
     </section>

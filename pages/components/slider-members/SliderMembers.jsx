@@ -40,7 +40,7 @@ SwiperCore.use([Pagination, Controller]);
 
 const SliderMembers = () => {
     return (
-        <section className={classes.members}>
+        <section className={classes.members} id="members">
             <div
                 className={`swiper-member-button-prev ${classes.swiperButtonPrev}`}
             >

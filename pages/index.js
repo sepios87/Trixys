@@ -28,11 +28,12 @@ export { MusicContext };
 export default function Home() {
     const [waveTransition, setWaveTransition] = useState(false);
     const [music, setMusic] = useState(null);
+    const [swiper, setSwiper] = useState(null);
     const [play] = useSound('/sounds/transition.mp3');
 
-    const {width} = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
-    const transitions = useTransition(music == null  ? [] : true, {
+    const transitions = useTransition(music == null ? [] : true, {
         from: { opacity: 0, transform: 'translate(100%, -50%)' },
         enter: { opacity: 1, transform: 'translate(0, -50%)' },
         leave: { opacity: 0, transform: 'translate(-100%, -50%)' },
@@ -49,19 +50,22 @@ export default function Home() {
             <Triangle num={5} classNameTriangle={classes.triangle8} />
             <Triangle num={6} classNameTriangle={classes.triangle6} />
 
-            {width > 780 && transitions(({ opacity, transform }) => (
-                <animated.div
-                    className="pagination"
-                    style={{
-                        opacity: opacity,
-                        transform: transform
-                    }}
-                />
-            ))}
+            {width > 780 &&
+                transitions(({ opacity, transform }) => (
+                    <animated.div
+                        className="pagination"
+                        style={{
+                            opacity: opacity,
+                            transform: transform,
+                        }}
+                    />
+                ))}
             <ConditionalWrapper
                 condition={width > 780}
                 wrapper={(children) => (
                     <Swiper
+                        loop={true}
+                        onSwiper={setSwiper}
                         direction={'vertical'}
                         slidesPerView={1}
                         mousewheel={true}
@@ -88,7 +92,7 @@ export default function Home() {
                     <Header />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Bio />
+                    <Bio onPageMembers={() => swiper.slideTo(4)} />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Services />
