@@ -10,16 +10,6 @@
         url('/fonts/poppins/Poppins-Regular.woff2') format('woff2');
 }
 
-@font-face {
-    font-family: 'icomoon';
-    src: url('/fonts/icomoon/icomoon.eot');
-    src: url('/fonts/icomoon/icomoon.eot?#iefix')
-            format('embedded-opentype'),
-        url('/fonts/icomoon/icomoon.woff') format('woff'),
-        url('/fonts/icomoon/icomoon.ttf') format('truetype'),
-        url('/fonts/icomoon/icomoon.svg#icomoon') format('svg');
-}
-
 :root {
     --primary: white;
     --secondary: #464652;
@@ -138,5 +128,57 @@ body {
         &--active {
             background-color: #f6c952;
         }
+    }
+}
+
+.croix {
+    position: absolute;
+    display: none;
+}
+
+.montagne {
+    position: absolute;
+    display: none;
+}
+
+.triangle__gris {
+    position: absolute;
+    height: 10rem;
+    top: 5vh;
+    left: -15vw;
+}
+
+.triangle__jaune {
+    position: absolute;
+    height: 20rem;
+    bottom: -15vh;
+    right: -10vw;
+} 
+
+@media screen and (min-width: 780px) {
+    .croix {
+        height: 15rem;
+        bottom: 2vh;
+        left: 5vw;
+        display: block;
+    }
+    
+    .montagne {
+        height: 1rem;
+        top: 15vh;
+        right: 22vw;
+        display: block;
+    }
+
+    .triangle__gris {
+        height: 10rem;
+        top: 5vh;
+        left: 20vw;
+    }
+
+    .triangle__jaune {
+        height: 10rem;
+        bottom: 5vh;
+        right: 15vw;
     }
 }

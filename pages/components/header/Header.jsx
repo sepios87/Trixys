@@ -21,9 +21,12 @@ const Header = ({ isWaiting }) => {
                 src="svg/rond.svg"
                 alt="rondFlottant"
             />
-            {/* Affiché sur mobile */}
             <Triangle num={7} classNameTriangle={classes.triangle2} />
             <Triangle num={3} classNameTriangle={classes.triangle5} />
+            <Triangle num={3} classNameTriangle={classes.triangle1} />
+            <Triangle num={1} classNameTriangle={classes.triangle3} />
+            <Triangle num={5} classNameTriangle={classes.triangle8} />
+            <Triangle num={6} classNameTriangle={classes.triangle6} />
 
             <div className={classes.header__titleDiv}>
                 <h1>

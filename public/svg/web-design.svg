@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="117" height="93" viewBox="0 0 117 93">
+  <g id="Groupe_92" data-name="Groupe 92" transform="translate(-308 -357)">
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(348 425)" fill="none" stroke="#fecf0d" stroke-width="2">
+      <path d="M0,0H48a0,0,0,0,1,0,0V8a0,0,0,0,1,0,0H8A8,8,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M1.6,1H46.4a.6.6,0,0,1,.6.6V6.4a.6.6,0,0,1-.6.6H6.4A5.4,5.4,0,0,1,1,1.6v0A.6.6,0,0,1,1.6,1Z" fill="none"/>
+    </g>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(350 393)" fill="none" stroke="#fecf0d" stroke-width="2">
+      <rect width="52" height="31" rx="5" stroke="none"/>
+      <rect x="1" y="1" width="50" height="29" rx="4" fill="none"/>
+    </g>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="21" height="33" rx="7" transform="translate(390 402)" fill="#fff"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="13.5" cy="13.5" r="13.5" transform="translate(398 423)" fill="#919191" opacity="0.17"/>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(390 404)" fill="none" stroke="#fecf0d" stroke-linecap="round" stroke-width="2">
+      <rect width="21" height="33" rx="7" stroke="none"/>
+      <rect x="1" y="1" width="19" height="31" rx="6" fill="none"/>
+    </g>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="1.5" cy="1.5" r="1.5" transform="translate(399 429)" fill="#fecf0d"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="40" cy="40" r="40" transform="translate(308 357)" fill="#fecf0d" opacity="0.1"/>
+  </g>
+</svg>

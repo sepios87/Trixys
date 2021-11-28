@@ -78,8 +78,18 @@
     width: 10rem;
 }
 
-.triangle6, .triangle8, .triangle9 {
+.triangle3, .triangle8, .triangle9 {
     display: none;
+}
+
+.triangle1 {
+    top: 20vh;
+    left: 5vw;
+}
+
+.triangle6 {
+    bottom: 30vh;
+    left: 10vw;
 }
 
 @media screen and (min-width: 780px) {
@@ -109,18 +119,19 @@
         &__rond {
             width: 8rem;
             bottom: 5vh;
-            right: 35vw;
+            left: 35vw;
         }
     }
 
     .triangle2 {
-        width: 18rem;
-        right: 3vw;
+        width: 15rem;
+        top: 0;
+        right: 10vw;
     }
 
     .triangle5 {
-        width: 10rem;
-        right: 25vw;
+        width: 8rem;
+        right: 35vw;
     }
 
     .triangle6 {
@@ -128,5 +139,17 @@
         bottom: 7vh;
         right: 8vw;
         width: 15rem;
+    }
+
+    .triangle3 {
+        width: 10rem;
+        bottom: 10vh;
+        left: 5vw;
+    }
+
+    .triangle1 {
+        width: 7rem;
+        top: 10vh;
+        left: 20vw;
     }
 }
