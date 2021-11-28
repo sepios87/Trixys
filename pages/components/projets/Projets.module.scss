@@ -1,3 +1,25 @@
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+
+    @media screen and (min-width: 780px) {
+        height: 100vh;
+    }
+
+    &__title {
+        font-family: Quick;
+        font-size: 30px;
+        margin: 10vh 0 5vh;
+
+        @media screen and (min-width: 780px) {
+            margin: 0 0 5vh;
+        }
+    }
+}
+
 .project {
     display: flex;
     position: relative;
@@ -5,8 +27,6 @@
     margin: 2vh auto;
 
     @media screen and (min-width: 780px) {
-        top: 50%;
-        transform: translateY(-50%);
         width: 60%;
     }
 
@@ -58,7 +78,7 @@
         padding: 1.5vh 3vh;
         bottom: 0;
         margin-bottom: -1px;
-        background-color: rgb(255, 255, 255);
+        background-color: var(--primary);
         pointer-events: none;
         width: 100%;
 
