@@ -1,12 +1,17 @@
-.title {
-  color: var(--secondary);
-}
-
 .contactForm {
   text-align: center;
   position: relative;
   width: 300px;
   color: var(--secondary);
+
+  &__title {
+    color: var(--secondary);
+    margin-bottom: 8vh;
+  }
+
+  &__input {
+    resize: none;
+  }
 
   &__input:not(input[type=submit]) {
     display: block;
@@ -53,12 +58,15 @@
   }
 
   &__modal {
+    margin-top: 4vh;
+    min-height: 28px;
+  }
+
+  &__response {
     background: rgba(green, .6);
     text-align: center;
     padding: .3rem 0;
     border-radius: 15px;
-    position: relative;
-    top: 60px;
     font-size: 8pt;
     color: white;
   }

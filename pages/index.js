@@ -64,7 +64,6 @@ export default function Home() {
                 condition={width > 780}
                 wrapper={(children) => (
                     <Swiper
-                        loop={true}
                         onSwiper={setSwiper}
                         direction={'vertical'}
                         slidesPerView={1}

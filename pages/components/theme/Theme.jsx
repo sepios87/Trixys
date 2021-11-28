@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 // css import
 import classes from './Theme.module.scss';
+import useSound from 'use-sound';
 
 // ui icons import
 import { BsBrightnessHigh } from 'react-icons/bs';
@@ -13,8 +14,13 @@ const Theme = ({ music, setMusic }) => {
     // light theme is default theme
     const [isDarkTheme, setIsDarkTheme] = useState(false);
     const [hidden, setHidden] = useState(false);
+    const [playHibou] = useSound('/sounds/hibou.mp3');
+    const [playCocorico] = useSound('/sounds/cocorico.mp3');
 
     useEffect(() => {
+        if (music) {
+            isDarkTheme ? playHibou() : playCocorico();
+        }
         document.documentElement.style.setProperty(
             '--primary',
             isDarkTheme ? '#464652' : 'white'
