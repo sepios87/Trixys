@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import classes from './Projets.module.scss';
 import Triangle from '../triangle/Triangle';
+import Button from '../button/Button';
+import useWindowDimensions from './../../../hooks/useWindowDimensions';
 
-const Projets = () => {
+const Projets = ({ onEstimate }) => {
     const [open, setOpen] = useState(null);
     let ref = useRef(null);
 
@@ -11,6 +13,8 @@ const Projets = () => {
             open != null && setOpen(null);
         }
     };
+
+    const { width } = useWindowDimensions();
 
     useEffect(() => {
         document.addEventListener('click', handleClickOutside, true);
@@ -27,7 +31,7 @@ const Projets = () => {
             <Triangle num={3} classNameTriangle="triangle__gris"/>
             <Triangle num={6} classNameTriangle="triangle__jaune"/>
             {/* end background elements */}
-            <h2 className={classes.projectContainer__title}>Nos projets</h2>
+            <h2 className="title">Nos projets</h2>
             <div className={classes.project} ref={ref}>
                 <img
                     onMouseEnter={() => setOpen(1)}
@@ -72,6 +76,7 @@ const Projets = () => {
                     </p>
                 </div>
             </div>
+            <Button {... width <= 780 && {href: '#estimate'}} onClick={() => width > 780 && onEstimate()}>Estimez votre projet</Button>
         </section>
     );
 };

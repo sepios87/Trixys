@@ -96,7 +96,7 @@ export default function Home() {
                     <SliderMembers />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Projets />
+                    <Projets onEstimate={() => swiper.slideTo(5)} />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Estimate />

@@ -2,7 +2,7 @@
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.05);
     display: block;
     width: auto;
-    padding: 15px;
+    padding: 2rem 20px;
     font-weight: 100;
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.95);
@@ -75,16 +75,19 @@
             font-family: 'Quick', sans-serif;
             text-align: center;
             text-transform: uppercase;
-            font-size: 14px;
+            font-size: 16px;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
         }
 
         p {
-            font-size: 12px;
+            font-size: 14px;
             line-height: 150%;
             font-family: 'Poppins', sans-serif;
             height: 0;
             overflow: hidden;
             transition: all 0.3s ease-in-out;
+            text-align: justify;
         }
     }
 
