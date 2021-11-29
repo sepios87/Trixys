@@ -1,7 +1,7 @@
 .member {
     display: flex;
     color: var(--secondary);
-    min-height: 50vh;
+    height: 40rem;
 
     &__imageProfil {
         width: 10rem;
@@ -12,7 +12,7 @@
     }
 
     figure {
-        margin: 0 4%;
+        margin: 0 2%;
         display: flex;
         justify-content: center;
         flex-direction: column;

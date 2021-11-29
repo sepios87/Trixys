@@ -1,26 +1,44 @@
 .theme {
-    background: white;
     position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    left: 45%;
+    top: 0px;
+    transform: translateY(-30%) rotate(90deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px 7px;
     z-index: 100;
 
+    @media screen and (min-width: 780px) {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--primary);
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    }
+
     &__icon {
         cursor: pointer;
         padding: 5px 0;
-        height: 30px;
         display: block;
         transition: 0.2s ease-in;
+        transform: rotate(270deg);
+        font-size: 35px;
+        color: var(--secondary);
+
+        @media screen and (min-width: 780px) {
+            font-size: 15px;
+            height: 30px;
+            transform: rotate(0);
+            color: var(--secondary);
+        }
     }
 
     &__moon {
-        transform: rotate(150deg);
+        transform: rotate(80deg);
+        @media screen and (min-width: 780px) {
+            transform: rotate(150deg);
+        }
     }
 }
 
@@ -30,6 +48,14 @@
     font-size: 0;
     padding: 0;
     transform: rotate(90deg);
+}
+
+.chevron {
+    display: none;
+
+    @media screen and (min-width: 780px) {
+        display: block;
+    }
 }
 
 .chevronRight {

@@ -5,8 +5,10 @@
     cursor: pointer;
     flex-wrap: wrap;
     flex-direction: column;
+    user-select: none;
 
     &__itemQuestion {
+        user-select: none;
         margin: 2vh 5%;
         box-shadow: -4px 4px 22px -4px rgba(0, 0, 0, 0.5);
         transition: .15s;

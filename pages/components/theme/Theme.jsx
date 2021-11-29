@@ -69,7 +69,7 @@ const Theme = ({ music, setMusic }) => {
                 />
             )}
             <BsChevronLeft
-                className={`${classes.theme__icon} ${
+                className={`${classes.chevron} ${classes.theme__icon} ${
                     hidden && classes.chevronRight
                 }`}
                 onClick={() => setHidden(!hidden)}
