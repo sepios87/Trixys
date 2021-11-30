@@ -26,20 +26,6 @@
         }
     }
 
-    h2 {
-        font-size: 30px;
-        font-weight: 100;
-        text-align: center;
-        letter-spacing: 3px;
-        font-family: 'Quick', sans-serif;
-        margin: 8vh 0 0;
-        color: var(--secondary);
-
-        @media screen and (min-width: 780px) {
-            margin: 0 0 10vh;
-        }
-    }
-
     &__servicesContainer {
         display: flex;
         flex-direction: column;

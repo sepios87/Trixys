@@ -43,7 +43,7 @@ const Services = () => {
             <Triangle num={3} classNameTriangle="triangle__gris"/>
             <Triangle num={6} classNameTriangle="triangle__jaune"/>
             {/* end background elements */}
-            <h2>NOS SERVICES</h2>
+            <h2 className="title">NOS SERVICES</h2>
             <div className={classes.services__servicesContainer}>
                 {servicesList.map((services, index) => (
                     <ServiceItem

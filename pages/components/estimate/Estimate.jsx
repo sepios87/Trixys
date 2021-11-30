@@ -120,7 +120,7 @@ const Estimate = () => {
     };
 
     return (
-        <section className={classes.estimate}>
+        <section className={classes.estimate} id="estimate">
             {/* background elements */}
             <img src="svg/croix.svg" alt="croix" className="croix" />
             <img src="svg/montagne.svg" alt="montagnes" className="montagne" />
@@ -130,7 +130,7 @@ const Estimate = () => {
             <span className={classes.estimate__questionNum}>
                 {currentQuestion + 1}
             </span>
-            <h2>Evaluez le montant de votre site web</h2>
+            <h2 className="title">Evaluez le montant de votre site web</h2>
             {formIsFinished() ? (
                 <div>
                     <p style={{ marginBottom: 30 }}>

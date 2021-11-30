@@ -8,7 +8,7 @@ const Informations = () => {
 
     return <section className={classes.informations}>
         <h2>Informations</h2>
-        <ul>
+        {/* <ul>
             <li>
                 <AiOutlineMail className={classes.informations__icon}/>
                 <a href="mailto:contact.trixys@gmail.com">contact.trixys@gmail.com</a>
@@ -25,7 +25,27 @@ const Informations = () => {
                 <MdOutlineWatchLater className={classes.informations__icon}/>
                 <a href="#">9h-12h 13h30-18h</a>
             </li>
-        </ul>
+        </ul> */}
+        <div className={classes.contacts}>
+            <figure className={classes.contact}>
+                <img src="/svg/adresse-picto.svg" alt="Adresse" className={classes.contact__svg} />
+                <figcaption>
+                    <a href="#" className={classes.contact__link}>44 Avenue Albert Einstein,<br/> 17000 LA ROCHELLE</a>
+                </figcaption>
+            </figure>
+            <figure className={classes.contact}>
+                <img src="/svg/tel-picto.svg" alt="Tel" className={classes.contact__svg} />
+                <figcaption>
+                    <a href="#" className={classes.contact__link}>06 06 06 06 06</a>
+                </figcaption>
+            </figure>
+            <figure className={classes.contact}>
+                <img src="/svg/mail-picto.svg" alt="Mail" className={classes.contact__svg} />
+                <figcaption>
+                    <a href="#" className={classes.contact__link}>contact.trixys@gmail.com</a>
+                </figcaption>
+            </figure>
+        </div>
     </section>
 }
 

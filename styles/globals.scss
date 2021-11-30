@@ -142,6 +142,7 @@ body {
 }
 
 .triangle__gris {
+    display: none;
     position: absolute;
     height: 10rem;
     top: 5vh;
@@ -149,11 +150,22 @@ body {
 }
 
 .triangle__jaune {
+    display: none;
     position: absolute;
     height: 20rem;
     bottom: -15vh;
     right: -10vw;
 } 
+
+.title {
+    font-family: Quick;
+    font-size: 30px;
+    margin: 10vh 0 5vh;
+
+    @media screen and (min-width: 780px) {
+        margin: 0 0 5vh;
+    }
+}
 
 @media screen and (min-width: 780px) {
     .croix {
