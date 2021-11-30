@@ -60,16 +60,6 @@
         }
     }
 
-    &__isopen {
-        .services__chevron {
-            transform: rotate(180deg) !important;
-        }
-
-        p {
-            height: auto !important;
-        }
-    }
-
     figcaption {
         h3 {
             font-family: 'Quick', sans-serif;
@@ -84,7 +74,17 @@
             font-family: 'Poppins', sans-serif;
             height: 0;
             overflow: hidden;
-            transition: all 0.3s ease-in-out;
+            transition: height 0.3s ease-in-out;
+        }
+    }
+
+    &__isopen {
+        .services__chevron {
+            transform: rotate(180deg) !important;
+        }
+
+        p {
+            height: 100% !important;
         }
     }
 
