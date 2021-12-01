@@ -88,7 +88,7 @@ export default function Home() {
                     <Header />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Bio onPageMembers={() => swiper.slideTo(4)} />
+                    <Bio onPageMembers={() => swiper.slideTo(3)} />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Services />
@@ -97,7 +97,7 @@ export default function Home() {
                     <SliderMembers />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Projets onEstimate={() => swiper.slideTo(5)} />
+                    <Projets onEstimate={() => swiper.slideTo(6)} />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Valeurs />
