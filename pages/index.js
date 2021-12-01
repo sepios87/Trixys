@@ -18,6 +18,7 @@ import useWindowDimensions from '../hooks/useWindowDimensions';
 import Triangle from './components/triangle/Triangle';
 import classes from '../styles/Home.module.scss';
 import Projets from './components/projets/Projets';
+import Valeurs from "./components/valeurs/Valeurs";
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -99,10 +100,15 @@ export default function Home() {
                     <Projets onEstimate={() => swiper.slideTo(5)} />
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Valeurs />
+                </SwiperSlide>
+                <SwiperSlide>
                     <Estimate />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Contact />
+                    <Contact
+                        width={width}
+                    />
                 </SwiperSlide>
             </ConditionalWrapper>
         </MusicContext.Provider>

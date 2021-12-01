@@ -4,7 +4,11 @@ import classes from './Contact.module.scss';
 import Informations from './informations/Informations';
 import Triangle from '../triangle/Triangle';
 
-const Contact = () => {
+const Contact = (props) => {
+    const {
+        width
+    } = props
+
     return (
         <section className={classes.contact}>
             {/* background elements */}
@@ -16,7 +20,9 @@ const Contact = () => {
                 <ContactForm />
             </div>
             <div className={classes.contact__item}>
-                <Informations />
+                <Informations
+                    width={width}
+                />
             </div>
         </section>
     );

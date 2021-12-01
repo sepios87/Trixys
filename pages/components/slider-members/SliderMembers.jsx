@@ -25,7 +25,7 @@ const tabMembers = [
         name: 'Rémi HAY--RIMBAULT',
         status: 'Développeur Web',
         descr: 'Féru de technologie et ayant découvert le développement récemment je suis le plus novice des développeurs de l’agence Trixys.\n\n Aimant la coopération et la nouveauté, je ferai au mieux pour pouvoir compléter mes collègues et aider à la réussite de vos projets.',
-        portfolio: 'https://www.remihr.fr/v1/',
+        portfolio: 'https://www.remihr.fr/',
     },
     {
         name: 'Océane Guilloizeau',

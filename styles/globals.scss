@@ -1,3 +1,5 @@
+@import 'colors';
+
 @font-face {
     font-family: 'Quick';
     src: url('/fonts/quick/Quick.woff') format('woff'),
@@ -8,12 +10,6 @@
     font-family: 'Poppins';
     src: url('/fonts/poppins/Poppins-Regular.woff') format('woff'),
         url('/fonts/poppins/Poppins-Regular.woff2') format('woff2');
-}
-
-:root {
-    --primary: white;
-    --secondary: #464652;
-    --yellow: #FED053;
 }
 
 html {
@@ -109,10 +105,14 @@ body {
     }
 
     &__number:nth-child(6):before {
-        content: 'Evaluez votre projet';
+        content: 'Nos valeurs';
     }
 
     &__number:nth-child(7):before {
+        content: 'Evaluez votre projet';
+    }
+
+    &__number:nth-child(8):before {
         content: 'Contact';
     }
 
@@ -155,7 +155,7 @@ body {
     height: 20rem;
     bottom: -15vh;
     right: -10vw;
-} 
+}
 
 .title {
     font-family: Quick;
@@ -174,7 +174,7 @@ body {
         left: 5vw;
         display: block;
     }
-    
+
     .montagne {
         height: 1rem;
         top: 15vh;
