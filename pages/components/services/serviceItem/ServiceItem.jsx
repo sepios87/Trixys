@@ -11,7 +11,7 @@ const ServiceItem = (props) => {
 
     return (
         <figure className={classes.services} onClick={openP}>
-            <ServiceImage src={props.src} alt={props.alt} />
+            <img src={props.src} alt={props.alt}/>
             <figcaption className={`${isOpen ? classes.services__isopen : ""}`}>
                 <h3>{props.name}</h3>
                 <BsChevronDown className={classes.services__chevron}/>
