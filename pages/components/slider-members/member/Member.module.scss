@@ -92,7 +92,10 @@
 
         p {
             white-space: pre-line; 
-            padding: 0 10%;
+            padding: 2vh 4vw;
+            @media screen and (min-width: 780px) {
+                padding: 2vh 0 2vh 3vw;
+            }
         }
     }
 }

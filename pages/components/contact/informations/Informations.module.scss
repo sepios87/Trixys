@@ -5,12 +5,7 @@
   box-sizing: border-box;
   margin: 8vh auto;
 
-  &__icon {
-    margin-right: 25px;
-  }
-
   .contacts {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +13,9 @@
 
     @media screen and (min-width: 700px) {
       justify-content: left;
+      justify-content: center;
+      row-gap: 4vh;
+      margin-right: 4vw;
     }
 
     .contact {
@@ -28,7 +26,7 @@
 
         @media screen and (min-width: 700px) {
           margin-bottom: 1rem;
-          height: 10rem;
+          height: 8rem;
         }
       }
 
@@ -45,7 +43,6 @@
 
   @media screen and (min-width: 700px) {
     color: var(--secondary);
-    padding: 20px 0 100px 55px;
     margin: auto;
   }
 
@@ -56,35 +53,6 @@
 
     @media screen and (min-width: 700px) {
       text-align: left;
-    }
-  }
-
-  ul {
-    list-style: none;
-    width: 80%;
-    margin: auto;
-
-    @media screen and (min-width: 700px) {
-      margin: 0;
-      width: auto;
-    }
-
-    li {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 30px 0;
-      height: 50px;
-
-      img {
-        width: 50px;
-      }
-
-      a {
-        font-size: 10px;
-        font-weight: 100;
-        margin-left: 25px;
-      }
     }
   }
 }
