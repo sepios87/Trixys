@@ -5,32 +5,32 @@ import Triangle from '../triangle/Triangle';
 
 const valeursList = [
     {
-        name: 'Créativité',
+        name: 'Intégrité',
         src: 'svg/creativite.svg',
-        alt: 'valeur',
+        alt: 'integrite',
         description:
-            "Du logotype à la charte graphique, nous sommes en capacité d'imaginer l’environnement graphique en cohérence avec l'esprit de votre entreprise en y apportant notre touche de créativité.",
+            "Pour faire en sorte que votre projet atteigne des sommets, nous saurons mettre à l'épreuve notre intégrité et notre esprit d’équipe afin qu’il dépasse vos espérances.",
     },
     {
         name: "Esprit d'équipe",
         src: 'svg/esprit-equipe.svg',
         alt: 'equipe',
         description:
-            "Du logotype à la charte graphique, nous sommes en capacité d'imaginer l’environnement graphique en cohérence avec l'esprit de votre entreprise en y apportant notre touche de créativité.",
+            "La cohésion de notre équipe ainsi que nos singularités complémentaires nous permettent de nous lancer dans des projets toujours plus ambitieux, plus conséquents et de les mener à bien.",
     },
     {
         name: 'Proximité',
         src: 'svg/proximite.svg',
         alt: 'proximite',
         description:
-            "Du logotype à la charte graphique, nous sommes en capacité d'imaginer l’environnement graphique en cohérence avec l'esprit de votre entreprise en y apportant notre touche de créativité.",
+            "En privilégiant le travail local, nous avons la possibilité de réaliser davantage de réunions en face à face afin de mieux cerner les besoins du client ainsi que les enjeux du projet.",
     },
     {
         name: 'Réactivité',
         src: 'svg/reactivite.svg',
         alt: 'reactivite',
         description:
-            "Du logotype à la charte graphique, nous sommes en capacité d'imaginer l’environnement graphique en cohérence avec l'esprit de votre entreprise en y apportant notre touche de créativité.",
+            "Travailler avec Trixys, c’est le choix d’une jeune agence réactive.À travers notre capacité d’adaptation basée sur des méthodes agiles, nous arrivons à répondre rapidement aux sollicitations de nos collaborateurs.",
     },
 ];
 
