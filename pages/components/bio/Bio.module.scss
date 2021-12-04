@@ -27,7 +27,7 @@
         align-items: center;
         padding: 0 10%;
         justify-content: center;
-        height: 72vh;
+        height: 100vh;
         color: var(--secondary);
 
         @media screen and (min-width: 780px) {
@@ -41,10 +41,5 @@
             display: block;
             margin-top: 1rem;
         }
-    }
-
-    &__title {
-        font-family: Quick;
-        font-size: 30px;
     }
 }

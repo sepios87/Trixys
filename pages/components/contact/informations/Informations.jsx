@@ -10,7 +10,6 @@ const Informations = () => {
                     rel="noreferrer"
                     target="_blank"
                     href="https://goo.gl/maps/zTmeeWjuJdoStEiA7"
-                    className={classes.contact__link}
                 >
                     <figure className={classes.contact}>
                         <img
@@ -19,7 +18,7 @@ const Informations = () => {
                             className={classes.contact__svg}
                         />
                         <figcaption>
-                            <p>
+                            <p className={classes.contact__content}>
                                 44 Avenue Albert Einstein,
                                 <br /> 17000 LA ROCHELLE
                             </p>
@@ -34,7 +33,7 @@ const Informations = () => {
                             className={classes.contact__svg}
                         />
                         <figcaption>
-                            <p>06 06 06 06 06</p>
+                            <p className={classes.contact__content}>06 06 06 06 06</p>
                         </figcaption>
                     </figure>
                 </a>
@@ -46,7 +45,7 @@ const Informations = () => {
                             className={classes.contact__svg}
                         />
                         <figcaption>
-                            <p>contact.trixys@gmail.com</p>
+                            <p className={classes.contact__content}>contact.trixys@gmail.com</p>
                         </figcaption>
                     </figure>
                 </a>

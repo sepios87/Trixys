@@ -14,13 +14,11 @@ const Member = ({ image, name, status, descr, portfolio }) => {
                     <h2>{name}</h2>
                     <h3>{status}</h3>
                     <p>{descr}</p>
-                    <Button
-                        newPage={true}
-                        href={portfolio}
-                        style={{ marginLeft: '10%' }}
-                    >
-                        Voir son portfolio
-                    </Button>
+                    <div className={classes.member__button}>
+                        <Button newPage={true} href={portfolio}>
+                            Voir son portfolio
+                        </Button>
+                    </div>
                 </figcaption>
             </figure>
         </section>

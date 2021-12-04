@@ -4,22 +4,40 @@
   color: var(--secondary);
   box-sizing: border-box;
   margin: 8vh auto;
+  
+  a {
+    width: 50%;
+
+    @media screen and (min-width: 700px) {
+      width: auto;
+    }
+  }
 
   .contacts {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4vh;
 
     @media screen and (min-width: 700px) {
       justify-content: left;
-      justify-content: center;
       row-gap: 4vh;
       margin-right: 4vw;
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
 
     .contact {
       text-align: center;
+      margin: 0;
+
+      &__content {
+        font-size: 10px;
+  
+        @media screen and (min-width: 700px) {
+          font-size: 12px;
+        }
+      }  
 
       &__svg {
         height: 5rem;
@@ -29,14 +47,6 @@
           height: 8rem;
         }
       }
-
-      &__link {
-        font-size: 10px;
-
-        @media screen and (min-width: 700px) {
-          font-size: 15px;
-        }
-      }
     }
 
   }
@@ -44,11 +54,11 @@
   @media screen and (min-width: 700px) {
     color: var(--secondary);
     margin: auto;
+    padding-right: 4vw;
   }
 
   h2 {
     padding-bottom: 20px;
-    padding-left: 40px;
     text-align: center;
 
     @media screen and (min-width: 700px) {

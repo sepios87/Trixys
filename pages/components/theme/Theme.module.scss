@@ -8,13 +8,14 @@
     justify-content: center;
     padding: 10px 7px;
     z-index: 100;
+    background: var(--primary);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
 
     @media screen and (min-width: 780px) {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        background: var(--primary);
-        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
     }
 
     &__icon {

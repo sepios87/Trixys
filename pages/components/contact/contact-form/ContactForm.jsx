@@ -58,7 +58,9 @@ const ContactForm = () => {
                     En envoyant ce message, vous nous autorisez à vous
                     recontacter avec le mail fourni dans ce formulaire.
                 </p>
-                <Button submitType={true}>Envoyer le message</Button>
+                <div className={classes.contactForm__button}>
+                    <Button submitType={true}>Envoyer le message</Button>
+                </div>
             </form>
             <div className={classes.contactForm__modal}>
                 {messageSucces != null && (

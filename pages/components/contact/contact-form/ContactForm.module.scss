@@ -6,6 +6,16 @@
   width: 300px;
   color: var(--secondary);
 
+  &__button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    @media screen and (min-width: 780px) {
+      display: block;
+    }
+  }
+
   &__title {
     color: var(--secondary);
     margin-bottom: 8vh;
@@ -13,6 +23,8 @@
 
   &__input {
     resize: none;
+    font-family: Poppins;
+    font-size: 12px;
   }
 
   &__input:not(input[type=submit]) {

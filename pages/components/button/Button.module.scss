@@ -1,13 +1,13 @@
 @import '../../../styles/colors';
 
 .button {
+    display: block;
     background: transparent;
     border: 2px solid var(--secondary);
     padding: 0.4rem 1.2rem;
     width: fit-content;
     font-size: 10pt;
     border-radius: 30px;
-    text-align: right;
     margin-top: 2rem;
     color: var(--secondary);
     transition: 0.2s;

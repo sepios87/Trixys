@@ -16,7 +16,7 @@ const Bio = ({ onPageMembers }) => {
             {/* end background elements */}
             <p className={classes.bio__backgroundLetter}>4</p>
             <section className={classes.bio__bioContainer}>
-                <h2 className={classes.bio__title}>L{"'"}agence</h2>
+                <h2 className='title'>L{"'"}agence</h2>
                 <h3>Qui sommes-nous ?</h3>
                 <p className={classes.bio__contentText}>
                     Trixys est une agence digitale basée à La Rochelle.{' '}

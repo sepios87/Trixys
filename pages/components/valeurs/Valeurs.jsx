@@ -6,7 +6,7 @@ import Triangle from '../triangle/Triangle';
 const valeursList = [
     {
         name: 'Créativité',
-        src: 'svg/valeur.svg',
+        src: 'svg/creativite.svg',
         alt: 'valeur',
         description:
             "Du logotype à la charte graphique, nous sommes en capacité d'imaginer l’environnement graphique en cohérence avec l'esprit de votre entreprise en y apportant notre touche de créativité.",
@@ -43,7 +43,7 @@ const Valeurs = () => {
             <Triangle num={3} classNameTriangle="triangle__gris" />
             <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}
-            <h2>NOS VALEURS</h2>
+            <h2 className='title'>Nos valeurs</h2>
             <div className={classes.valeurs__valeursContainer}>
                 {valeursList.map((valeur, index) => (
                     <ServiceItem

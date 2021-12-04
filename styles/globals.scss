@@ -140,6 +140,8 @@ body {
     font-family: Quick;
     font-size: 30px;
     margin: 10vh 0 5vh;
+    font-weight: initial;
+    color: var(--secondary);
 
     @media screen and (min-width: 780px) {
         margin: 0 0 5vh;
