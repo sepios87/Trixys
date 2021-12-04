@@ -26,6 +26,9 @@ const Bio = ({ onPageMembers }) => {
                         accompagnement dans l&apos;expérience utilisateur, le
                         design graphique mais aussi le développement web.
                     </span>
+                    Notre agence met au centre de sa méthode le travail d’équipe.
+                    En plus d’une bonne ambiance, nous tissons des liens forts sur la base
+                    d’une confiance avec nos collaborateurs et construisons ensemble leur projet.
                 </p>
                 <Button
                     {...(width <= 780 && { href: '#members' })}
