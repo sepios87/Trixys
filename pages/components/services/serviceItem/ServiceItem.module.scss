@@ -1,3 +1,5 @@
+@import '../../../../styles/colors';
+
 .services {
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.05);
     display: block;
@@ -24,6 +26,10 @@
         margin: 10px auto;
         transition: all 0.3s ease-in-out;
 
+        @media screen and (min-width: 780px) {
+            display: none;
+        }
+
         &_open {
             transform: rotate(180deg);
         }
@@ -32,10 +38,14 @@
     &__content {
         font-size: 14px;
         line-height: 150%;
-        font-family: 'Poppins', sans-serif;        
         max-height: 0;
         transition: max-height .5s;
         overflow: hidden; 
+
+        @media screen and (min-width: 780px) {
+            max-height: none;
+            overflow: auto;
+        }
 
         &_open {
             max-height: 500px;
@@ -66,7 +76,7 @@
             z-index: -1;
             left: 10px;
             top: 10px;
-            background: var(--yellow);
+            background: $yellow;
             display: block;
             content: '';
             position: absolute;
@@ -88,14 +98,6 @@
 
     @media screen and (min-width: 780px) {
         width: 45%;
-
-        &__chevron {
-            display: none;
-        }
-
-        &__content {
-            height: auto;
-        }
     }
 
     @media screen and (min-width: 960px) {

@@ -1,3 +1,5 @@
+@import '../../../styles/colors';
+
 .members {
     display: flex;
     align-items: center;
@@ -29,7 +31,7 @@
     margin: 0 10px;
 
     &:hover {
-        color: var(--yellow);
+        color: $yellow;
     }
 }
 

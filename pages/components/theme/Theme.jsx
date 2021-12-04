@@ -17,24 +17,21 @@ const Theme = ({ music, setMusic }) => {
     const [playHibou] = useSound('/sounds/hibou.mp3');
     const [playCocorico] = useSound('/sounds/cocorico.mp3');
 
-    useEffect(() => {
+    const changeTheme = () => {
+        const variables = window.getComputedStyle(document.documentElement);
+        const primary = variables.getPropertyValue('--primary');
+        const secondary = variables.getPropertyValue('--secondary');
         if (music) {
-            isDarkTheme ? playHibou() : playCocorico();
+            !isDarkTheme ? playHibou() : playCocorico();
         }
-        document.documentElement.style.setProperty(
-            '--primary',
-            isDarkTheme ? '#464652' : 'white'
-        );
-        document
-            .querySelector(':root')
-            .style.setProperty(
-                '--secondary',
-                isDarkTheme ? 'white' : '#464652'
-            );
-    }, [isDarkTheme]);
+        const rootStyle = document.documentElement.style;
+        rootStyle.setProperty('--primary', secondary);
+        rootStyle.setProperty('--secondary', primary);
+    }
 
     const onClickDarkTheme = () => {
         // inverser isDarkTheme
+        changeTheme();
         setIsDarkTheme(!isDarkTheme);
     };
 
@@ -47,9 +44,9 @@ const Theme = ({ music, setMusic }) => {
                 onClick={onClickDarkTheme}
             />
             <MdOutlineBrightness2
-                className={`${isDarkTheme ? classes.theme__moon : classes.hidden} ${
-                    hidden && classes.hidden
-                } ${classes.theme__icon}
+                className={`${
+                    isDarkTheme ? classes.theme__moon : classes.hidden
+                } ${hidden && classes.hidden} ${classes.theme__icon}
                     `}
                 onClick={onClickDarkTheme}
             />

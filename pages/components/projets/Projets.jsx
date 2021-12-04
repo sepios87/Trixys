@@ -28,8 +28,8 @@ const Projets = ({ onEstimate }) => {
             {/* background elements */}
             <img src="svg/croix.svg" alt="croix" className="croix" />
             <img src="svg/montagne.svg" alt="montagnes" className="montagne" />
-            <Triangle num={3} classNameTriangle="triangle__gris"/>
-            <Triangle num={6} classNameTriangle="triangle__jaune"/>
+            <Triangle num={3} classNameTriangle="triangle__gris" />
+            <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}
             <h2 className="title">Nos projets</h2>
             <div className={classes.project} ref={ref}>
@@ -76,7 +76,12 @@ const Projets = ({ onEstimate }) => {
                     </p>
                 </div>
             </div>
-            <Button {... width <= 780 && {href: '#estimate'}} onClick={() => width > 780 && onEstimate()}>Estimez votre projet</Button>
+            <Button
+                {...(width <= 780 && { href: '#estimate' })}
+                onClick={() => width > 780 && onEstimate()}
+            >
+                Estimez votre projet
+            </Button>
         </section>
     );
 };

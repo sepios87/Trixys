@@ -5,7 +5,6 @@ import Button from '../button/Button';
 import { useTransition, animated } from 'react-spring';
 
 const MusicController = ({ music, setMusic }) => {
-
     useEffect(() => {
         if (music == null) {
             document.body.style.overflow = 'hidden';
@@ -18,7 +17,7 @@ const MusicController = ({ music, setMusic }) => {
         from: { opacity: 1 },
         enter: { opacity: 1 },
         leave: { opacity: 0 },
-        config: {duration: 600}
+        config: { duration: 600 },
     });
 
     return transitions(({ opacity }) => (

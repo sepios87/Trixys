@@ -15,10 +15,9 @@ import Services from './components/services/Services';
 import ConditionalWrapper from '../components/conditionalwrapper/ConditionalWrapper';
 import { useTransition, animated } from 'react-spring';
 import useWindowDimensions from '../hooks/useWindowDimensions';
-import Triangle from './components/triangle/Triangle';
-import classes from '../styles/Home.module.scss';
 import Projets from './components/projets/Projets';
-import Valeurs from "./components/valeurs/Valeurs";
+import Valeurs from './components/valeurs/Valeurs';
+import Head from 'next/head';
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -43,6 +42,36 @@ export default function Home() {
 
     return (
         <MusicContext.Provider value={music}>
+            <Head>
+                <title>Trixys</title>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+                <meta name="theme-color" content="#000000" />
+                <meta name="Content-Type" content="UTF-8" />
+                <meta name="Content-Language" content="fr" />
+                <meta
+                    name="Description"
+                    content="Trixys - Agence Web à La Rochelle, nous sommes à votre disposition pour la créations de vos projets web"
+                />
+                <meta
+                    name="Keywords"
+                    content="agence, web, la-rochelle, la rochelle,  ux, design, développement web"
+                />
+                <meta name="Copyright" content="Trixys" />
+                <meta name="Author" content="Rémi Benjamin Océane Florian" />
+                <meta
+                    name="Identifier-Url"
+                    content="https://agence-trixys.lpmiaw.univ-lr.fr/"
+                />
+                <meta name="Reply-To" content="contact.trixys@gmail.com" />
+                <meta name="Revisit-After" content="15 days" />
+                <meta name="Rating" content="general" />
+                <meta name="Distribution" content="global" />
+                <meta name="Geography" content="La Rochelle, 17000" />
+                <meta name="Robots" content="all" />
+            </Head>
             <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
@@ -106,9 +135,7 @@ export default function Home() {
                     <Estimate />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Contact
-                        width={width}
-                    />
+                    <Contact width={width} />
                 </SwiperSlide>
             </ConditionalWrapper>
         </MusicContext.Provider>

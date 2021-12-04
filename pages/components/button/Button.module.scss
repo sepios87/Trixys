@@ -1,3 +1,5 @@
+@import '../../../styles/colors';
+
 .button {
     background: transparent;
     border: 2px solid var(--secondary);
@@ -17,8 +19,8 @@
     }
 
     &:hover {
-        border-color: var(--yellow);
-        background-color: var(--yellow);
+        border-color: $yellow;
+        background-color: $yellow;
         box-shadow: -2px 2px 12px -2px rgba(0, 0, 0, .1);
         color: var(--primary);
     }

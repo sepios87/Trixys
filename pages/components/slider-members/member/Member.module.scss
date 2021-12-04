@@ -1,3 +1,5 @@
+@import '../../../../styles/colors';
+
 .member {
     display: flex;
     color: var(--secondary);
@@ -29,7 +31,7 @@
         &::after {
             width: 10rem;
             height: 10rem;
-            background-color: var(--yellow);
+            background-color: $yellow;
             opacity: .7;
             transform: translate(-30%, -130%);
 
@@ -69,7 +71,7 @@
         h2::after,
         h3::after {
             content: '';
-            background-color: var(--yellow);
+            background-color: $yellow;
             position: relative;
             display: block;
         }
