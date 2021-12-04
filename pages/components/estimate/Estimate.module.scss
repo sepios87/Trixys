@@ -57,6 +57,7 @@
     &__titleQuestion {
         font-size: 1rem;
         min-height: 5rem;
+        user-select: none;
 
         @media screen and (min-width: 780px) {
             min-height: 3rem;

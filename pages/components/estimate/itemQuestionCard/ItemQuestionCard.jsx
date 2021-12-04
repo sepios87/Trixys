@@ -1,4 +1,7 @@
+import { useContext } from 'react';
 import classes from './ItemQuestionCard.module.scss';
+import { MusicContext } from '../../../index';
+import useSound from 'use-sound';
 
 const ItemQuestionCard = ({
     onFinishedQuestion,
@@ -9,9 +12,13 @@ const ItemQuestionCard = ({
     name2,
     point2,
 }) => {
+    const music = useContext(MusicContext);
+    const [play] = useSound('/sounds/hover.mp3');
+
     const Card = ({ image, name, point }) => {
         return (
             <figure
+                onMouseEnter={() => music && play()}
                 className={classes.containerQuestion__itemQuestion}
                 onClick={() => onFinishedQuestion(point)}
             >

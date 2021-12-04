@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
+import { useState, useContext } from 'react';
 import classes from './ServiceItem.module.scss';
 import { BsChevronDown } from 'react-icons/bs';
+import { MusicContext } from '../../../index';
+import useSound from 'use-sound';
 
 const ServiceItem = (props) => {
     const [isOpen, setIsOpen] = useState(false);
+    const music = useContext(MusicContext);
+    const [play] = useSound('/sounds/hover.mp3');
 
     return (
-        <figure className={classes.services} onClick={() => setIsOpen(!isOpen)}>
+        <figure
+            onMouseEnter={() => music && play()}
+            className={classes.services}
+            onClick={() => setIsOpen(!isOpen)}
+        >
             <img
                 className={classes.services__img}
                 src={props.src}
