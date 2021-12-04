@@ -2,7 +2,7 @@
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.05);
     display: block;
     width: auto;
-    padding: 2rem 20px;
+    padding: 2rem 20px 1rem;
     font-weight: 100;
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.95);
@@ -10,10 +10,36 @@
     position: relative;
     transition: 0.15s;
 
+    
+    &__title {
+        font-family: 'Quick', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 1vh;
+    }
+
     &__chevron {
         display: block;
         margin: 10px auto;
         transition: all 0.3s ease-in-out;
+
+        &_open {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__content {
+        font-size: 14px;
+        line-height: 150%;
+        font-family: 'Poppins', sans-serif;        
+        max-height: 0;
+        transition: max-height .5s;
+        overflow: hidden; 
+
+        &_open {
+            max-height: 500px;
+        }
     }
 
     &:hover {
@@ -60,35 +86,6 @@
         }
     }
 
-    figcaption {
-        h3 {
-            font-family: 'Quick', sans-serif;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 16px;
-            margin-bottom: 1vh;
-        }
-
-        p {
-            font-size: 14px;
-            line-height: 150%;
-            font-family: 'Poppins', sans-serif;
-            height: 0;
-            overflow: hidden;
-            transition: height 0.3s ease-in-out;
-        }
-    }
-
-    &__isopen {
-        .services__chevron {
-            transform: rotate(180deg) !important;
-        }
-
-        p {
-            height: 100% !important;
-        }
-    }
-
     @media screen and (min-width: 780px) {
         width: 45%;
 
@@ -96,10 +93,8 @@
             display: none;
         }
 
-        figcaption {
-            p {
-                height: auto;
-            }
+        &__content {
+            height: auto;
         }
     }
 

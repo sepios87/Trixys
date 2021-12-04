@@ -14,7 +14,7 @@ const Informations = () => {
                 >
                     <figure className={classes.contact}>
                         <img
-                            src="/svg/adresse-picto.svg"
+                            src="svg/adresse-picto.svg"
                             alt="Adresse"
                             className={classes.contact__svg}
                         />
@@ -29,7 +29,7 @@ const Informations = () => {
                 <a href="tel:+33606060606">
                     <figure className={classes.contact}>
                         <img
-                            src="/svg/tel-picto.svg"
+                            src="svg/tel-picto.svg"
                             alt="Tel"
                             className={classes.contact__svg}
                         />
@@ -41,7 +41,7 @@ const Informations = () => {
                 <a href="mailto:contact.trixys@gmail.com">
                     <figure className={classes.contact}>
                         <img
-                            src="/svg/mail-picto.svg"
+                            src="svg/mail-picto.svg"
                             alt="Mail"
                             className={classes.contact__svg}
                         />

@@ -5,7 +5,7 @@ import Triangle from '../triangle/Triangle';
 
 const valeursList = [
     {
-        name: 'Valeur',
+        name: 'Créativité',
         src: 'svg/valeur.svg',
         alt: 'valeur',
         description:

@@ -77,8 +77,7 @@ const tab = [
         },
     },
     {
-        question:
-            "Qui doit gérer l'hébergement et le nom de domaine ?",
+        question: "Qui doit gérer l'hébergement et le nom de domaine ?",
         response1: {
             name: 'Vous',
             image: 'svg/domaine.svg',
@@ -124,8 +123,8 @@ const Estimate = () => {
             {/* background elements */}
             <img src="svg/croix.svg" alt="croix" className="croix" />
             <img src="svg/montagne.svg" alt="montagnes" className="montagne" />
-            <Triangle num={3} classNameTriangle="triangle__gris"/>
-            <Triangle num={6} classNameTriangle="triangle__jaune"/>
+            <Triangle num={3} classNameTriangle="triangle__gris" />
+            <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}
             <span className={classes.estimate__questionNum}>
                 {currentQuestion + 1}
@@ -136,7 +135,12 @@ const Estimate = () => {
                     <p style={{ marginBottom: 30 }}>
                         Votre site est estimé à : {points * 65}€
                     </p>
-                    <Button onClick={() => setCurrentQuestion(0)}>
+                    <Button
+                        onClick={() => {
+                            setPoints(0);
+                            setCurrentQuestion(0);
+                        }}
+                    >
                         Recommencer
                     </Button>
                 </div>
@@ -145,7 +149,11 @@ const Estimate = () => {
                     <h3 className={classes.estimate__titleQuestion}>
                         {tab[currentQuestion].question}
                     </h3>
-                    <div className={`${classes.estimate__progressBar} ${currentQuestion == 0 && classes.hidden}`}>
+                    <div
+                        className={`${classes.estimate__progressBar} ${
+                            currentQuestion == 0 && classes.hidden
+                        }`}
+                    >
                         <div
                             className={classes.estimate__progressBarContent}
                             style={{
