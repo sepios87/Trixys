@@ -31,7 +31,7 @@ export default function Home() {
     const [swiper, setSwiper] = useState(null);
     const [play] = useSound('/sounds/transition.mp3');
 
-    const { width } = useWindowDimensions();
+    const { width, height } = useWindowDimensions();
 
     const transitions = useTransition(music == null ? [] : true, {
         from: { opacity: 0, transform: 'translate(100%, -50%)' },
@@ -39,6 +39,18 @@ export default function Home() {
         leave: { opacity: 0, transform: 'translate(-100%, -50%)' },
         delay: 750,
     });
+
+    const checkIfMobile = () => {
+        if (
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent
+            )
+        ) {
+            return true;
+        } else {
+            return false;
+        }
+    };
 
     return (
         <MusicContext.Provider value={music}>
@@ -76,7 +88,7 @@ export default function Home() {
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
 
-            {width > 780 &&
+            {width > 780 && !checkIfMobile() &&
                 transitions(({ opacity, transform }) => (
                     <animated.div
                         className="pagination"
@@ -87,7 +99,9 @@ export default function Home() {
                     />
                 ))}
             <ConditionalWrapper
-                condition={width > 780}
+                condition={
+                    width > 780 && !checkIfMobile()
+                }
                 wrapper={(children) => (
                     <Swiper
                         onSwiper={setSwiper}
