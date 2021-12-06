@@ -40,7 +40,7 @@ const Projets = ({ onEstimate }) => {
                     className={`${classes.project__image1} ${
                         open === 1 && classes.project__image1_deploy
                     } ${open === 2 && classes.project__image1_retract}`}
-                    src="img/trixys.png"
+                    src="img/trixys.jpg"
                     loading='lazy'
                     alt="trixys"
                 ></img>
@@ -62,7 +62,7 @@ const Projets = ({ onEstimate }) => {
                     className={`${classes.project__image2} ${
                         open === 2 && classes.project__image2_deploy
                     } ${open === 1 && classes.project__image2_retract}`}
-                    src="img/unumondo.png"
+                    src="img/unumondo.jpg"
                     loading='lazy'
                     alt="unumondo"
                 ></img>
