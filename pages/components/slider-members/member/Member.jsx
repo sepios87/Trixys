@@ -1,15 +1,18 @@
 import Button from '../../button/Button';
+import Image from 'next/image';
 import classes from './Member.module.scss';
 
 const Member = ({ image, name, status, descr, portfolio }) => {
     return (
         <section className={classes.member}>
             <figure>
-                <img
+                <Image
                     loading='lazy'
                     alt="image"
                     className={classes.member__imageProfil}
                     src={image}
+                    height={300}
+                    width={300}
                 />
                 <figcaption className={classes.member__content}>
                     <h2>{name}</h2>

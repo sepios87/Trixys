@@ -43,7 +43,7 @@ const Projets = ({ onEstimate }) => {
                     src="img/trixys.jpg"
                     loading='lazy'
                     alt="trixys"
-                ></img>
+                />
                 <div
                     className={`${classes.project__comment1} ${
                         open !== 1 && classes.project__comment1_hidden
@@ -65,7 +65,7 @@ const Projets = ({ onEstimate }) => {
                     src="img/unumondo.jpg"
                     loading='lazy'
                     alt="unumondo"
-                ></img>
+                />
                 <div
                     className={`${classes.project__comment2} ${
                         open !== 2 && classes.project__comment2_hidden
