@@ -37,8 +37,9 @@ mod_gzip_item_include handler ^cgi-script$
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
 Header set X-XSS-Protection "1; mode=block"
-Header always append X-Frame-Options SAMEORIGIN
-Header set X-Content-Type-Options nosniff
+Header always set X-FRAME-OPTIONS "DENY"
+Header always set X-Content-Type-Options "nosniff"
+Header append Vary: Accept-Encoding
  <FilesMatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf|svg)$">
  Header set Cache-Control "max-age=2592000, public"
  </FilesMatch>

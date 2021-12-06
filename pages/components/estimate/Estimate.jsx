@@ -132,7 +132,7 @@ const Estimate = () => {
             <h2 className="title">Evaluez le montant de votre site web</h2>
             {formIsFinished() ? (
                 <div>
-                    <p style={{ marginBottom: 30 }}>
+                    <p className={classes.estimateNumber}>
                         Votre site est estimé à : {points * 65}€
                     </p>
                     <Button
