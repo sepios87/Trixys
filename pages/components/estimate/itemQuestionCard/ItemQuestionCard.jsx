@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import classes from './ItemQuestionCard.module.scss';
 import { MusicContext } from '../../../index';
 import useSound from 'use-sound';
+import Image from 'next/image';
 
 const ItemQuestionCard = ({
     onFinishedQuestion,
@@ -22,7 +23,7 @@ const ItemQuestionCard = ({
                 className={classes.containerQuestion__itemQuestion}
                 onClick={() => onFinishedQuestion(point)}
             >
-                <img src={image} alt="image carte estimation" />
+                <Image layout='fixed' width={150} height={150} src={image} alt="image carte estimation" />
                 <figcaption>
                     <p>{name}</p>
                 </figcaption>

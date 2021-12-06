@@ -6,9 +6,10 @@
   margin: 8vh auto;
   
   a {
-    width: 50%;
+    min-width: 150px;
+    max-width: 60%;
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 780px) {
       width: auto;
     }
   }
@@ -19,7 +20,7 @@
     justify-content: center;
     row-gap: 4vh;
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 780px) {
       justify-content: left;
       row-gap: 4vh;
       margin-right: 4vw;
@@ -34,7 +35,7 @@
       &__content {
         font-size: 10px;
   
-        @media screen and (min-width: 700px) {
+        @media screen and (min-width: 780px) {
           font-size: 12px;
         }
       }  
@@ -42,7 +43,7 @@
       &__svg {
         height: 5rem;
 
-        @media screen and (min-width: 700px) {
+        @media screen and (min-width: 780px) {
           margin-bottom: 1rem;
           height: 8rem;
         }
@@ -51,7 +52,7 @@
 
   }
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 780px) {
     color: var(--secondary);
     margin: auto;
     padding-right: 4vw;
@@ -61,7 +62,7 @@
     padding-bottom: 20px;
     text-align: center;
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 780px) {
       text-align: left;
     }
   }

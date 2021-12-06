@@ -10,12 +10,12 @@ const tab = [
         question: 'Est-ce pour une création ou une refonte de site ?',
         response1: {
             name: 'Création',
-            image: 'svg/creation.svg',
+            image: '/svg/creation.svg',
             point: 5,
         },
         response2: {
             name: 'Refonte',
-            image: 'svg/refonte.svg',
+            image: '/svg/refonte.svg',
             point: 3,
         },
     },

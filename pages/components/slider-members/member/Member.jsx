@@ -6,13 +6,11 @@ const Member = ({ image, name, status, descr, portfolio }) => {
     return (
         <section className={classes.member}>
             <figure>
-                <Image
+                <img
                     loading='lazy'
                     alt="image"
                     className={classes.member__imageProfil}
                     src={image}
-                    height={300}
-                    width={300}
                 />
                 <figcaption className={classes.member__content}>
                     <h2>{name}</h2>

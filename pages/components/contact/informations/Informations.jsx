@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Informations.module.scss';
+import Image from 'next/image';
 
 const Informations = () => {
     return (
@@ -12,11 +13,14 @@ const Informations = () => {
                     href="https://goo.gl/maps/zTmeeWjuJdoStEiA7"
                 >
                     <figure className={classes.contact}>
-                        <img
+                        <Image
                             loading="lazy"
-                            src="svg/adresse-picto.svg"
+                            src="/svg/adresse-picto.svg"
                             alt="Adresse"
                             className={classes.contact__svg}
+                            width={130}
+                            height={130}
+                            layout='fixed'
                         />
                         <figcaption>
                             <p className={classes.contact__content}>
@@ -28,11 +32,14 @@ const Informations = () => {
                 </a>
                 <a href="tel:+33606060606">
                     <figure className={classes.contact}>
-                        <img
+                        <Image
                             loading='lazy'
-                            src="svg/tel-picto.svg"
+                            src="/svg/tel-picto.svg"
                             alt="Tel"
                             className={classes.contact__svg}
+                            width={130}
+                            height={130}
+                            layout='fixed'
                         />
                         <figcaption>
                             <p className={classes.contact__content}>
@@ -43,11 +50,14 @@ const Informations = () => {
                 </a>
                 <a href="mailto:contact.trixys@gmail.com">
                     <figure className={classes.contact}>
-                        <img
+                        <Image
                             loading='lazy'
-                            src="svg/mail-picto.svg"
+                            src="/svg/mail-picto.svg"
                             alt="Mail"
                             className={classes.contact__svg}
+                            width={130}
+                            height={130}
+                            layout='fixed'
                         />
                         <figcaption>
                             <p className={classes.contact__content}>

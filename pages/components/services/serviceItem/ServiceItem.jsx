@@ -21,10 +21,11 @@ const ServiceItem = (props) => {
                 className={classes.services__img}
                 src={props.src}
                 alt={props.alt}
-                height={150}
-                width={150}
+                height={130}
+                width={130}
+                layout='fixed'
             />
-            <figcaption>
+            <figcaption className={classes.services__figcaption}>
                 <h3 className={classes.services__title}>{props.name}</h3>
                 <BsChevronDown
                     className={`${classes.services__chevron} ${

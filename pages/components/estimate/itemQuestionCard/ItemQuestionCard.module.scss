@@ -13,16 +13,11 @@
         box-shadow: -4px 4px 22px -4px rgba(0, 0, 0, 0.5);
         transition: .15s;
         background-color: var(--primary);
+        padding-top: 2vh;
 
         @media screen and (min-width: 780px) {
             width: 35%;
             padding: 3vh 0;
-        }
-
-        img {
-            user-select: none;
-            height: 13vh;
-            margin: 2vh 0;
         }
 
         p {

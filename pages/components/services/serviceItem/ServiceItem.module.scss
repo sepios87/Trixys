@@ -15,6 +15,10 @@
     transition: 0.15s;
     column-gap: 2rem;
 
+    &__figcaption {
+        flex: 1;
+    }
+
 
     &__title {
         font-family: 'Quick', sans-serif;
