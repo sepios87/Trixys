@@ -3,6 +3,7 @@ import classes from './ServiceItem.module.scss';
 import { BsChevronDown } from 'react-icons/bs';
 import { MusicContext } from '../../../index';
 import useSound from 'use-sound';
+import Image from 'next/image';
 
 const ServiceItem = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,11 +16,13 @@ const ServiceItem = (props) => {
             className={classes.services}
             onClick={() => setIsOpen(!isOpen)}
         >
-            <img
+            <Image
                 loading='lazy'
                 className={classes.services__img}
                 src={props.src}
                 alt={props.alt}
+                height={150}
+                width={150}
             />
             <figcaption>
                 <h3 className={classes.services__title}>{props.name}</h3>

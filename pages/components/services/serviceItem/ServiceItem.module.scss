@@ -2,7 +2,9 @@
 
 .services {
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.05);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: auto;
     padding: 2rem 20px 1rem;
     font-weight: 100;
@@ -11,8 +13,9 @@
     margin: 0;
     position: relative;
     transition: 0.15s;
+    column-gap: 2rem;
 
-    
+
     &__title {
         font-family: 'Quick', sans-serif;
         text-align: center;
@@ -40,7 +43,7 @@
         line-height: 150%;
         max-height: 0;
         transition: max-height .5s;
-        overflow: hidden; 
+        overflow: hidden;
 
         @media screen and (min-width: 780px) {
             max-height: none;
