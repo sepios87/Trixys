@@ -16,6 +16,7 @@ const ServiceItem = (props) => {
             onClick={() => setIsOpen(!isOpen)}
         >
             <img
+                loading='lazy'
                 className={classes.services__img}
                 src={props.src}
                 alt={props.alt}

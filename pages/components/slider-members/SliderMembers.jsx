@@ -42,8 +42,8 @@ const SliderMembers = () => {
     return (
         <section className={classes.members} id="members">
             {/* background elements */}
-            <img src="svg/croix.svg" alt="croix" className="croix" />
-            <img src="svg/montagne.svg" alt="montagnes" className="montagne" />
+            <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
+            <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
             <Triangle num={3} classNameTriangle="triangle__gris" />
             <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}

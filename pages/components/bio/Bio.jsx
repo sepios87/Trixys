@@ -9,8 +9,8 @@ const Bio = ({ onPageMembers }) => {
     return (
         <section className={classes.bio}>
             {/* background elements */}
-            <img src="svg/croix.svg" alt="croix" className="croix" />
-            <img src="svg/montagne.svg" alt="montagnes" className="montagne" />
+            <img src="svg/croix.svg" loading='lazy' alt="croix" className="croix" />
+            <img src="svg/montagne.svg" loading='lazy' alt="montagnes" className="montagne" />
             <Triangle num={3} classNameTriangle="triangle__gris" />
             <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}

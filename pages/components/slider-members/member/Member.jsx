@@ -6,6 +6,7 @@ const Member = ({ image, name, status, descr, portfolio }) => {
         <section className={classes.member}>
             <figure>
                 <img
+                    loading='lazy'
                     alt="image"
                     className={classes.member__imageProfil}
                     src={image}

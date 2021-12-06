@@ -26,8 +26,8 @@ const Projets = ({ onEstimate }) => {
     return (
         <section className={classes.projectContainer}>
             {/* background elements */}
-            <img src="svg/croix.svg" alt="croix" className="croix" />
-            <img src="svg/montagne.svg" alt="montagnes" className="montagne" />
+            <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
+            <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
             <Triangle num={3} classNameTriangle="triangle__gris" />
             <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}
@@ -41,6 +41,7 @@ const Projets = ({ onEstimate }) => {
                         open === 1 && classes.project__image1_deploy
                     } ${open === 2 && classes.project__image1_retract}`}
                     src="img/trixys.png"
+                    loading='lazy'
                     alt="trixys"
                 ></img>
                 <div
@@ -62,6 +63,7 @@ const Projets = ({ onEstimate }) => {
                         open === 2 && classes.project__image2_deploy
                     } ${open === 1 && classes.project__image2_retract}`}
                     src="img/unumondo.png"
+                    loading='lazy'
                     alt="unumondo"
                 ></img>
                 <div

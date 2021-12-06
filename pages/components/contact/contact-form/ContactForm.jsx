@@ -34,6 +34,7 @@ const ContactForm = () => {
                 onSubmit={onSubmitForm}
             >
                 <input
+                    title="email"
                     required
                     type="email"
                     name="email"
@@ -41,6 +42,7 @@ const ContactForm = () => {
                     className={classes.contactForm__input + ' form__input'}
                 />
                 <input
+                    title="object"
                     required
                     type="text"
                     name="objet"
@@ -49,6 +51,7 @@ const ContactForm = () => {
                 />
                 <textarea
                     required
+                    title='content'
                     type="text"
                     name="message"
                     placeholder="Votre message"

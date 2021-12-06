@@ -22,7 +22,7 @@ const ItemQuestionCard = ({
                 className={classes.containerQuestion__itemQuestion}
                 onClick={() => onFinishedQuestion(point)}
             >
-                <img src={image} alt="" />
+                <img src={image} alt="image carte estimation" />
                 <figcaption>
                     <p>{name}</p>
                 </figcaption>

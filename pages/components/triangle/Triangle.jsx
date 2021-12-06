@@ -20,6 +20,7 @@ const Triangle = ({ num, classNameTriangle }) => {
 
     return (
         <animated.img
+            loading="lazy"
             style={animation}
             className={classNameTriangle + ' ' + classes.triangles}
             src={`svg/triangle${num}.svg`}
