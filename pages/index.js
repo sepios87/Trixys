@@ -55,7 +55,7 @@ export default function Home() {
     return (
         <MusicContext.Provider value={music}>
             <Head>
-                <title>Trixys Agence Web</title>
+                <title>Trixys Agence Web à La Rochelle</title>
                 <meta
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
