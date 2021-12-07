@@ -6,11 +6,12 @@
   margin: 8vh auto;
   
   a {
-    min-width: 150px;
+    min-width: 50%;
     max-width: 60%;
 
     @media screen and (min-width: 780px) {
       width: auto;
+      min-width: 150px;
     }
   }
 
@@ -21,11 +22,9 @@
     row-gap: 4vh;
 
     @media screen and (min-width: 780px) {
-      justify-content: left;
       row-gap: 4vh;
       margin-right: 4vw;
-      flex-wrap: nowrap;
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
     .contact {

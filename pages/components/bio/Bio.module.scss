@@ -1,7 +1,5 @@
 .bio {
     position: relative;
-    overflow: hidden;
-    min-height: 560px;
     &__backgroundLetter {
         position: absolute;
         font-size: 100vh;
@@ -28,13 +26,16 @@
         align-items: center;
         padding: 0 10%;
         justify-content: center;
-        height: 100vh;
+        min-height: 100vh;
         color: var(--secondary);
-        min-height: 500px;
 
         @media screen and (min-width: 780px) {
             padding: 0 15%;
             height: 100vh;
+        }
+
+        @media screen and (min-width: 780px) {
+
         }
     }
 
