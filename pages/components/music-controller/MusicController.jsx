@@ -6,9 +6,7 @@ import { useTransition, animated } from 'react-spring';
 
 const MusicController = ({ music, setMusic }) => {
     useEffect(() => {
-        if (music == null) {
-            document.body.style.overflow = 'hidden';
-        } else {
+        if (music != null) {
             document.body.style.overflow = 'hidden auto';
         }
     }, [music]);
