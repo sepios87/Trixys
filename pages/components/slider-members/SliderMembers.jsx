@@ -28,7 +28,7 @@ const tabMembers = [
         portfolio: 'https://www.remihr.fr/',
     },
     {
-        name: 'Océane Guilloizeau',
+        name: 'Océane GUILLOIZEAU',
         status: 'Web designeuse',
         descr: "Passionnée par le graphisme et le web design, je saurais créer des maquettes et des visuels adaptés à tous vos projets.\n\n A l'écoute, création et soucieuse du détail, je vous accompagnerai et vous conseillerai dans vos projets pour une identité visuelle de qualité.",
         portfolio: 'https://oceaneguilloizeau.alwaysdata.net/',
