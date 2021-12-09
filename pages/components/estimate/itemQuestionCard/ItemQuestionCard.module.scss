@@ -7,6 +7,10 @@
     user-select: none;
     outline: 0;
 
+    @media screen and (min-width: 780px) {
+        flex-direction: row;
+    }
+
     &__itemQuestion {
         margin: 2vh 5%;
         box-shadow: -4px 4px 22px -4px rgba(0, 0, 0, 0.5);
@@ -15,7 +19,7 @@
         padding-top: 2vh;
 
         @media screen and (min-width: 780px) {
-            width: 35%;
+            width: 32%;
             padding: 3vh 0;
         }
 

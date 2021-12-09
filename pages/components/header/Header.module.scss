@@ -141,9 +141,10 @@
     }
 
     .triangle3 {
+        display: block;
         width: 10rem;
         bottom: 10vh;
-        left: 5vw;
+        right: 5vw;
     }
 
     .triangle1 {
@@ -151,4 +152,17 @@
         top: 10vh;
         left: 20vw;
     }
+
+    .triangle8 {
+        display: block;
+        width: 16rem;
+        left: 40vw;
+        top: 5vh;
+    }
+
+    .triangle4 {
+        width: 22rem;
+        bottom: 1vh;
+    }
+
 }

@@ -17,6 +17,15 @@ const Theme = ({ music, setMusic }) => {
     const [playHibou] = useSound('/sounds/hibou.mp3');
     const [playCocorico] = useSound('/sounds/cocorico.mp3');
 
+    useEffect(() => {
+        const isLocalDarkTheme = localStorage.getItem('isDarkTheme') == "true";
+        if (isLocalDarkTheme) {
+            setIsDarkTheme(true);
+            changeTheme();
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
     const changeTheme = () => {
         const variables = window.getComputedStyle(document.documentElement);
         const primary = variables.getPropertyValue('--primary');
@@ -32,8 +41,14 @@ const Theme = ({ music, setMusic }) => {
     const onClickDarkTheme = () => {
         // inverser isDarkTheme
         changeTheme();
+        localStorage.setItem('isDarkTheme', !isDarkTheme);
         setIsDarkTheme(!isDarkTheme);
     };
+
+    const onClickSound = (e) => {
+        localStorage.setItem('music', e);
+        setMusic(e);
+    }
 
     return (
         <div className={classes.theme}>
@@ -55,14 +70,14 @@ const Theme = ({ music, setMusic }) => {
                     className={`${hidden && classes.hidden} ${
                         classes.theme__icon
                     }`}
-                    onClick={() => setMusic(false)}
+                    onClick={() => onClickSound(false)}
                 />
             ) : (
                 <IoVolumeMuteOutline
                     className={`${hidden && classes.hidden} ${
                         classes.theme__icon
                     }`}
-                    onClick={() => setMusic(true)}
+                    onClick={() => onClickSound(true)}
                 />
             )}
             <BsChevronLeft

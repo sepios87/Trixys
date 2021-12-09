@@ -114,11 +114,13 @@ body {
 .croix {
     position: absolute;
     display: none;
+    z-index: -1;
 }
 
 .montagne {
     position: absolute;
     display: none;
+    z-index: -1;
 }
 
 .title {

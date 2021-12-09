@@ -1,22 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from './MusicController.module.scss';
 import { IoVolumeHighOutline } from 'react-icons/io5';
 import Button from '../button/Button';
 import { useTransition, animated } from 'react-spring';
 
 const MusicController = ({ music, setMusic }) => {
+    const [firstOpen, setFirstOpen] = useState(false)
+
     useEffect(() => {
-        if (music != null) {
+        if (music == null) {
+            const localValue = localStorage.getItem('music');
+            localValue == null ? setFirstOpen(true) : setMusic(localValue === "true");
+        } else {
             document.body.style.overflow = 'hidden auto';
         }
-    }, [music]);
+    }, [music, setMusic]);
 
     const transitions = useTransition(music != null ? [] : true, {
-        from: { opacity: 1 },
+        from: { opacity: firstOpen ? 1 : 0 },
         enter: { opacity: 1 },
         leave: { opacity: 0 },
         config: { duration: 600 },
     });
+
+    const selectMusic = (choice) => {
+        setMusic(choice);
+        localStorage.setItem('music', choice);
+    }
 
     return transitions(({ opacity }) => (
         <animated.section
@@ -29,10 +39,10 @@ const MusicController = ({ music, setMusic }) => {
                 navigation. Souhaitez-vous en bénéficier ?
             </p>
             <div className={classes.musicController__buttons}>
-                <Button whiteTheme={true} onClick={() => setMusic(true)}>
+                <Button whiteTheme={true} onClick={() => selectMusic(true)}>
                     Oui
                 </Button>
-                <Button whiteTheme={true} onClick={() => setMusic(false)}>
+                <Button whiteTheme={true} onClick={() => selectMusic(false)}>
                     Non
                 </Button>
             </div>
