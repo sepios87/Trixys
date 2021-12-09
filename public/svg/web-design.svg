@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="117" height="93" viewBox="0 0 117 93"><g id="Groupe_92" data-name="Groupe 92" transform="translate(-308 -357)"><g id="Rectangle_7" data-name="Rectangle 7" transform="translate(348 425)" fill="none" stroke="#fecf0d" stroke-width="2"><path d="M0 0H48a0 0 0 0 1 0 0V8a0 0 0 0 1 0 0H8A8 8 0 0 1 0 0V0A0 0 0 0 1 0 0z" stroke="none"/><path d="M1.6 1H46.4a.6.6.0 0 1 .6.6V6.4a.6.6.0 0 1-.6.6H6.4A5.4 5.4.0 0 1 1 1.6v0A.6.6.0 0 1 1.6 1z" fill="none"/></g><g id="Rectangle_6" data-name="Rectangle 6" transform="translate(350 393)" fill="none" stroke="#fecf0d" stroke-width="2"><rect width="52" height="31" rx="5" stroke="none"/><rect x="1" y="1" width="50" height="29" rx="4" fill="none"/></g><rect id="Rectangle_8" data-name="Rectangle 8" width="21" height="33" rx="7" transform="translate(390 402)" fill="#fff"/><circle id="Ellipse_8" data-name="Ellipse 8" cx="13.5" cy="13.5" r="13.5" transform="translate(398 423)" fill="#919191" opacity=".17"/><g id="Rectangle_5" data-name="Rectangle 5" transform="translate(390 404)" fill="none" stroke="#fecf0d" stroke-linecap="round" stroke-width="2"><rect width="21" height="33" rx="7" stroke="none"/><rect x="1" y="1" width="19" height="31" rx="6" fill="none"/></g><circle id="Ellipse_6" data-name="Ellipse 6" cx="1.5" cy="1.5" r="1.5" transform="translate(399 429)" fill="#fecf0d"/><circle id="Ellipse_7" data-name="Ellipse 7" cx="40" cy="40" r="40" transform="translate(308 357)" fill="#fecf0d" opacity=".1"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 90" style="enable-background:new 0 0 150 90;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.17;fill:#919191;enable-background:new    ;}
+	.st1{fill:none;}
+	.st2{fill:none;stroke:#FECF0D;stroke-width:2;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;stroke:#FECF0D;stroke-width:2;stroke-linecap:round;}
+	.st5{fill:#FECF0D;}
+	.st6{opacity:0.1;fill:#FECF0D;enable-background:new    ;}
+</style>
+<g id="Groupe_92" transform="translate(-308 -357)">
+	<circle id="Ellipse_8" class="st0" cx="423.2" cy="430.2" r="15.6"/>
+	<g>
+		<g id="Rectangle_7" transform="translate(348 425)">
+			<path class="st1" d="M3.5-13h48l0,0v8l0,0h-40C7.1-5,3.5-8.6,3.5-13L3.5-13L3.5-13z"/>
+			<path class="st2" d="M5.1-12h44.8c0.3,0,0.6,0.3,0.6,0.6v4.8c0,0.3-0.3,0.6-0.6,0.6h-40c-3,0-5.4-2.4-5.4-5.4l0,0
+				C4.5-11.7,4.8-12,5.1-12L5.1-12z"/>
+		</g>
+		<g id="Rectangle_6" transform="translate(350 393)">
+			<path class="st1" d="M8.5-13h42c2.8,0,5,2.2,5,5v21c0,2.8-2.2,5-5,5h-42c-2.8,0-5-2.2-5-5V-8C3.5-10.8,5.7-13,8.5-13z"/>
+			<path class="st2" d="M8.5-12h42c2.2,0,4,1.8,4,4v21c0,2.2-1.8,4-4,4h-42c-2.2,0-4-1.8-4-4V-8C4.5-10.2,6.3-12,8.5-12z"/>
+		</g>
+		<path id="Rectangle_8" class="st3" d="M400.5,389h7c3.9,0,7,3.1,7,7v19c0,3.9-3.1,7-7,7h-7c-3.9,0-7-3.1-7-7v-19
+			C393.5,392.1,396.6,389,400.5,389z"/>
+		<g id="Rectangle_5" transform="translate(390 404)">
+			<path class="st1" d="M10.5-13h7c3.9,0,7,3.1,7,7v19c0,3.9-3.1,7-7,7h-7c-3.9,0-7-3.1-7-7V-6C3.5-9.9,6.6-13,10.5-13z"/>
+			<path class="st4" d="M10.5-12h7c3.3,0,6,2.7,6,6v19c0,3.3-2.7,6-6,6h-7c-3.3,0-6-2.7-6-6V-6C4.5-9.3,7.2-12,10.5-12z"/>
+		</g>
+		<circle id="Ellipse_6" class="st5" cx="404" cy="417.5" r="1.5"/>
+	</g>
+	<circle id="Ellipse_7" class="st6" cx="345.5" cy="394.5" r="37.5"/>
+</g>
+</svg>

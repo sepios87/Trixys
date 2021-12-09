@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './Informations.module.scss';
 import Image from 'next/image';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { IoLogoFacebook } from 'react-icons/io';
 
 const Informations = () => {
     return (
@@ -43,7 +45,7 @@ const Informations = () => {
                         />
                         <figcaption>
                             <p className={classes.contact__content}>
-                                06 06 06 06 06
+                                09 79 19 04 55
                             </p>
                         </figcaption>
                     </figure>
@@ -65,6 +67,22 @@ const Informations = () => {
                             </p>
                         </figcaption>
                     </figure>
+                </a>
+            </div>
+            <div className={classes.socials}>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/trixys_agency/?hl=fr"
+                >
+                    <AiOutlineInstagram />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/Trixys-107698671761137"
+                >
+                    <IoLogoFacebook />
                 </a>
             </div>
         </section>

@@ -23,7 +23,7 @@ const servicesList = [
         src: '/svg/dev.svg',
         alt: 'developpement',
         description:
-            'Nos développeurs travaillent main dans la main pour donner vie à vos maquettes, en respectant le cahier des charges défini au préalable et en vous offrant un accompagnement personnalisé sur le long terme.',
+            'Nos développeurs travaillent main dans la main pour donner vie à vos maquettes, en respectant le cahier des charges et en vous offrant un accompagnement personnalisé sur le long terme.',
     },
     {
         name: 'UX / UI Design',

@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="117" height="95" viewBox="0 0 117 95"><g id="Groupe_89" data-name="Groupe 89" transform="translate(-324 -655)"><circle id="Ellipse_43" data-name="Ellipse 43" cx="13.5" cy="13.5" r="13.5" transform="translate(414 723)" fill="#919191" opacity=".17"/><circle id="Ellipse_45" data-name="Ellipse 45" cx="40" cy="40" r="40" transform="translate(324 655)" fill="#fecf0d" opacity=".1"/><g id="vuesax_outline_location" data-name="vuesax/outline/location" transform="translate(-66 481)"><g id="location" transform="translate(428 188)"><path id="Vector" d="M12.255 24.478A12.239 12.239.0 1 1 24.51 12.255 12.265 12.265.0 0 1 12.255 24.478zm0-19.728a7.505 7.505.0 1 0 7.505 7.505A7.521 7.521.0 0 0 12.255 4.75z" transform="translate(25.745 20.393)" fill="#fecf0d"/><path id="Vector-2" data-name="Vector" d="M29.693 68.115a18.907 18.907.0 0 1-13.078-5.288C7.273 53.833-3.051 39.488.844 22.42 4.359 6.935 17.881.0 29.693.0h.032C41.536.0 55.058 6.935 58.573 22.452c3.863 17.068-6.46 31.382-15.8 40.375A18.907 18.907.0 0 1 29.693 68.115zm0-63.365C20.478 4.75 8.634 9.658 5.5 23.465c-3.42 14.915 5.953 27.772 14.44 35.91a14.014 14.014.0 0 0 19.538.0c8.455-8.138 17.828-20.995 14.472-35.91C50.783 9.658 38.908 4.75 29.693 4.75z" transform="translate(8.307 3.958)" fill="#fecf0d"/><path id="Vector-3" data-name="Vector" d="M0 0H76V76H0z" fill="none" opacity="0"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 90" style="enable-background:new 0 0 150 90;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.17;fill:#919191;enable-background:new    ;}
+	.st1{opacity:0.1;fill:#FECF0D;enable-background:new    ;}
+	.st2{fill:#FECF0D;}
+	.st3{fill:none;}
+</style>
+<g id="Groupe_89" transform="translate(-324 -655)">
+	<circle id="Ellipse_43" class="st0" cx="427.5" cy="731.5" r="13.5"/>
+	<circle id="Ellipse_45" class="st1" cx="359.3" cy="690.3" r="35.3"/>
+	<g id="vuesax_outline_location" transform="translate(-66 481)">
+		<g id="location" transform="translate(428 188)">
+			<path id="Vector" class="st2" d="M37,37.9c-6.8,0-12.2-5.5-12.2-12.3S30.3,13.4,37,13.4c6.8,0,12.2,5.5,12.2,12.3
+				C49.2,32.4,43.8,37.9,37,37.9z M37,18.1c-4.1,0-7.5,3.4-7.5,7.5s3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5l0,0
+				C44.5,21.5,41.1,18.2,37,18.1z"/>
+			<path id="Vector-2" class="st2" d="M37,65.1c-4.9,0-9.6-1.9-13.1-5.3c-9.3-9-19.7-23.3-15.8-40.4C11.7,3.9,25.2-3,37-3h0
+				c11.8,0,25.3,6.9,28.8,22.5c3.9,17.1-6.5,31.4-15.8,40.4C46.6,63.2,41.9,65.1,37,65.1z M37,1.7c-9.2,0-21.1,4.9-24.2,18.7
+				c-3.4,14.9,6,27.8,14.4,35.9c5.4,5.3,14.1,5.3,19.5,0c8.5-8.1,17.8-21,14.5-35.9C58.1,6.6,46.2,1.7,37,1.7z"/>
+			<path id="Vector-3" class="st3" d="M-1-7h76v76H-1V-7z"/>
+		</g>
+	</g>
+</g>
+</svg>

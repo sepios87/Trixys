@@ -34,7 +34,7 @@ const Projets = ({ onEstimate }) => {
             <h2 className="title">Nos projets</h2>
             <div className={classes.project} ref={ref}>
                 <img
-                    onMouseEnter={() => setOpen(1)}
+                    onMouseEnter={() =>  width > 780 && setOpen(1)}
                     onMouseLeave={() => setOpen(null)}
                     onClick={() => (open === 1 ? setOpen(null) : setOpen(1))}
                     className={`${classes.project__image1} ${
@@ -56,7 +56,7 @@ const Projets = ({ onEstimate }) => {
                     </p>
                 </div>
                 <img
-                    onMouseEnter={() => setOpen(2)}
+                    onMouseEnter={() =>  width > 780 && setOpen(2)}
                     onMouseLeave={() => setOpen(null)}
                     onClick={() => (open === 2 ? setOpen(null) : setOpen(2))}
                     className={`${classes.project__image2} ${

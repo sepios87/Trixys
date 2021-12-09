@@ -19,7 +19,22 @@
     top: 10px;
     left: 10px;
     max-width: 20vw;
-    z-index: 200;
+    z-index: 2;
+}
+
+.socials {
+    z-index: 2;
+    position: fixed;
+    color: var(--secondary);
+    font-size: 30px;
+    right: 50px;
+    column-gap: 35%;
+    bottom: 10px;
+    display: none;
+
+    @media screen and (min-width: 780px) {
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 780px) {

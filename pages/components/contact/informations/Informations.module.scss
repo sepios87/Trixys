@@ -1,68 +1,81 @@
 .informations {
-  width: 100%;
-  background: none;
-  color: var(--secondary);
-  box-sizing: border-box;
-  margin: 8vh auto;
-  
-  a {
-    min-width: 50%;
-    max-width: 60%;
-
-    @media screen and (min-width: 780px) {
-      width: auto;
-      min-width: 150px;
-    }
-  }
-
-  .contacts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 4vh;
-
-    @media screen and (min-width: 780px) {
-      row-gap: 4vh;
-      margin-right: 4vw;
-      justify-content: space-around;
-    }
-
-    .contact {
-      text-align: center;
-      margin: 0;
-
-      &__content {
-        font-size: 10px;
-  
-        @media screen and (min-width: 780px) {
-          font-size: 12px;
-        }
-      }  
-
-      &__svg {
-        height: 5rem;
-
-        @media screen and (min-width: 780px) {
-          margin-bottom: 1rem;
-          height: 8rem;
-        }
-      }
-    }
-
-  }
-
-  @media screen and (min-width: 780px) {
+    width: 100%;
+    background: none;
     color: var(--secondary);
-    margin: auto;
-    padding-right: 4vw;
-  }
+    box-sizing: border-box;
+    margin: 8vh auto;
 
-  h2 {
-    padding-bottom: 20px;
-    text-align: center;
+    a {
+        min-width: 50%;
+        max-width: 60%;
+
+        @media screen and (min-width: 780px) {
+            width: auto;
+            min-width: 150px;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 4vh;
+
+        @media screen and (min-width: 780px) {
+            row-gap: 4vh;
+            margin-right: 4vw;
+            justify-content: space-around;
+        }
+
+        .contact {
+            text-align: center;
+            margin: 0;
+
+            &__content {
+                font-size: 10px;
+
+                @media screen and (min-width: 780px) {
+                    font-size: 12px;
+                }
+            }
+
+            &__svg {
+                height: 5rem;
+
+                @media screen and (min-width: 780px) {
+                    margin-bottom: 1rem;
+                    height: 8rem;
+                }
+            }
+        }
+    }
 
     @media screen and (min-width: 780px) {
-      text-align: left;
+        color: var(--secondary);
+        margin: auto;
+        padding-right: 4vw;
     }
-  }
+
+    h2 {
+        padding-bottom: 20px;
+        text-align: center;
+
+        @media screen and (min-width: 780px) {
+            text-align: left;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    font-size: 30px;
+    column-gap: 20%;
+    z-index: 2;
+
+    @media screen and (min-width: 780px) {
+        display: none;
+    }
 }

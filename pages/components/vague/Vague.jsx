@@ -1,5 +1,7 @@
 import React from 'react';
 import classes from './Vague.module.scss';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { IoLogoFacebook } from 'react-icons/io';
 
 const Vague = ({ waveTransition }) => {
     return (
@@ -78,6 +80,22 @@ const Vague = ({ waveTransition }) => {
                 </g>
             </svg>
 
+            <div className={classes.socials}>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/trixys_agency/?hl=fr"
+                >
+                    <AiOutlineInstagram />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/Trixys-107698671761137"
+                >
+                    <IoLogoFacebook />
+                </a>
+            </div>
             <svg
                 style={{
                     width: waveTransition ? '75vh' : '',

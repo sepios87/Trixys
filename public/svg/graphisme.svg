@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="111.002" height="80" viewBox="0 0 111.002 80"><g id="Groupe_93" data-name="Groupe 93" transform="translate(-689 -365)"><g id="Rectangle_9" data-name="Rectangle 9" transform="translate(725 427)" fill="none" stroke="#fecf0d" stroke-width="2"><path d="M0 0H48a0 0 0 0 1 0 0V8a0 0 0 0 1 0 0H8A8 8 0 0 1 0 0V0A0 0 0 0 1 0 0z" stroke="none"/><path d="M1.6 1H46.4a.6.6.0 0 1 .6.6V6.4a.6.6.0 0 1-.6.6H6.4A5.4 5.4.0 0 1 1 1.6v0A.6.6.0 0 1 1.6 1z" fill="none"/></g><g id="Rectangle_10" data-name="Rectangle 10" transform="translate(727 393)" fill="none" stroke="#fecf0d" stroke-width="2"><rect width="52" height="31" rx="5" stroke="none"/><rect x="1" y="1" width="50" height="29" rx="4" fill="none"/></g><rect id="Rectangle_11" data-name="Rectangle 11" width="21" height="33" rx="7" transform="translate(765 405)" fill="#fff"/><circle id="Ellipse_9" data-name="Ellipse 9" cx="40" cy="40" r="40" transform="translate(689 365)" fill="#fecf0d" opacity=".1"/><circle id="Ellipse_10" data-name="Ellipse 10" cx="13.5" cy="13.5" r="13.5" transform="translate(761 379)" fill="#919191" opacity=".17"/><path id="lnr-pencil" d="M33.476 1.551a5.216 5.216.0 0 0-7.374.0L3.76 23.893a.87.87.0 0 0-.2.321l-3.5 9.638a.874.874.0 0 0 .824 1.174.892.892.0 0 0 .3-.053l9.638-3.5a.893.893.0 0 0 .321-.2L33.476 8.923a5.216 5.216.0 0 0 0-7.374zM10.032 29.889l-7.691 2.8 2.8-7.691L24.532 5.6l4.894 4.894L10.032 29.889zm22.2-22.2-1.57 1.57L25.771 4.36l1.57-1.57a3.459 3.459.0 0 1 4.892 4.892z" transform="translate(765 399.975)" fill="#fecf0d"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 90" style="enable-background:new 0 0 150 90;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.1;fill:#FECF0D;enable-background:new    ;}
+	.st1{fill:none;}
+	.st2{fill:none;stroke:#FECF0D;stroke-width:2;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#FECF0D;}
+	.st5{opacity:0.17;fill:#919191;enable-background:new    ;}
+</style>
+<g id="Groupe_93" transform="translate(-689 -365)">
+	<circle id="Ellipse_9" class="st0" cx="726.5" cy="400.7" r="35.1"/>
+	<g>
+		<g id="Rectangle_9" transform="translate(725 427)">
+			<path class="st1" d="M-0.5-5.5h48l0,0v8l0,0h-40C3.1,2.5-0.5-1.1-0.5-5.5L-0.5-5.5L-0.5-5.5z"/>
+			<path class="st2" d="M1.1-4.5h44.8c0.3,0,0.6,0.3,0.6,0.6v4.8c0,0.3-0.3,0.6-0.6,0.6h-40c-3,0-5.4-2.4-5.4-5.4l0,0
+				C0.5-4.2,0.8-4.5,1.1-4.5L1.1-4.5z"/>
+		</g>
+		<g id="Rectangle_10" transform="translate(727 393)">
+			<path class="st1" d="M4.5-5.5h42c2.8,0,5,2.2,5,5v21c0,2.8-2.2,5-5,5h-42c-2.8,0-5-2.2-5-5v-21C-0.5-3.3,1.7-5.5,4.5-5.5z"/>
+			<path class="st2" d="M4.5-4.5h42c2.2,0,4,1.8,4,4v21c0,2.2-1.8,4-4,4h-42c-2.2,0-4-1.8-4-4v-21C0.5-2.7,2.3-4.5,4.5-4.5z"/>
+		</g>
+		<path id="Rectangle_11" class="st3" d="M771.5,399.5h7c3.9,0,7,3.1,7,7v19c0,3.9-3.1,7-7,7h-7c-3.9,0-7-3.1-7-7v-19
+			C764.5,402.6,767.6,399.5,771.5,399.5z"/>
+		<path id="lnr-pencil" class="st4" d="M802,393c-2-2-5.3-2-7.4,0l-22.3,22.3c-0.1,0.1-0.2,0.2-0.2,0.3l-3.5,9.6
+			c-0.2,0.5,0.1,1,0.5,1.1c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l9.6-3.5c0.1,0,0.2-0.1,0.3-0.2l22.3-22.3
+			C804,398.4,804,395.1,802,393L802,393z M778.5,421.4l-7.7,2.8l2.8-7.7l19.4-19.4l4.9,4.9L778.5,421.4z M800.7,399.2l-1.6,1.6
+			l-4.9-4.9l1.6-1.6c1.4-1.4,3.5-1.4,4.9,0S802.1,397.8,800.7,399.2L800.7,399.2L800.7,399.2z"/>
+	</g>
+	<circle id="Ellipse_10" class="st5" cx="784" cy="419.5" r="13.5"/>
+</g>
+</svg>
