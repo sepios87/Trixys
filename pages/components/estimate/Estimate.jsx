@@ -3,7 +3,6 @@ import { useState } from 'react';
 import ItemQuestionCard from './itemQuestionCard/ItemQuestionCard';
 import ItemQuestionNumber from './itemQuestionNumber/ItemQuestionNumber';
 import Button from '../button/Button';
-import Triangle from '../triangle/Triangle';
 
 const tab = [
     {
@@ -123,8 +122,6 @@ const Estimate = () => {
             {/* background elements */}
             <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
             <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
-            <Triangle num={3} classNameTriangle="triangle__gris" />
-            <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}
             <span className={classes.estimate__questionNum}>
                 {currentQuestion + 1}

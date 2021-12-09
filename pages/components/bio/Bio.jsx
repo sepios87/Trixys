@@ -1,7 +1,6 @@
 import Button from '../button/Button';
 import classes from './Bio.module.scss';
 import useWindowDimensions from './../../../hooks/useWindowDimensions';
-import Triangle from '../triangle/Triangle';
 
 const Bio = ({ onPageMembers }) => {
     const { width } = useWindowDimensions();
@@ -11,8 +10,6 @@ const Bio = ({ onPageMembers }) => {
             {/* background elements */}
             <img src="svg/croix.svg" loading='lazy' alt="croix" className="croix" />
             <img src="svg/montagne.svg" loading='lazy' alt="montagnes" className="montagne" />
-            <Triangle num={3} classNameTriangle="triangle__gris" />
-            <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}
             <p className={classes.bio__backgroundLetter}>4</p>
             <section className={classes.bio__bioContainer}>

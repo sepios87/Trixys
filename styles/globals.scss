@@ -121,22 +121,6 @@ body {
     display: none;
 }
 
-.triangle__gris {
-    display: none;
-    position: absolute;
-    height: 10rem;
-    top: 5vh;
-    left: -15vw;
-}
-
-.triangle__jaune {
-    display: none;
-    position: absolute;
-    height: 20rem;
-    bottom: -15vh;
-    right: -10vw;
-}
-
 .title {
     font-family: Quick;
     font-size: 30px;
@@ -162,17 +146,5 @@ body {
         top: 15vh;
         right: 22vw;
         display: block;
-    }
-
-    .triangle__gris {
-        height: 10rem;
-        top: 5vh;
-        left: 20vw;
-    }
-
-    .triangle__jaune {
-        height: 10rem;
-        bottom: 5vh;
-        right: 15vw;
     }
 }

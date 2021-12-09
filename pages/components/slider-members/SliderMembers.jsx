@@ -3,7 +3,6 @@ import Member from './member/Member';
 import SwiperCore, { Pagination, Navigation } from 'swiper';
 import classes from './SliderMember.module.scss';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
-import Triangle from '../triangle/Triangle';
 
 const tabMembers = [
     {
@@ -44,8 +43,6 @@ const SliderMembers = () => {
             {/* background elements */}
             <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
             <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
-            <Triangle num={3} classNameTriangle="triangle__gris" />
-            <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}
             <Swiper
                 autoHeight={true}

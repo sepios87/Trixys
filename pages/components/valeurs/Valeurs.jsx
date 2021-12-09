@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './Valeurs.module.scss';
 import ServiceItem from '../services/serviceItem/ServiceItem';
-import Triangle from '../triangle/Triangle';
 
 const valeursList = [
     {
@@ -40,8 +39,6 @@ const Valeurs = () => {
             {/* background elements */}
             <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
             <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
-            <Triangle num={3} classNameTriangle="triangle__gris" />
-            <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}
             <h2 className='title'>Nos valeurs</h2>
             <div className={classes.valeurs__valeursContainer}>

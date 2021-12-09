@@ -2,7 +2,6 @@ import React from 'react';
 import ContactForm from './contact-form/ContactForm';
 import classes from './Contact.module.scss';
 import Informations from './informations/Informations';
-import Triangle from '../triangle/Triangle';
 
 const Contact = (props) => {
     const { width } = props;
@@ -12,7 +11,6 @@ const Contact = (props) => {
             {/* background elements */}
             <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
             <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
-            <Triangle num={6} classNameTriangle="triangle__jaune" />
             {/* end background elements */}
             <div className={classes.contact__item}>
                 <ContactForm />
