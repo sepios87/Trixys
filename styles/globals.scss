@@ -111,18 +111,6 @@ body {
     }
 }
 
-.croix {
-    position: absolute;
-    display: none;
-    z-index: -1;
-}
-
-.montagne {
-    position: absolute;
-    display: none;
-    z-index: -1;
-}
-
 .title {
     font-family: Quick;
     font-size: 30px;
@@ -132,21 +120,5 @@ body {
 
     @media screen and (min-width: 780px) {
         margin: 0 0 5vh;
-    }
-}
-
-@media screen and (min-width: 780px) {
-    .croix {
-        height: 15rem;
-        bottom: 2vh;
-        left: 5vw;
-        display: block;
-    }
-
-    .montagne {
-        height: 1rem;
-        top: 15vh;
-        right: 22vw;
-        display: block;
     }
 }

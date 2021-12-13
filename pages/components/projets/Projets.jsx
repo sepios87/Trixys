@@ -25,8 +25,7 @@ const Projets = ({ onEstimate }) => {
     return (
         <section className={classes.projectContainer}>
             {/* background elements */}
-            <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
-            <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
+           
             {/* end background elements */}
             <h2 className="title">Nos projets</h2>
             <div className={classes.project} ref={ref}>

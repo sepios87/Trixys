@@ -15,8 +15,9 @@
         margin: 2vh 5%;
         box-shadow: -4px 4px 22px -4px rgba(0, 0, 0, 0.5);
         transition: .15s;
-        background-color: var(--primary);
+        background-color: rgba(255, 255, 255, 0.95);
         padding-top: 2vh;
+        color: black;
 
         @media screen and (min-width: 780px) {
             width: 32%;
@@ -32,9 +33,4 @@
             transform: scale(1.03);
         }
     }
-
-    // @media screen and (min-width: 780px) {
-    //     flex-direction: row;
-    //     width: 70%;
-    // }
 }

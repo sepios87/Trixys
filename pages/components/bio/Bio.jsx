@@ -7,9 +7,6 @@ const Bio = ({ onPageMembers }) => {
 
     return (
         <section className={classes.bio}>
-            {/* background elements */}
-            <img src="svg/croix.svg" loading='lazy' alt="croix" className="croix" />
-            <img src="svg/montagne.svg" loading='lazy' alt="montagnes" className="montagne" />
             {/* end background elements */}
             <p className={classes.bio__backgroundLetter}>4</p>
             <section className={classes.bio__bioContainer}>

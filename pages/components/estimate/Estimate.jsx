@@ -120,8 +120,7 @@ const Estimate = () => {
     return (
         <section className={classes.estimate} id="estimate">
             {/* background elements */}
-            <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
-            <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
+           
             {/* end background elements */}
             <span className={classes.estimate__questionNum}>
                 {currentQuestion + 1}

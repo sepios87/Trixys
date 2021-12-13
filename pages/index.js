@@ -18,6 +18,7 @@ import useWindowDimensions from '../hooks/useWindowDimensions';
 import Projets from './components/projets/Projets';
 import Valeurs from './components/valeurs/Valeurs';
 import Head from 'next/head';
+import classes from './index.module.scss';
 
 SwiperCore.use([Mousewheel, Pagination, Keyboard]);
 
@@ -31,7 +32,7 @@ export default function Home() {
     const [swiper, setSwiper] = useState(null);
     const [play] = useSound('/sounds/transition.mp3');
 
-    const { width, height } = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
     const transitions = useTransition(music == null ? [] : true, {
         from: { opacity: 0, transform: 'translate(100%, -50%)' },
@@ -64,6 +65,11 @@ export default function Home() {
             <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
+
+            {swiper?.activeIndex > 0 && <>
+                <img src="svg/croix.svg" loading='lazy' alt="croix" className={classes.croix} />
+                <img src="svg/montagne.svg" loading='lazy' alt="montagnes" className={classes.montagne} />
+            </>}
 
             {width > 780 &&
                 !checkIfMobile() &&

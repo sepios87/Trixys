@@ -37,8 +37,7 @@ const Valeurs = () => {
     return (
         <section className={classes.valeurs}>
             {/* background elements */}
-            <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
-            <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
+           
             {/* end background elements */}
             <h2 className='title'>Nos valeurs</h2>
             <div className={classes.valeurs__valeursContainer}>

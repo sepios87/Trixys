@@ -41,8 +41,7 @@ const SliderMembers = () => {
     return (
         <section className={classes.members} id="members">
             {/* background elements */}
-            <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
-            <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
+           
             {/* end background elements */}
             <Swiper
                 autoHeight={true}

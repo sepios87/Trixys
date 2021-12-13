@@ -37,8 +37,7 @@ const Services = () => {
     return (
         <section className={classes.services}>
             {/* background elements */}
-            <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
-            <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
+           
             {/* end background elements */}
             <h2 className="title">Nos services</h2>
             <div className={classes.services__servicesContainer}>

@@ -9,8 +9,7 @@ const Contact = (props) => {
     return (
         <section className={classes.contact}>
             {/* background elements */}
-            <img loading='lazy' src="svg/croix.svg" alt="croix" className="croix" />
-            <img loading='lazy' src="svg/montagne.svg" alt="montagnes" className="montagne" />
+           
             {/* end background elements */}
             <div className={classes.contact__item}>
                 <ContactForm />
