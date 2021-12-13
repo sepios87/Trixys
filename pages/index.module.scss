@@ -1,13 +1,13 @@
-.croix {
+.croix, .montagne {
+    opacity: 1;
     position: absolute;
-    display: none;
     z-index: -1;
+    display: none;
+    transition: .8s;
 }
 
-.montagne {
-    position: absolute;
-    display: none;
-    z-index: -1;
+.hidden {
+    opacity: 0;
 }
 
 @media screen and (min-width: 780px) {

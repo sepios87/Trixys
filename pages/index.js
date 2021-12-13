@@ -66,10 +66,22 @@ export default function Home() {
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
 
-            {swiper?.activeIndex > 0 && <>
-                <img src="svg/croix.svg" loading='lazy' alt="croix" className={classes.croix} />
-                <img src="svg/montagne.svg" loading='lazy' alt="montagnes" className={classes.montagne} />
-            </>}
+            <img
+                src="svg/croix.svg"
+                loading="lazy"
+                alt="croix"
+                className={`${classes.croix} ${
+                    !swiper?.activeIndex > 0 && classes.hidden
+                }`}
+            />
+            <img
+                src="svg/montagne.svg"
+                loading="lazy"
+                alt="montagnes"
+                className={`${classes.montagne} ${
+                    !swiper?.activeIndex > 0 && classes.hidden
+                }`}
+            />
 
             {width > 780 &&
                 !checkIfMobile() &&
