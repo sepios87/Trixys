@@ -120,7 +120,7 @@ const Estimate = () => {
     return (
         <section className={classes.estimate} id="estimate">
             {/* background elements */}
-           
+
             {/* end background elements */}
             <span className={classes.estimate__questionNum}>
                 {currentQuestion + 1}
@@ -129,7 +129,7 @@ const Estimate = () => {
             {formIsFinished() ? (
                 <div>
                     <p className={classes.estimateNumber}>
-                        Votre site est estimé à : {points * 65}€
+                        Votre site est estimé à : <strong>{points * 150}€</strong>
                     </p>
                     <Button
                         onClick={() => {
