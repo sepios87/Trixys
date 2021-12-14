@@ -1,8 +1,7 @@
-import React, { useState, createContext } from 'react';
+import React, {useState, createContext, useEffect} from 'react';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import 'swiper/css';
 import SwiperCore, { Keyboard, Mousewheel, Pagination } from 'swiper';
-import MusicController from './components/music-controller/MusicController';
 import Vague from './components/vague/Vague';
 import Header from './components/header/Header';
 import Bio from './components/bio/Bio';
@@ -53,6 +52,10 @@ export default function Home() {
         }
     };
 
+    useEffect(() => {
+        setMusic(localStorage.getItem('music') ?? false);
+    }, []);
+
     return (
         <MusicContext.Provider value={music}>
             <Head>
@@ -62,7 +65,6 @@ export default function Home() {
                     content="initial-scale=1.0, width=device-width"
                 />
             </Head>
-            <MusicController music={music} setMusic={setMusic} />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
 
