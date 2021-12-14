@@ -28,7 +28,7 @@ const tab = [
         response2: {
             name: 'Site de e-commerce',
             image: 'svg/ecommerce.svg',
-            point: 3,
+            point: 4,
         },
     },
     {
@@ -50,29 +50,6 @@ const tab = [
             min: 1,
             max: 10,
             point: 2,
-        },
-    },
-    {
-        question:
-            'Quel niveau de graphisme souhaitez-vous ? (1 étant un design classique et 5 étant un design très poussé)',
-        response: {
-            min: 1,
-            max: 5,
-            point: 2,
-        },
-    },
-    {
-        question:
-            'Souhaitez-vous que votre site s’adapte aux mobiles et tablettes ?',
-        response1: {
-            name: 'Oui',
-            image: 'svg/responsiveYes.svg',
-            point: 2,
-        },
-        response2: {
-            name: 'Non',
-            image: 'svg/responsiveNo.svg',
-            point: 0,
         },
     },
     {
@@ -129,7 +106,7 @@ const Estimate = () => {
             {formIsFinished() ? (
                 <div>
                     <p className={classes.estimateNumber}>
-                        Votre site est estimé à : <strong>{points * 150}€</strong>
+                        Votre site est estimé à : <strong>{points * 175}€</strong>
                     </p>
                     <Button
                         onClick={() => {

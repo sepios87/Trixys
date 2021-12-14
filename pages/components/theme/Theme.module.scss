@@ -5,9 +5,8 @@
     transform: translateY(-30%) rotate(90deg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 10px 7px;
-    z-index: 100;
+    padding: 10px 8px;
+    z-index: 10;
     background: var(--primary);
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
@@ -27,8 +26,8 @@
         color: var(--secondary);
 
         @media screen and (min-width: 780px) {
-            font-size: 15px;
-            height: 30px;
+            font-size: 20px;
+            height: 35px;
             transform: rotate(0);
             color: var(--secondary);
         }

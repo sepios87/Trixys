@@ -6,8 +6,7 @@
 
     &__pointsDroite,
     &__pointsGauche {
-        position: absolute;
-        width: 20vw;
+        display: none;
     }
 
     &__pointsDroite {
@@ -53,7 +52,7 @@
 .contact {
     display: flex;
 
-    p{
+    p {
         border-right: solid #464652 2px;
         padding-right: 8%;
         margin-right: 6%;
@@ -77,7 +76,9 @@
     width: 10rem;
 }
 
-.triangle3, .triangle8, .triangle9 {
+.triangle3,
+.triangle8,
+.triangle9 {
     display: none;
 }
 
@@ -92,12 +93,15 @@
 }
 
 @media screen and (min-width: 780px) {
-    .triangles, .rond {
+    .triangles,
+    .rond {
         max-width: 30vw;
     }
     .header {
         &__pointsDroite,
         &__pointsGauche {
+            display: block;
+            position: absolute;
             width: 4rem;
         }
 
@@ -164,5 +168,4 @@
         width: 22rem;
         bottom: 1vh;
     }
-
 }
