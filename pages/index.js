@@ -1,4 +1,4 @@
-import React, {useState, createContext, useEffect} from 'react';
+import React, { useState, createContext, useEffect } from 'react';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import 'swiper/css';
 import SwiperCore, { Keyboard, Mousewheel, Pagination } from 'swiper';
@@ -65,11 +65,13 @@ export default function Home() {
                     content="initial-scale=1.0, width=device-width"
                 />
             </Head>
-            <img className={classes.logo}
-                 src="svg/logo.svg"
-                 alt="logo"
-                 onClick={() => swiper.slideTo(0)}
-            />
+            <a
+                {...(width <= 780 && { href: '#home' })}
+                onClick={() => width > 780 && swiper.slideTo(0)}
+            >
+                <img className={classes.logo} src="svg/logo.svg" alt="logo" />
+            </a>
+
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
 

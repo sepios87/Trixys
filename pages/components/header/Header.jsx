@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 
 const Header = ({ isWaiting }) => {
     return (
-        <section className={classes.header}>
+        <section className={classes.header} id="home">
             <img
                 className={classes.header__pointsDroite}
                 src="svg/points.svg"

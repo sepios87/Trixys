@@ -9,7 +9,11 @@ ServerSignature Off
  ExpiresByType image/png "access plus 2592000 seconds"
  ExpiresByType image/gif "access plus 2592000 seconds"
  ExpiresByType image/svg "access plus 2592000 seconds"
- ExpiresByType audio/mp3 "access plus 2592000 seconds"
+ ExpiresByType audio/mpeg "access plus 2592000 seconds"
+ ExpiresByType audio/ogg "access plus 2592000 seconds"
+ ExpiresByType audio/wav "access plus 2592000 seconds"
+ ExpiresByType audio/wma "access plus 2592000 seconds"
+ ExpiresByType audio/* "access plus 2592000 seconds"
  AddType image/x-icon .ico
  ExpiresByType image/ico "access plus 2592000 seconds"
  ExpiresByType image/icon "access plus 2592000 seconds"
@@ -41,7 +45,7 @@ Header set X-XSS-Protection "1; mode=block"
 Header always set X-FRAME-OPTIONS "DENY"
 Header always set X-Content-Type-Options "nosniff"
 Header append Vary: Accept-Encoding
- <FilesMatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf|svg|mp3)$">
+ <FilesMatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf|svg|mp3|mpeg)$">
  Header set Cache-Control "max-age=2592000, public"
  </FilesMatch>
  <FilesMatch "\\.(css)$">

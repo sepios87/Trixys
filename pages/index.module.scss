@@ -11,12 +11,17 @@
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     width: 3rem;
-    top: 20px;
-    left: 20px;
+    top: 12px;
+    left: 12px;
     max-width: 20vw;
     z-index: 2;
+
+    @media screen and (min-width: 780px) {
+        top: 20px;
+        left: 20px;
+    }
 }
 
 .hidden {
