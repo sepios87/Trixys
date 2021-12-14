@@ -65,6 +65,11 @@ export default function Home() {
                     content="initial-scale=1.0, width=device-width"
                 />
             </Head>
+            <img className={classes.logo}
+                 src="svg/logo.svg"
+                 alt="logo"
+                 onClick={() => swiper.slideTo(0)}
+            />
             <Theme music={music} setMusic={setMusic} />
             <Vague waveTransition={waveTransition} />
 

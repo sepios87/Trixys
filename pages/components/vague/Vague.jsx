@@ -6,7 +6,6 @@ import { IoLogoFacebook } from 'react-icons/io';
 const Vague = ({ waveTransition }) => {
     return (
         <>
-            <img className={classes.logo} src="svg/logo.svg" alt="logo" />
             <svg
                 style={{
                     width: waveTransition ? '75vh' : '',
